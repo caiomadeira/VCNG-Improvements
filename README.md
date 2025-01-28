@@ -1,9 +1,5 @@
-# ViceCity-NextGen-Fixes
-Some fixes for Mod GTA VC Next Gen from RevTeam. 
+## GTA ViceCity Next-Gen Mod: Fixes and Enhancements
 
-### Fix #1:
-- Player Can Change Weapon while is talking on the phone. I fix this disabling the control in phone call.
+### Fixes:
+ 1. Player Can Change Weapon while is talking on the phone. I fix this disabling the control in phone call. (mob_phone.c)
 
-```
-file: mob_phone.c
-```
