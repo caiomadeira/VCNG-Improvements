@@ -1,0 +1,23 @@
+Version 110 12
+shadinggroup
+{
+	Shaders 1
+	{
+		gta_default.sps csdeal\csdeal.dds
+	}
+}
+skel
+{
+	skel csdeal\csdeal.skel
+}
+lodgroup
+{
+	high 1 csdeal\csdeal_high.mesh 0 9999.00000000
+	med none 9999.00000000
+	low none 9999.00000000
+	vlow none 9999.00000000
+	center -0.01003650 0.00313273 -0.07677850
+	AABBMin -0.18773000 -0.89927600 -0.99990400
+	AABBMax 0.16765700 0.90554100 0.84634690
+	radius 1.30310000
+}

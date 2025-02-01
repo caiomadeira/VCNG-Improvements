@@ -57,7 +57,7 @@ void LAWYER_1(void)
 		if (sutosave == 1)
 		{
 			sutosave = 0;
-			G_SAVE_SAVED = 16; // точка входа 
+			G_SAVE_SAVED = 16; // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 
 			G_SAVE_OCCURED = TRUE;
 			DO_AUTO_SAVE();
 			WAIT(500);
@@ -71,26 +71,26 @@ void LAWYER_1(void)
 		{
 			if (blip_on == 0)
 			{
-				ADD_BLIP_FOR_COORD(552.217, -293.87, 4.356, &lawyer_ico);//создаем иконку на радаре
-				CHANGE_BLIP_SPRITE(lawyer_ico, BLIP_ROMAN);//текстура иконки на радаре
-				CHANGE_BLIP_COLOUR(lawyer_ico, 0);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-				CHANGE_BLIP_SCALE(lawyer_ico, 1.1); // масштаб иконки на радаре
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(lawyer_ico, "NE_LAWYER");//иконка на радаре называние в истории карты "Адвокат"
+				ADD_BLIP_FOR_COORD(552.217, -293.87, 4.356, &lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SPRITE(lawyer_ico, BLIP_ROMAN);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_COLOUR(lawyer_ico, 0);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+				CHANGE_BLIP_SCALE(lawyer_ico, 1.1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(lawyer_ico, "NE_LAWYER");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 				blip_on = 1;
 			}
-			DRAW_CHECKPOINT( 552.217, -293.87, 4.356, 1.5, 160, 116, 209);//создание чекпойнт на координатах и его цвет
-			GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-			GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 552.217, -293.87, 4.356, &PlayR);//проверка "игрок на координатах"
+			DRAW_CHECKPOINT( 552.217, -293.87, 4.356, 1.5, 160, 116, 209);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+			GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 552.217, -293.87, 4.356, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 			if (( PlayR < 1.5) && (!IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())))
 			{
-				//--------------- СТАРТ МИССИИ ---------------
-				skip = 0; // переменная пропуска
+				//--------------- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ---------------
+				skip = 0; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				load_all = 0;
 				G_ONMISSION = 1;
-				REMOVE_BLIP(lawyer_ico);//Удаляем иконку на радаре
-				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+				REMOVE_BLIP(lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				
-				DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+				DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				while(true)
 				{
 					WAIT(0);
@@ -99,19 +99,19 @@ void LAWYER_1(void)
 						break;
 					}
 				}
-				// переодивание тут
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 				SET_CHAR_COMPONENT_VARIATION(GetPlayerPed(), 1, 0, 0);
 
-				SET_CHAR_COORDINATES(GetPlayerPed(), 552.036, -293.714, 4.766);// перемещаем игрока
+				SET_CHAR_COORDINATES(GetPlayerPed(), 552.036, -293.714, 4.766);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				SET_CHAR_HEADING(GetPlayerPed(), 52.894);
 
 				GET_TIME_OF_DAY(&hour, &minute);
 				GET_CURRENT_WEATHER(&weather);
 				FORCE_WEATHER_NOW(WEATHER_EXTRA_SUNNY);
-				FORWARD_TO_TIME_OF_DAY(18, 40);//устанавливаем время
+				FORWARD_TO_TIME_OF_DAY(18, 40);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				
-				//------------ катсцена ----------------
-				LOAD_ADDITIONAL_TEXT( "LAW_1A", 6 ); // загружаем субтитры из *.GTX
+				//------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ----------------
+				LOAD_ADDITIONAL_TEXT( "LAW_1A", 6 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ *.GTX
 				START_CUTSCENE_NOW("law_1a");
 				while (!HAS_CUTSCENE_LOADED())
 				{
@@ -129,16 +129,16 @@ void LAWYER_1(void)
 					DO_SCREEN_FADE_IN(0);
 				}
 
-				FORCE_WEATHER_NOW( weather );//устанавливаем погода
+				FORCE_WEATHER_NOW( weather );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				RELEASE_WEATHER();
-				FORWARD_TO_TIME_OF_DAY(hour, minute);//устанавливаем время
+				FORWARD_TO_TIME_OF_DAY(hour, minute);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
-				ADD_BLIP_FOR_COORD(527.259, -601.747, 4.341, &Party_ico);//создаем иконку на радаре
-				CHANGE_BLIP_SPRITE(Party_ico, BLIP_CLOTHES_SHOP);//текстура иконки на радаре
-				CHANGE_BLIP_COLOUR(Party_ico, 0);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-				CHANGE_BLIP_SCALE(Party_ico, 1.1); // масштаб иконки на радаре
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_SHOP");//иконка на радаре называние в истории карты "Clothes shop"
+				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				ADD_BLIP_FOR_COORD(527.259, -601.747, 4.341, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SPRITE(Party_ico, BLIP_CLOTHES_SHOP);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_COLOUR(Party_ico, 0);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+				CHANGE_BLIP_SCALE(Party_ico, 1.1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_SHOP");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "Clothes shop"
 
 				SetTime(1000);
 				NEW_SCRIPTED_CONVERSATION();
@@ -150,7 +150,7 @@ void LAWYER_1(void)
 				PRINT_STRING_IN_STRING("string", "LAW1_1", 5500, 1);//~g~Go get some new threads from Rafael's clothes shop.
 				SetTime(2000);
 
-				// мигиние радара
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				DISPLAY_RADAR(0);
 				SetTime(250);
 				DISPLAY_RADAR(1);
@@ -172,8 +172,8 @@ void LAWYER_1(void)
 				Ped ped1, ped2;
 				Cam camera, camera2, camera3;
 
-				uint PedM1 = MODEL_M_Y_DORK_02;// Байкер
-				uint PedM2 = MODEL_IG_ANNA;// Мерседес
+				uint PedM1 = MODEL_M_Y_DORK_02;// пїЅпїЅпїЅпїЅпїЅпїЅ
+				uint PedM2 = MODEL_IG_ANNA;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				uint CarM1 = MODEL_BOBBER;
 				uint CarM2 = MODEL_BANSHEE;
 				uint CarM3 = MODEL_SUPERGT;
@@ -195,17 +195,17 @@ void LAWYER_1(void)
 				REQUEST_MODEL(CarM5);
 				while (!HAS_MODEL_LOADED(CarM5)) WAIT(100);
 
-				REQUEST_MODEL(PedM1);// Байкер
-				while (!HAS_MODEL_LOADED(PedM1));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM1);// пїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM1));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(PedM2);// Мерседес
-				while (!HAS_MODEL_LOADED(PedM2));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM2);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM2));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// создаём байк и байкера
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				CREATE_CAR(CarM1, 286.576, -788.199, 5.801, &car1, TRUE);
-				CREATE_CHAR_INSIDE_CAR(car1, 1, PedM1, &ped1);//создаём педа за рулём автомобиля
+				CREATE_CHAR_INSIDE_CAR(car1, 1, PedM1, &ped1);//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// создаём транспорт у яхты
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
 				CREATE_CAR(CarM2, 196.987, -842.386, 2.732, &car2, TRUE);
 				SET_CAR_HEADING(car2, 102.336);
 				CREATE_CAR(CarM3, 195.982, -837.659, 2.732, &car3, TRUE);
@@ -215,40 +215,40 @@ void LAWYER_1(void)
 				CREATE_CAR(CarM5, 191.191, -813.617, 2.732, &car5, TRUE);
 				SET_CAR_HEADING(car5, 102.336);
 
-				// создаём Мерседес
-				CREATE_CHAR (26, PedM2, 281.145, -791.79, 5.445, &ped2, TRUE);// создаём педа
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 281.145, -791.79, 5.445, &ped2, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 				SET_CHAR_COMPONENT_VARIATION(ped2, 1, 0, 0);
 
-				// грузим пути байкера
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				REQUEST_CAR_RECORDING( 2993 );
 				while (!HAS_CAR_RECORDING_BEEN_LOADED( 2993 )) WAIT(0);
 
-				//------------------ Первая часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				while (TRUE)
 				{
 					WAIT(0);
-					DRAW_CHECKPOINT( 527.259, -601.747, 4.341, 1.3, 246, 151, 255);//создание чекпойнт на координатах и его цвет
-					GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-					GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 527.259, -601.747, 4.341, &PlayR);//проверка "игрок на координатах"
+					DRAW_CHECKPOINT( 527.259, -601.747, 4.341, 1.3, 246, 151, 255);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+					GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 527.259, -601.747, 4.341, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 					if (( PlayR < 1.3) && (!IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())))
 					{
-						REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+						REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-						// камера сверху
+						// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						CREATE_CAM( 14, &camera );
-						POINT_CAM_AT_COORD	( camera, 530.273, -604.626, 4.197 ); // куда смотрит камера
-						SET_CAM_POS			( camera, 522.552, -596.448, 16.414 );//расположение камеры
+						POINT_CAM_AT_COORD	( camera, 530.273, -604.626, 4.197 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 522.552, -596.448, 16.414 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_ACTIVE( camera, 1 );
 						SET_CAM_PROPAGATE( camera, 1 );
 						ACTIVATE_SCRIPTED_CAMS(1, 1);
 						SET_CAM_FOV( camera, 45.0 );
 						SET_WIDESCREEN_BORDERS( 1 );
 
-						TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 529.623, -603.946, 4.766, 2, -2);// Томми идёт в двери
+						TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 529.623, -603.946, 4.766, 2, -2);// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 						SetTime(1000);
 
-						DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+						DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						while(true)
 						{
 							WAIT(0);
@@ -257,30 +257,30 @@ void LAWYER_1(void)
 								break;
 							}
 						}
-						// переодивание	
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ	
 						SET_CHAR_COMPONENT_VARIATION(GetPlayerPed(), 1, 1, 0);
 
-						FORWARD_TO_TIME_OF_DAY(19, 30);//устанавливаем время
-						SET_CHAR_COORDINATES(GetPlayerPed(), 528.664, -602.916, 4.766);// перемещаем игрока
+						FORWARD_TO_TIME_OF_DAY(19, 30);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+						SET_CHAR_COORDINATES(GetPlayerPed(), 528.664, -602.916, 4.766);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CHAR_HEADING(GetPlayerPed(), 52.9);
 						SetTime(200);
-						DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
+						DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-						// подём камеры
+						// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						CREATE_CAM( 3, &camera2 );
 						CREATE_CAM( 14, &camera3 );
-						POINT_CAM_AT_COORD	( camera, 528.442, -602.798, 4.56 ); // куда смотрит камера
-						SET_CAM_POS			( camera, 527.141, -601.545, 5.08 );//расположение камеры
-						POINT_CAM_AT_COORD	( camera3, 528.442, -602.798, 5.839 ); // куда смотрит камера
-						SET_CAM_POS			( camera3, 527.141, -601.545, 5.08 );//расположение камеры
-						SET_CAM_INTERP_STYLE_CORE( camera2, camera, camera3, 3500, 0 ); //перемещение камеры от игрока на точку указанную в координатах "SET_CAM_POS(camera, X, Y, Z)" 
+						POINT_CAM_AT_COORD	( camera, 528.442, -602.798, 4.56 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 527.141, -601.545, 5.08 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						POINT_CAM_AT_COORD	( camera3, 528.442, -602.798, 5.839 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera3, 527.141, -601.545, 5.08 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_INTERP_STYLE_CORE( camera2, camera, camera3, 3500, 0 ); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "SET_CAM_POS(camera, X, Y, Z)" 
 						SET_CAM_ACTIVE( camera2, 1 );
 						SET_CAM_PROPAGATE( camera2, 1 );
 						ACTIVATE_SCRIPTED_CAMS(1, 1);
 
 						SetTime(800);
-						CLEAR_AREA(527.259, -601.747, 4.341, 80.5, 1);//очещаем зону загрузки
-						START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car1, 2993, 0.0, 0.0, 0.0);// подъезд мотоцыкла
+						CLEAR_AREA(527.259, -601.747, 4.341, 80.5, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car1, 2993, 0.0, 0.0, 0.0);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						SetTime(3200);
 						
 						ACTIVATE_SCRIPTED_CAMS( 0, 0 );
@@ -288,10 +288,10 @@ void LAWYER_1(void)
 						DESTROY_CAM( camera2 );
 						DESTROY_CAM( camera3 );
 
-						// смена ракурса камеры
+						// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						CREATE_CAM( 14, &camera );
-						POINT_CAM_AT_COORD	( camera, 529.848, -602.708, 5.331 ); // куда смотрит камера
-						SET_CAM_POS			( camera, 507.329, -603.689, 5.273 );//расположение камеры
+						POINT_CAM_AT_COORD	( camera, 529.848, -602.708, 5.331 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 507.329, -603.689, 5.273 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_ACTIVE( camera, 1 );
 						SET_CAM_PROPAGATE( camera, 1 );
 						ACTIVATE_SCRIPTED_CAMS(1, 1);
@@ -313,32 +313,32 @@ void LAWYER_1(void)
 						ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 						DESTROY_CAM( camera );
 						SET_WIDESCREEN_BORDERS( 0 );
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						CLEAR_PRINTS();
 						PRINT_STRING_IN_STRING("string", "LAW1_2", 5500, 1);//~g~Get to the Colonel's boat.
 
-						ADD_BLIP_FOR_COORD(192.169, -827.01, 2.043, &Party_ico);//создаем иконку на радаре
-						CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре "BLIP_FINISH_LINE"
-						CHANGE_BLIP_COLOUR(Party_ico, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-						CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
-						CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//иконка на радаре называние в истории карты ""
+						ADD_BLIP_FOR_COORD(192.169, -827.01, 2.043, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "BLIP_FINISH_LINE"
+						CHANGE_BLIP_COLOUR(Party_ico, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+						CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ ""
 
 						bike = 0;
 						break;
 					}
-					else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+					else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					{
-						skip = 1;// переменная пропуска
+						skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						break;
 					}
 				}
-				//------------------ Вторая часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				if (skip == 0)
 				{
 					while (TRUE)
 					{
 						WAIT(0);
-						if ((!IS_CHAR_DEAD(ped1)) && (!IS_CHAR_INJURED(ped1)))//если игрок мёртв или аврестован
+						if ((!IS_CHAR_DEAD(ped1)) && (!IS_CHAR_INJURED(ped1)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
 							if ((IS_CHAR_IN_CAR(GetPlayerPed(), car1)) && (bike == 0))
 							{
@@ -349,11 +349,11 @@ void LAWYER_1(void)
 								START_SCRIPT_CONVERSATION(1, 1);
 								SETTIMERB( 0 );
 
-								// тут анимация
+								// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 								SET_CHAR_HEADING(ped1, -32.106);
 								REQUEST_ANIMS( "amb@taxi_hail_m" );
 								while (!HAVE_ANIMS_LOADED( "amb@taxi_hail_m" )) WAIT(0);
-								TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped1, "hail_left", "amb@taxi_hail_m", 1.0, 1, 0, 0, 0, 3000 );//Воиспроизвидение анимации на педе
+								TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped1, "hail_left", "amb@taxi_hail_m", 1.0, 1, 0, 0, 0, 3000 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 							}
 							if ((bike == 1) && (TIMERB() > 2000))
 							{
@@ -367,30 +367,30 @@ void LAWYER_1(void)
 						if ((load_all == 0) && (IS_CHAR_IN_AREA_3D( GetPlayerPed(), 182.78, -847.079, 0.41, 210.881, -811.954, 17.658, 0 )))
 						{
 							load_all = 1;
-							MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//выгружаем модель машины
-							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//выгружаем модель машины
-							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM2);//выгружаем модель машины
-							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM3);//выгружаем модель машины
-							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM4);//выгружаем модель машины
-							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM5);//выгружаем модель машины
+							MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							MARK_MODEL_AS_NO_LONGER_NEEDED(CarM5);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//выгружаем модель педа(в последствии пед изчезнет
-							MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//выгружаем модель машины(в последствии машина изчезнет)
-							MARK_CAR_AS_NO_LONGER_NEEDED(&car2);//выгружаем модель машины(в последствии машина изчезнет)
-							MARK_CAR_AS_NO_LONGER_NEEDED(&car3);//выгружаем модель машины(в последствии машина изчезнет)
-							MARK_CAR_AS_NO_LONGER_NEEDED(&car4);//выгружаем модель машины(в последствии машина изчезнет)
-							MARK_CAR_AS_NO_LONGER_NEEDED(&car5);//выгружаем модель машины(в последствии машина изчезнет)
-							REMOVE_CAR_RECORDING( 2993 ); // выгружаем пути транспорта
+							MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+							MARK_CAR_AS_NO_LONGER_NEEDED(&car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+							MARK_CAR_AS_NO_LONGER_NEEDED(&car3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+							MARK_CAR_AS_NO_LONGER_NEEDED(&car4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+							MARK_CAR_AS_NO_LONGER_NEEDED(&car5);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+							REMOVE_CAR_RECORDING( 2993 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						}
 
-						DRAW_CHECKPOINT( 192.169, -827.01, 2.043, 1.8, 246, 151, 255);//создание чекпойнт на координатах и его цвет
-						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-						GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 192.169, -827.01, 2.043, &PlayR);//проверка "игрок на координатах"
+						DRAW_CHECKPOINT( 192.169, -827.01, 2.043, 1.8, 246, 151, 255);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 192.169, -827.01, 2.043, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 						if ( PlayR < 1.3 )
 						{
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
-							DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							while(true)
 							{
 								WAIT(0);
@@ -399,26 +399,26 @@ void LAWYER_1(void)
 									break;
 								}
 							}
-							// проверка игрок в машине
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							if (IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed()))
 							{
 								GET_CAR_CHAR_IS_USING(GetPlayerPed(), &car6);
-								WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 189.069, -827.351, 2.732);// высаживаем игрока
+								WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 189.069, -827.351, 2.732);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								FIX_CAR(car6);
 								SET_CAR_COORDINATES(car6, 194.114, -830.352, 2.732);
 								SET_CAR_HEADING(car6, -77.664);
 								MARK_CAR_AS_NO_LONGER_NEEDED(&car6);
 							}
-							SET_CHAR_COORDINATES(GetPlayerPed(), 189.069, -827.351, 2.732);// перемещаем игрока
+							SET_CHAR_COORDINATES(GetPlayerPed(), 189.069, -827.351, 2.732);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), -55.1);
-							SET_CHAR_COORDINATES(ped2, 189.147, -825.867, 2.732);// перемещаем педа Мерседес
+							SET_CHAR_COORDINATES(ped2, 189.147, -825.867, 2.732);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(ped2, -175.0);
 
 							FORCE_WEATHER_NOW(WEATHER_SUNNY);
-							FORWARD_TO_TIME_OF_DAY(20, 30);//устанавливаем время
+							FORWARD_TO_TIME_OF_DAY(20, 30);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-							//------------ катсцена ----------------
-							LOAD_ADDITIONAL_TEXT( "LAW_1B", 6 ); // загружаем субтитры из *.GTX
+							//------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ----------------
+							LOAD_ADDITIONAL_TEXT( "LAW_1B", 6 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ *.GTX
 							START_CUTSCENE_NOW("law_1b");
 							while (!HAS_CUTSCENE_LOADED())
 							{
@@ -436,14 +436,14 @@ void LAWYER_1(void)
 								DO_SCREEN_FADE_IN(0);
 							}
 
-							FORWARD_TO_TIME_OF_DAY(04, 35);//устанавливаем время
+							FORWARD_TO_TIME_OF_DAY(04, 35);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							RELEASE_WEATHER();
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
-							ADD_BLIP_FOR_COORD(534.054, -946.33, 4.189, &Party_ico);//создаем иконку на радаре
-							CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре "BLIP_FINISH_LINE"
-							CHANGE_BLIP_COLOUR(Party_ico, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-							CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//иконка на радаре называние в истории карты ""
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							ADD_BLIP_FOR_COORD(534.054, -946.33, 4.189, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "BLIP_FINISH_LINE"
+							CHANGE_BLIP_COLOUR(Party_ico, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+							CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ ""
 							PRINT_STRING_IN_STRING("string", "LAW1_3", 5500, 1);//~g~Take the Colonel's daughter to the Pole Position club.
 							in_car = 0;
 							stelking = 0;
@@ -451,22 +451,22 @@ void LAWYER_1(void)
 							textID = 0;
 							break;
 						}
-						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							break;
 						}
 					}
 				}
-				//------------------ Третья часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				if (skip == 0)
 				{
 					while (TRUE)
 					{
 						WAIT(0);
-						// Мерседес сталкирит за Томми
-						GET_CHAR_COORDINATES(ped2,  &PedX, &PedY, &PedZ);//вписываем координаты игрока в переменную
-						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+						GET_CHAR_COORDINATES(ped2,  &PedX, &PedY, &PedZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						if (IS_CHAR_IN_AREA_3D( GetPlayerPed(), PedX+15, PedY+15, PedZ+15, PedX-15, PedY-15, PedZ-15, 0 ))
 						{
 							if ((IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())) && (!IS_CHAR_SITTING_IN_ANY_CAR(ped2)) && (in_car == 0))
@@ -510,10 +510,10 @@ void LAWYER_1(void)
 								PRINT_STRING_IN_STRING("string", "NE_LEFT", 5500, 1);//~g~You left the colonels daughter, come back for her.
 							}
 						}
-						// Диалог в транспорте
+						// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						if ((IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())) && (IS_CHAR_SITTING_IN_ANY_CAR(ped2)) && (dialog == 0))
 						{
-							if (IS_CHAR_ON_ANY_BIKE(GetPlayerPed())) // в мотоцикле
+							if (IS_CHAR_ON_ANY_BIKE(GetPlayerPed())) // пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							{
 								NEW_SCRIPTED_CONVERSATION();
 								ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
@@ -522,7 +522,7 @@ void LAWYER_1(void)
 								dialog = 1;
 								textID = 2;
 							}
-							else // в машине
+							else // пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							{
 								NEW_SCRIPTED_CONVERSATION();
 								ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
@@ -632,18 +632,18 @@ void LAWYER_1(void)
 							}
 						}
 
-						DRAW_CHECKPOINT( 534.054, -946.33, 4.189, 1.3, 246, 151, 255);//создание чекпойнт на координатах и его цвет
-						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-						GET_CHAR_COORDINATES(ped2,  &PedX, &PedY, &PedZ);//вписываем координаты игрока в переменную
-						GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 534.054, -946.33, 4.189, &PlayR);//проверка "игрок на координатах"
-						GET_DISTANCE_BETWEEN_COORDS_3D( PedX, PedY, PedZ, 534.054, -946.33, 4.189, &PedR);//проверка "игрок на координатах"
+						DRAW_CHECKPOINT( 534.054, -946.33, 4.189, 1.3, 246, 151, 255);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						GET_CHAR_COORDINATES(ped2,  &PedX, &PedY, &PedZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 534.054, -946.33, 4.189, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+						GET_DISTANCE_BETWEEN_COORDS_3D( PedX, PedY, PedZ, 534.054, -946.33, 4.189, &PedR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 						if (( PlayR < 1.5 ) && ( PedR < 1.5 ))
 						{
 							ABORT_SCRIPTED_CONVERSATION( 0 );
-							// затемнение
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-							DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							while(true)
 							{
 								WAIT(0);
@@ -652,21 +652,21 @@ void LAWYER_1(void)
 									break;
 								}
 							}
-							// Мерседесс идёт в двери
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 							if (IS_CHAR_SITTING_IN_ANY_CAR(ped2))
 							{
-								WARP_CHAR_FROM_CAR_TO_COORD(ped2, 533.717, -943.083, 4.834);// высаживаем педа
+								WARP_CHAR_FROM_CAR_TO_COORD(ped2, 533.717, -943.083, 4.834);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 							}
 							else
 							{
-								SET_CHAR_COORDINATES(ped2, 533.717, -943.083, 4.834);// перемещаем педа Мерседес
+								SET_CHAR_COORDINATES(ped2, 533.717, -943.083, 4.834);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							}
 							TASK_GO_STRAIGHT_TO_COORD(ped2, 524.137, -930.173, 4.834, 2, -2);
 
-							// ставим камеру
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							CREATE_CAM( 14, &camera );
-							POINT_CAM_AT_COORD	( camera, 535.314, -937.212, 8.304); // куда смотрит камера
-							SET_CAM_POS			( camera, 519.49, -951.657, 4.995 );//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 535.314, -937.212, 8.304); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 519.49, -951.657, 4.995 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_ACTIVE( camera, 1 );
 							SET_CAM_PROPAGATE( camera, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
@@ -674,7 +674,7 @@ void LAWYER_1(void)
 							SET_WIDESCREEN_BORDERS( 1 );
 
 							SetTime(200);
-							DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
+							DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SetTime(500);
 
 							NEW_SCRIPTED_CONVERSATION();
@@ -683,9 +683,9 @@ void LAWYER_1(void)
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetSpeech();
 
-							// смена ракурса камеры
-							POINT_CAM_AT_COORD	( camera, 524.911, -931.449, 6.039 ); // куда смотрит камера
-							SET_CAM_POS			( camera, 533.056, -941.08, 4.889 );//расположение камеры
+							// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							POINT_CAM_AT_COORD	( camera, 524.911, -931.449, 6.039 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 533.056, -941.08, 4.889 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 							NEW_SCRIPTED_CONVERSATION();
 							ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
@@ -693,72 +693,72 @@ void LAWYER_1(void)
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetSpeech();
 
-							//убираем камеру
+							//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SetTime(4000);
 							SET_CAM_BEHIND_PED( GetPlayerPed() );
 							ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 							DESTROY_CAM( camera );
 							SET_WIDESCREEN_BORDERS( 0 );
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
-							SET_CHAR_COORDINATES(ped2, 19.147, -5.867, 12.732);// перемещаем педа Мерседес
-							skip = 2;// переменная пропуска
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CHAR_COORDINATES(ped2, 19.147, -5.867, 12.732);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							skip = 2;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							CLEAR_PRINTS();
 							break;
 						}
-						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
 							ABORT_SCRIPTED_CONVERSATION( 0 );
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							break;
 						}
-						else if ((IS_CHAR_DEAD(ped2)) || (IS_CHAR_INJURED(ped2)))//если игрок мёртв или аврестован
+						else if ((IS_CHAR_DEAD(ped2)) || (IS_CHAR_INJURED(ped2)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
 							ABORT_SCRIPTED_CONVERSATION( 0 );
 							CLEAR_PRINTS();
 							EXPLODE_CHAR_HEAD(ped2);
 							PRINT_STRING_IN_STRING("string", "LAW1_4", 5500, 1);//~r~You killed the Colonel's daughter!
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							break;
 						}
 					}
 				}
-				// чистим скрипт тут
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 				ABORT_SCRIPTED_CONVERSATION( 0 );
-				REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
+				REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				if (load_all == 0)
 				{
-					MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//выгружаем модель машины
-					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//выгружаем модель машины
-					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM2);//выгружаем модель машины
-					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM3);//выгружаем модель машины
-					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM4);//выгружаем модель машины
-					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM5);//выгружаем модель машины
-					MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//выгружаем модель педа(в последствии пед изчезнет
-					MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//выгружаем модель машины(в последствии машина изчезнет)
-					MARK_CAR_AS_NO_LONGER_NEEDED(&car2);//выгружаем модель машины(в последствии машина изчезнет)
-					MARK_CAR_AS_NO_LONGER_NEEDED(&car3);//выгружаем модель машины(в последствии машина изчезнет)
-					MARK_CAR_AS_NO_LONGER_NEEDED(&car4);//выгружаем модель машины(в последствии машина изчезнет)
-					MARK_CAR_AS_NO_LONGER_NEEDED(&car5);//выгружаем модель машины(в последствии машина изчезнет)
-					REMOVE_CAR_RECORDING( 2993 ); // выгружаем пути транспорта
+					MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+					MARK_MODEL_AS_NO_LONGER_NEEDED(CarM5);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+					MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+					MARK_CAR_AS_NO_LONGER_NEEDED(&car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+					MARK_CAR_AS_NO_LONGER_NEEDED(&car3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+					MARK_CAR_AS_NO_LONGER_NEEDED(&car4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+					MARK_CAR_AS_NO_LONGER_NEEDED(&car5);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+					REMOVE_CAR_RECORDING( 2993 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				}
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM2);//выгружаем модель педа
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped2);//выгружаем модель педа(в последствии пед изчезнет
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 				if (car6 != 0)
 				{
-					MARK_CAR_AS_NO_LONGER_NEEDED(&car6);//выгружаем модель машины(в последствии машина изчезнет)
+					MARK_CAR_AS_NO_LONGER_NEEDED(&car6);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 				}
 				if (skip == 1)
 				{
-					SETTIMERA(0); //сбрасываем таймер 
+					SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 					while (true)
 					{
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.6); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
-						DISPLAY_TEXT(0.5, 0.45, "MISSION_FAILED");// пишем "Миссия провалена"
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DISPLAY_TEXT(0.5, 0.45, "MISSION_FAILED");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 						WAIT( 0 );
 						if ( TIMERA() > 3000 )
@@ -770,22 +770,22 @@ void LAWYER_1(void)
 				else if (skip == 2)
 				{
 					PRINT_HELP("NECLOTH1"); //Soiree outfit delivered to Ocean View Hotel on Ocean Beach.
-					SETTIMERA(0); //сбрасываем таймер 
-					TRIGGER_MISSION_COMPLETE_AUDIO(1);//произрываем музыку параметр "(1)" воспроизводит звук из "...\EFLC\pc\audio\Sfx\gps.rpf\GPS\MISSION_COMPLETE_1" (цыфра "6" = "SMC6" в том-же архиве) 
+					SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
+					TRIGGER_MISSION_COMPLETE_AUDIO(1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "(1)" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ "...\EFLC\pc\audio\Sfx\gps.rpf\GPS\MISSION_COMPLETE_1" (пїЅпїЅпїЅпїЅпїЅ "6" = "SMC6" пїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) 
 					while (true)
 					{
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
-						DISPLAY_TEXT(0.5, 0.45, "MISSION_PASSED");// пишем "Миссия завершина"
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DISPLAY_TEXT(0.5, 0.45, "MISSION_PASSED");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						DISPLAY_TEXT_WITH_NUMBER(0.5, 0.5, "CASH", 100);// +5000$
 						
 						WAIT( 0 );
@@ -794,7 +794,7 @@ void LAWYER_1(void)
 							break;
 						}
 					}
-					ADD_SCORE( GetPlayerIndex(), +100 );//даём игроку денег
+					ADD_SCORE( GetPlayerIndex(), +100 );//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					G_LAWYER = 2;
 					sutosave = 1;
 				}
@@ -808,30 +808,30 @@ void LAWYER_1(void)
 		{
 			if (blip_on == 0)
 			{
-				ADD_BLIP_FOR_COORD(552.217, -293.87, 4.356, &lawyer_ico);//создаем иконку на радаре
-				CHANGE_BLIP_SPRITE(lawyer_ico, BLIP_ROMAN);//текстура иконки на радаре
-				CHANGE_BLIP_SCALE(lawyer_ico, 1.1); // масштаб иконки на радаре
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(lawyer_ico, "NE_LAWYER");//иконка на радаре называние в истории карты "Адвокат"
+				ADD_BLIP_FOR_COORD(552.217, -293.87, 4.356, &lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SPRITE(lawyer_ico, BLIP_ROMAN);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SCALE(lawyer_ico, 1.1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(lawyer_ico, "NE_LAWYER");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 				blip_on = 1;
 			}
-			DRAW_CHECKPOINT( 552.217, -293.87, 4.356, 1.5, 160, 116, 209);//создание чекпойнт на координатах и его цвет
-			GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-			GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 552.217, -293.87, 4.356, &PlayR);//проверка "игрок на координатах"
+			DRAW_CHECKPOINT( 552.217, -293.87, 4.356, 1.5, 160, 116, 209);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+			GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 552.217, -293.87, 4.356, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 			if (( PlayR < 1.5) && (!IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())))
 			{
-				//--------------- СТАРТ МИССИИ ---------------
+				//--------------- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ---------------
 				G_ONMISSION = 1;
-				skip = 0;// переменная пропуска
+				skip = 0;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				add_phone = 0;
 				in_cord = 0;
 				textID = 0;
 				in_car = 0;
 				help = 0;
 				locked = 1;
-				REMOVE_BLIP(lawyer_ico);//Удаляем иконку на радаре
-				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+				REMOVE_BLIP(lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				
-				DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+				DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				while(true)
 				{
 					WAIT(0);
@@ -841,17 +841,17 @@ void LAWYER_1(void)
 					}
 				}
 
-				SET_CHAR_COORDINATES(GetPlayerPed(), 552.036, -293.714, 4.766);// перемещаем игрока
+				SET_CHAR_COORDINATES(GetPlayerPed(), 552.036, -293.714, 4.766);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				SET_CHAR_HEADING(GetPlayerPed(), 52.894);
 				SET_CHAR_COMPONENT_VARIATION(GetPlayerPed(), 1, 1, 0);
 
 				GET_TIME_OF_DAY(&hour, &minute);
 				GET_CURRENT_WEATHER(&weather);
 				FORCE_WEATHER_NOW(WEATHER_EXTRA_SUNNY);
-				FORWARD_TO_TIME_OF_DAY(18, 40);//устанавливаем время
+				FORWARD_TO_TIME_OF_DAY(18, 40);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				
-				//------------ катсцена ----------------
-				LOAD_ADDITIONAL_TEXT( "LAW_2A", 6 ); // загружаем субтитры из *.GTX
+				//------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ----------------
+				LOAD_ADDITIONAL_TEXT( "LAW_2A", 6 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ *.GTX
 				START_CUTSCENE_NOW("law_2a");
 				while (!HAS_CUTSCENE_LOADED())
 				{
@@ -869,16 +869,16 @@ void LAWYER_1(void)
 					DO_SCREEN_FADE_IN(0);
 				}
 
-				FORCE_WEATHER_NOW( weather );//устанавливаем погода
+				FORCE_WEATHER_NOW( weather );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				RELEASE_WEATHER();
-				FORWARD_TO_TIME_OF_DAY(hour, minute);//устанавливаем время
-				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+				FORWARD_TO_TIME_OF_DAY(hour, minute);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				ADD_BLIP_FOR_COORD(925.599, 453.827, 5.389, &Party_ico);//создаем иконку на радаре
-				CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре
-				CHANGE_BLIP_COLOUR(Party_ico, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-				CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//иконка на радаре называние в истории карты "Телефонный звонок"
+				ADD_BLIP_FOR_COORD(925.599, 453.827, 5.389, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_COLOUR(Party_ico, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+				CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"
 				PRINT_STRING_IN_STRING("string", "LAW2_6", 5500, 1);//~g~Go to the Malibu Club and find Kent Paul.
 
 				Car car1;
@@ -888,9 +888,9 @@ void LAWYER_1(void)
 				Object trubka_1;
 				int dm, cdm;
 
-				uint PedM1 = MODEL_M_M_KOREACOOK_01;// Повор - босс 
-				uint PedM2 = MODEL_M_M_SHORTORDER;// повор m_m_koreacook_01 
-				uint PedM3 = MODEL_IG_LILJACOB;// Ланс
+				uint PedM1 = MODEL_M_M_KOREACOOK_01;// пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅ 
+				uint PedM2 = MODEL_M_M_SHORTORDER;// пїЅпїЅпїЅпїЅпїЅ m_m_koreacook_01 
+				uint PedM3 = MODEL_IG_LILJACOB;// пїЅпїЅпїЅпїЅ
 				uint CarM1 = MODEL_INFERNUS;
 				uint trubka = vc_mob_phone;
 
@@ -900,67 +900,67 @@ void LAWYER_1(void)
 				SET_DECISION_MAKER_ATTRIBUTE_SIGHT_RANGE(dm, 50);
 				SET_DECISION_MAKER_ATTRIBUTE_SIGHT_RANGE(cdm, 50);
 
-				REQUEST_MODEL(PedM1);// Повор - босс
-				while (!HAS_MODEL_LOADED(PedM1));////проверка "пед загрузился" если нет то начанаем с начало
-				REQUEST_MODEL(PedM2);// повор
-				while (!HAS_MODEL_LOADED(PedM2));////проверка "пед загрузился" если нет то начанаем с начало
-				REQUEST_MODEL(PedM3);// Ланс
-				while (!HAS_MODEL_LOADED(PedM3));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM1);// пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM1));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REQUEST_MODEL(PedM2);// пїЅпїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM2));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REQUEST_MODEL(PedM3);// пїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM3));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// создаём педов
-				CREATE_CHAR (26, PedM1, 281.145, -791.79, 5.445, &ped1, TRUE);// создаём повора босса
-				CREATE_CHAR (26, PedM2, 281.145, -791.79, 5.445, &ped2, TRUE);// создаём повора 1
-				CREATE_CHAR (26, PedM2, 281.145, -791.79, 5.445, &ped3, TRUE);// создаём повора 2
-				CREATE_CHAR (26, PedM2, 281.145, -791.79, 5.445, &ped4, TRUE);// создаём повора 3
-				CREATE_CHAR (26, PedM3, 281.145, -791.79, 5.445, &ped5, TRUE);// // создаём Ланса
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM1, 281.145, -791.79, 5.445, &ped1, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 281.145, -791.79, 5.445, &ped2, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 1
+				CREATE_CHAR (26, PedM2, 281.145, -791.79, 5.445, &ped3, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 2
+				CREATE_CHAR (26, PedM2, 281.145, -791.79, 5.445, &ped4, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 3
+				CREATE_CHAR (26, PedM3, 281.145, -791.79, 5.445, &ped5, TRUE);// // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-				//создаём машину Ланса
+				//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				REQUEST_MODEL(CarM1);
 				while (!HAS_MODEL_LOADED(CarM1)) WAIT(100);
 				CREATE_CAR(CarM1, 196.987, -842.386, 2.732, &car1, TRUE);
 				SET_CAR_HEADING(car1, 102.336);
-				LOCK_CAR_DOORS(car1, 3); //блокируем двери автомобиля для игрока
-				CHANGE_CAR_COLOUR( car1, 112, 112 );//цвет машины
-				SET_EXTRA_CAR_COLOURS( car1, 112, 112 );//цвет отрожений машины
+				LOCK_CAR_DOORS(car1, 3); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_CAR_COLOUR( car1, 112, 112 );//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				SET_EXTRA_CAR_COLOURS( car1, 112, 112 );//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// грузим пути
-				REQUEST_CAR_RECORDING( 2994 );// грузим пути ланса подъезд
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				REQUEST_CAR_RECORDING( 2994 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				while (!HAS_CAR_RECORDING_BEEN_LOADED( 2994 )) WAIT(0);
-				REQUEST_CAR_RECORDING( 2995 );// грузим пути ланса уезд
+				REQUEST_CAR_RECORDING( 2995 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 				while (!HAS_CAR_RECORDING_BEEN_LOADED( 2995 )) WAIT(0);
 
-				// грузим телефон
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				REQUEST_MODEL(trubka);
 				while (!HAS_MODEL_LOADED(trubka)) WAIT(0);
 				CREATE_OBJECT_NO_OFFSET(trubka, 1.1, 1.1, -1.1, &trubka_1, TRUE);
 
-				//------------------ Первая часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				while (TRUE)
 				{
-					// клуб молибу
+					// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 					WAIT(0);
-					DRAW_CHECKPOINT( 925.599, 453.827, 5.389, 1.3, 246, 151, 255);//создание чекпойнт на координатах и его цвет
-					GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-					GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 925.599, 453.827, 5.389, &PlayR);//проверка "игрок на координатах"
+					DRAW_CHECKPOINT( 925.599, 453.827, 5.389, 1.3, 246, 151, 255);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+					GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 925.599, 453.827, 5.389, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 					if (( PlayR < 1.3) && (!IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())))
 					{
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-						// ставим камеру
+						// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						CREATE_CAM( 14, &camera );
-						POINT_CAM_AT_COORD	( camera, 923.279, 454.929, 6.108); // куда смотрит камера
-						SET_CAM_POS			( camera, 936.918, 437.017, 6.893 );//расположение камеры
+						POINT_CAM_AT_COORD	( camera, 923.279, 454.929, 6.108); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 936.918, 437.017, 6.893 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_ACTIVE( camera, 1 );
 						SET_CAM_PROPAGATE( camera, 1 );
 						ACTIVATE_SCRIPTED_CAMS(1, 1);
 						SET_CAM_FOV( camera, 45.0 );
 						SET_WIDESCREEN_BORDERS( 1 );
 
-						TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 921.141, 457.901, 5.688, 2, -2);//игрок идёт в клуб
+						TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 921.141, 457.901, 5.688, 2, -2);//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
 
-						// затемнение
-						REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-						DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						while(true)
 						{
 							WAIT(0);
@@ -970,17 +970,17 @@ void LAWYER_1(void)
 							}
 						}
 						SetTime(200);
-						SET_CHAR_COORDINATES(GetPlayerPed(), 925.06, 453.041, 5.763);// перемещаем игрока
+						SET_CHAR_COORDINATES(GetPlayerPed(), 925.06, 453.041, 5.763);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CHAR_HEADING(GetPlayerPed(), -128.321);
 
-						//убираем камеру
+						//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_BEHIND_PED( GetPlayerPed() );
 						ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 						DESTROY_CAM( camera );
 						SET_WIDESCREEN_BORDERS( 0 );
 
-						//------------ катсцена тут ----------------
-						LOAD_ADDITIONAL_TEXT( "LAW_2B", 6 ); // загружаем субтитры из *.GTX
+						//------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ ----------------
+						LOAD_ADDITIONAL_TEXT( "LAW_2B", 6 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ *.GTX
 						START_CUTSCENE_NOW("law_2b");
 						while (!HAS_CUTSCENE_LOADED())
 						{
@@ -998,48 +998,48 @@ void LAWYER_1(void)
 							DO_SCREEN_FADE_IN(0);
 						}
 
-						ADD_BLIP_FOR_COORD(869.546, -37.984, 5.566, &Party_ico);//создаем иконку на радаре
-						CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре
-						CHANGE_BLIP_COLOUR(Party_ico, 19);  //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-						CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
-						CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//иконка на радаре называние в истории карты "Телефонный звонок"
+						ADD_BLIP_FOR_COORD(869.546, -37.984, 5.566, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						CHANGE_BLIP_COLOUR(Party_ico, 19);  //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+						CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"
 						PRINT_STRING_IN_STRING("string", "LAW2_7", 5500, 1);//~g~Go and find the chef on Ocean Drive.
 
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
-						SET_CHAR_COORDINATES(ped1, 869.546, -37.984, 4.853);// перемещаем повора-босса
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CHAR_COORDINATES(ped1, 869.546, -37.984, 4.853);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅ
 						SET_CHAR_HEADING(ped1, 56.323);
 
-						// анимация разговора по телефону
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						ATTACH_OBJECT_TO_PED( trubka_1, ped1, 1232, 0.070, 0.052, 0.003, 3.30000000, 0.30000000, -0.45000000, 0 );
-						REQUEST_ANIMS( "amb@payphone" );//загружаем файл с анимацией
+						REQUEST_ANIMS( "amb@payphone" );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						while (!HAVE_ANIMS_LOADED( "amb@payphone" )) WAIT(0);
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped1, "cellphone_talk", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped1, "cellphone_talk", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 						break;
 					}
-					else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+					else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					{
-						skip = 1;// переменная пропуска
+						skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						break;
 					}
 				}
 				if (skip == 0)
 				{
-				//------------------ Вторая часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 					while (TRUE)
 					{
-						// драка в переулке
+						// пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						WAIT(0);
-						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-						GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 869.546, -37.984, 5.566, &PlayR);//проверка "игрок на координатах"
+						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 869.546, -37.984, 5.566, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 						if ( PlayR < 15.3)
 						{
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// ставим камеру
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							CREATE_CAM( 14, &camera );
-							POINT_CAM_AT_COORD	( camera, 868.909, -38.109, 5.991); // куда смотрит камера
-							SET_CAM_POS			( camera, 871.836, -37.408, 6.237 );//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 868.909, -38.109, 5.991); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 871.836, -37.408, 6.237 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_ACTIVE( camera, 1 );
 							SET_CAM_PROPAGATE( camera, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
@@ -1048,38 +1048,38 @@ void LAWYER_1(void)
 
 							if (IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed()))
 							{
-								SET_CHAR_COORDINATES(GetPlayerPed(), 879.131, -26.629, 5.39);// перемещаем игрока
+								SET_CHAR_COORDINATES(GetPlayerPed(), 879.131, -26.629, 5.39);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								SET_CHAR_HEADING(GetPlayerPed(), 156.233);
-								WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 872.062, -31.654, 4.918);// высаживаем игрока
+								WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 872.062, -31.654, 4.918);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							}
 							else
 							{
-								SET_CHAR_COORDINATES(GetPlayerPed(), 872.062, -31.654, 4.918);// перемещаем игрока
+								SET_CHAR_COORDINATES(GetPlayerPed(), 872.062, -31.654, 4.918);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								SET_CHAR_HEADING(GetPlayerPed(), 154.994);
 							}
 
 							SetTime(800);
 							SET_CHAR_HEADING(ped1, -15.994);
-							TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped1, "cellphone_out", "amb@payphone", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+							TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped1, "cellphone_out", "amb@payphone", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 							SetTime(1000);
 							DETACH_OBJECT( trubka_1, 1 );
 							SET_OBJECT_COORDINATES(trubka_1, 1.1, 1.1, -1.1);
 
-							TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 870.175, -36.652, 4.918, 2, -2);//игрок идёт к повору - боссу
+							TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 870.175, -36.652, 4.918, 2, -2);//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ
 							SetTime(200);
 
-							// меняем ракурс
-							POINT_CAM_AT_COORD	( camera, 870.603, -38.014, 4.678); // куда смотрит камера
-							SET_CAM_POS			( camera, 867.869, -25.671, 8.817 );//расположение камеры
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							POINT_CAM_AT_COORD	( camera, 870.603, -38.014, 4.678); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 867.869, -25.671, 8.817 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// диалог тут
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 							NEW_SCRIPTED_CONVERSATION();
 							ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
 							ADD_LINE_TO_CONVERSATION(0, "R1_BH_XXX2", "LAW2_1", 0, 0);//Hey, whatchoo lookin' at?
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetSpeech();
 
-// анимация разговора тут
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 
 							NEW_SCRIPTED_CONVERSATION();
 							ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
@@ -1087,7 +1087,7 @@ void LAWYER_1(void)
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetSpeech();
 
-// анимация разговора тут
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 
 							NEW_SCRIPTED_CONVERSATION();
 							ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
@@ -1095,21 +1095,21 @@ void LAWYER_1(void)
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetSpeech();
 
-							//убираем камеру
+							//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_BEHIND_PED( GetPlayerPed() );
 							ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 							DESTROY_CAM( camera );
 							SET_WIDESCREEN_BORDERS( 0 );
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// над повором загорается стрелка
+							// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							ADD_BLIP_FOR_CHAR(ped1, &Party_ico);
-							CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре
-							CHANGE_BLIP_COLOUR(Party_ico, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "MO_TARGET");//иконка на радаре "Связной"
-							CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
+							CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_COLOUR(Party_ico, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "MO_TARGET");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+							CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// повор атакует игрока
+							// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SetTime(200);
 							CLEAR_PRINTS();
 							SET_SENSE_RANGE(ped1, 50.0);
@@ -1124,86 +1124,86 @@ void LAWYER_1(void)
 							while (TRUE)
 							{
 								WAIT(0);
-								if ((IS_CHAR_DEAD(ped1)) || (IS_CHAR_INJURED(ped1)))//если пед мёртв или ранен
+								if ((IS_CHAR_DEAD(ped1)) || (IS_CHAR_INJURED(ped1)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 								{
 									EXPLODE_CHAR_HEAD(ped1);
-									REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
+									REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-									// из педа выподает телефон
+									// пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 									PRINT_STRING_IN_STRING("string", "LAW2_11", 5500, 1);//~g~Pick up his cell phone.
-									GET_CHAR_COORDINATES(ped1,  &PedX, &PedY, &PedZ);//вписываем координаты игрока в переменную
+									GET_CHAR_COORDINATES(ped1,  &PedX, &PedY, &PedZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 									GET_GROUND_Z_FOR_3D_COORD(PedX, PedY, PedZ, &PedZ);
-									CREATE_PICKUP( vc_phone_pick_up, 22, PedX+0.2, PedY+0.2, PedZ+0.2, &mob_phone, 0 );// телефон
+									CREATE_PICKUP( vc_phone_pick_up, 22, PedX+0.2, PedY+0.2, PedZ+0.2, &mob_phone, 0 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 									ADD_BLIP_FOR_PICKUP(mob_phone, &Party_ico);
-									CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре
-									CHANGE_BLIP_COLOUR(Party_ico, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-									CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
-									CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "MO_TARGET");//иконка на радаре называние в истории карты "Телефонный звонок"
+									CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+									CHANGE_BLIP_COLOUR(Party_ico, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+									CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+									CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "MO_TARGET");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"
 									add_phone = 1;
 									break;
 								}
-								GET_CHAR_COORDINATES(ped1,  &PedX, &PedY, &PedZ);//вписываем координаты игрока в переменную
-								if (!IS_CHAR_IN_AREA_3D( GetPlayerPed(), PedX+20, PedY+20, PedZ+20, PedX-20, PedY-20, PedZ-20, 0 ))// если игрок убежал от повора
+								GET_CHAR_COORDINATES(ped1,  &PedX, &PedY, &PedZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+								if (!IS_CHAR_IN_AREA_3D( GetPlayerPed(), PedX+20, PedY+20, PedZ+20, PedX-20, PedY-20, PedZ-20, 0 ))// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								{
 									PRINT_STRING_IN_STRING("string", "NE_FIGHT", 5500, 1);//~r~Are you afraid of a fight?
-									skip = 1;// переменная пропуска
+									skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 									break;
 								}
-								else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+								else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 								{
-									skip = 1;// переменная пропуска
+									skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 									break;
 								}
 							}
 							break;
 						}
-						else if ((IS_CHAR_DEAD(ped1)) || (IS_CHAR_INJURED(ped1)))//если игрок мёртв или аврестован
+						else if ((IS_CHAR_DEAD(ped1)) || (IS_CHAR_INJURED(ped1)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
 							EXPLODE_CHAR_HEAD(ped1);
 							DETACH_OBJECT( trubka_1, 1 );
 							SET_OBJECT_COORDINATES(trubka_1, 1.1, 1.1, -1.1);
 
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							if (add_phone == 0)
 							{
-								// из педа выподает телефон
+								// пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 								PRINT_STRING_IN_STRING("string", "LAW2_11", 5500, 1);//~g~Pick up his cell phone.
-								GET_CHAR_COORDINATES(ped1,  &PedX, &PedY, &PedZ);//вписываем координаты игрока в переменную
+								GET_CHAR_COORDINATES(ped1,  &PedX, &PedY, &PedZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 								GET_GROUND_Z_FOR_3D_COORD(PedX, PedY, PedZ, &PedZ);
-								CREATE_PICKUP( vc_phone_pick_up, 22, PedX+0.2, PedY+0.2, PedZ+0.2, &mob_phone, 0 );// телефон
+								CREATE_PICKUP( vc_phone_pick_up, 22, PedX+0.2, PedY+0.2, PedZ+0.2, &mob_phone, 0 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 								ADD_BLIP_FOR_PICKUP(mob_phone, &Party_ico);
-								CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре
-								CHANGE_BLIP_COLOUR(Party_ico, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-								CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
-								CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "MO_TARGET");//иконка на радаре называние в истории карты "Телефонный звонок"
+								CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								CHANGE_BLIP_COLOUR(Party_ico, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+								CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "MO_TARGET");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"
 								add_phone = 1;
 							}
 							break;
 						}
-						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							break;
 						}
 					}
 				}
-				//------------------ Третья часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				if (skip == 0)
 				{
 					while (TRUE)
 					{
-						// поднять телефон
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						WAIT(0);
 						if (HAS_PICKUP_BEEN_COLLECTED( mob_phone ))
 						{
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_HELP_FOREVER("LAW2_12"); //Cell phone acquired! You can now receive phone calls.
 							SetTime(1000);
 
-							DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+							DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							while(true)
 							{
 								WAIT(0);
@@ -1212,9 +1212,9 @@ void LAWYER_1(void)
 									break;
 								}
 							}
-							CLEAR_HELP(); // удаляем текст подсказки
+							CLEAR_HELP(); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// раздаём оружие
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							GIVE_WEAPON_TO_CHAR(GetPlayerPed(), WEAPON_PISTOL, 14, FALSE);
 							SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_PISTOL, TRUE);
 
@@ -1227,44 +1227,44 @@ void LAWYER_1(void)
 							SET_CURRENT_CHAR_WEAPON(ped4, WEAPON_EPISODIC_3, TRUE);
 							SET_CURRENT_CHAR_WEAPON(ped5, WEAPON_PISTOL, TRUE);
 
-							// телепортируем Игрока
-							SET_CHAR_COORDINATES(GetPlayerPed(), 867.67, -38.887, 4.918);// перемещаем игрока
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CHAR_COORDINATES(GetPlayerPed(), 867.67, -38.887, 4.918);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), -21.819);
 
-							// телепортируем Ланса
-							SET_CHAR_COORDINATES(ped5, 867.607, -41.114, 4.918);// перемещаем Ланса
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+							SET_CHAR_COORDINATES(ped5, 867.607, -41.114, 4.918);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(ped5, 154.994);
 
-							// телепортируем автомобиль Ланса
-							SET_CAR_COORDINATES(car1, 867.521, -116.042, 5.519);// перемещаем автомобиль Ланса
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+							SET_CAR_COORDINATES(car1, 867.521, -116.042, 5.519);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							SET_CAR_HEADING(car1, 156.233);
 							FREEZE_CAR_POSITION(car1, 1);
 
-							// телепортируем поворов
-							SET_CHAR_COORDINATES(ped2, 871.851, -33.606, 4.918);// перемещаем повора1
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CHAR_COORDINATES(ped2, 871.851, -33.606, 4.918);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ1
 							SET_CHAR_HEADING(ped2, 154.994);
 
-							SET_CHAR_COORDINATES(ped3, 870.694, -32.833, 4.918);// перемещаем повора2
+							SET_CHAR_COORDINATES(ped3, 870.694, -32.833, 4.918);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ2
 							SET_CHAR_HEADING(ped3, 154.994);
 
-							SET_CHAR_COORDINATES(ped4, 869.312, -32.151, 4.918);// перемещаем повора3
+							SET_CHAR_COORDINATES(ped4, 869.312, -32.151, 4.918);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ3
 							SET_CHAR_HEADING(ped4, 154.994);
 							SetTime(500);
 
 							ADD_BLIP_FOR_CHAR(ped5, &Party_ico);
-							CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре
-							CHANGE_BLIP_COLOUR(Party_ico, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_LANCE");//иконка на радаре "Связной"
-							CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
+							CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_COLOUR(Party_ico, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_LANCE");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+							CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 							ADD_BLIP_FOR_CAR(car1, &lance_car);
-							CHANGE_BLIP_SPRITE(lance_car, BLIP_OBJECTIVE);//текстура иконки на радаре
-							CHANGE_BLIP_COLOUR(lance_car, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(lance_car, "NE_CAR");//иконка на радаре "Связной"
-							CHANGE_BLIP_SCALE(lance_car, 0.6); // масштаб иконки на радаре
+							CHANGE_BLIP_SPRITE(lance_car, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_COLOUR(lance_car, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(lance_car, "NE_CAR");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+							CHANGE_BLIP_SCALE(lance_car, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							//------------ катсцена тут ----------------
-							LOAD_ADDITIONAL_TEXT( "LAW_2C", 6 ); // загружаем субтитры из *.GTX
+							//------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ ----------------
+							LOAD_ADDITIONAL_TEXT( "LAW_2C", 6 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ *.GTX
 							START_CUTSCENE_NOW("law_2c");
 							while (!HAS_CUTSCENE_LOADED())
 							{
@@ -1282,10 +1282,10 @@ void LAWYER_1(void)
 								DO_SCREEN_FADE_IN(0);
 							}
 
-							// ставим камеру
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							CREATE_CAM( 14, &camera );
-							POINT_CAM_AT_COORD	( camera, 870.993, -32.916, 5.651 ); // куда смотрит камера
-							SET_CAM_POS			( camera, 864.445, -44.067, 6.119 );//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 870.993, -32.916, 5.651 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 864.445, -44.067, 6.119 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_ACTIVE( camera, 1 );
 							SET_CAM_PROPAGATE( camera, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
@@ -1293,24 +1293,24 @@ void LAWYER_1(void)
 							SET_WIDESCREEN_BORDERS( 1 );
 							SetTime(2000);
 
-							// смена ракурса
-							POINT_CAM_AT_COORD	( camera, 864.085, -44.291, 5.505 ); // куда смотрит камера
-							SET_CAM_POS			( camera, 869.913, -35.165, 5.837 );//расположение камеры
+							// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							POINT_CAM_AT_COORD	( camera, 864.085, -44.291, 5.505 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 869.913, -35.165, 5.837 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 							NEW_SCRIPTED_CONVERSATION();
 							ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
 							ADD_LINE_TO_CONVERSATION(0, "R1_BI_XXX2", "LAW2_4", 0, 0);//This way!
 							START_SCRIPT_CONVERSATION(1, 1);
-							TASK_GO_STRAIGHT_TO_COORD(ped5, 838.004, -103.263, 4.918, 4, -2);//Ланс бежит в первый пойнт
+							TASK_GO_STRAIGHT_TO_COORD(ped5, 838.004, -103.263, 4.918, 4, -2);//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							SetSpeech();
 
-							//убираем камеру
+							//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SetTime(500);
 							SET_CAM_BEHIND_PED( GetPlayerPed() );
 							ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 							DESTROY_CAM( camera );
 							SET_WIDESCREEN_BORDERS( 0 );
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 							SET_SENSE_RANGE(ped2, 50.0);
 							SET_CHAR_DECISION_MAKER(ped2, dm);
@@ -1339,49 +1339,49 @@ void LAWYER_1(void)
 							SetTime(6000);
 							break;
 						}
-						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							break;
 						}
 					}
 				}
-				//------------------ Четвёртая часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				if (skip == 0)
 				{
 					while (TRUE)
 					{
-						// сесть в иашину
+						// пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						WAIT(0);
-						GET_CHAR_COORDINATES(ped5,  &PedX, &PedY, &PedZ);//вписываем координаты педа в переменную
+						GET_CHAR_COORDINATES(ped5,  &PedX, &PedY, &PedZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						if (in_cord == 0)
 						{
-							GET_DISTANCE_BETWEEN_COORDS_3D( PedX, PedY, PedZ, 838.004, -103.263, 4.918, &PedR);//проверка "пед на координатах"
+							GET_DISTANCE_BETWEEN_COORDS_3D( PedX, PedY, PedZ, 838.004, -103.263, 4.918, &PedR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 							if ( PedR < 1.3)
 							{
-								TASK_GO_STRAIGHT_TO_COORD(ped5, 867.269, -115.923, 5.519, 4, -2);//Ланс бежит во второй пойнт
+								TASK_GO_STRAIGHT_TO_COORD(ped5, 867.269, -115.923, 5.519, 4, -2);//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 								in_cord = 1;
 							}
 						}
 						else if (in_cord == 1)
 						{
-							GET_DISTANCE_BETWEEN_COORDS_3D( PedX, PedY, PedZ, 867.269, -115.923, 5.519, &PedR);//проверка "пед на координатах"
+							GET_DISTANCE_BETWEEN_COORDS_3D( PedX, PedY, PedZ, 867.269, -115.923, 5.519, &PedR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 							if ( PedR < 5.3)
 							{
 								TASK_ENTER_CAR_AS_PASSENGER(ped5, car1, -1, 0);
 								in_cord = 2;
-								SETTIMERB(0); //сбрасываем таймер 
+								SETTIMERB(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 							}
 						}
 
 						if (locked == 1)
 						{
-							GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-							GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 868.855, -116.292, 5.08047, &PlayR);//проверка "игрок на координатах"
+							GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 868.855, -116.292, 5.08047, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 							if ( PlayR < 1.5)
 							{
 								FREEZE_CAR_POSITION(car1, 0);
-								LOCK_CAR_DOORS(car1, 1); //разблокируем двери автомобиля для игрока
+								LOCK_CAR_DOORS(car1, 1); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								locked = 0;
 							}
 						}
@@ -1389,7 +1389,7 @@ void LAWYER_1(void)
 						if ((IS_CHAR_SITTING_IN_ANY_CAR(ped5)) && (in_cord == 2))
 						{
 							PRINT_STRING_IN_STRING("string", "NE_IN_CAR", 5500, 1);//~g~Get in the car.
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							in_cord = 3;
 						}
 						else if (( TIMERB() > 10000 ) && (in_cord == 2) && (!IS_CHAR_SITTING_IN_ANY_CAR(ped5)))
@@ -1399,33 +1399,33 @@ void LAWYER_1(void)
 
 						if ((IS_CHAR_IN_CAR(GetPlayerPed(), car1)) && (IS_CHAR_SITTING_IN_ANY_CAR(ped5)))
 						{
-							REMOVE_BLIP(lance_car);//Удаляем иконку на радаре
+							REMOVE_BLIP(lance_car);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							break;
 						}
-						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							break;
 						}
-						else if ((IS_CHAR_DEAD(ped5)) || (IS_CHAR_INJURED(ped5)))//если Ланс мёртв
+						else if ((IS_CHAR_DEAD(ped5)) || (IS_CHAR_INJURED(ped5)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 						{
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "COK2_26", 5500, 1);//~r~You killed Lance!
 							EXPLODE_CHAR_HEAD(ped5);
 							break;
 						}
 					}
 				}
-				//------------------ Первая часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				if (skip == 0)
 				{
 					while (TRUE)
 					{
-						// оружейный магазин
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						WAIT(0);
 						if ((IS_CHAR_IN_CAR(GetPlayerPed(), car1)) && (textID == 0))
 						{
-							// диалог тут
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 							SetTime(2000);
 							CLOSE_ALL_CAR_DOORS(car1);
 							NEW_SCRIPTED_CONVERSATION();
@@ -1440,12 +1440,12 @@ void LAWYER_1(void)
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetSpeech();
 
-							// создаём блип оружейки
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							SetTime(1000);
-							ADD_BLIP_FOR_COORD(379.082, -948.858, 4.217, &Party_ico);//создаем иконку на радаре
-							CHANGE_BLIP_SPRITE(Party_ico, BLIP_WEAPONS);//текстура иконки на радаре
-							CHANGE_BLIP_SCALE(Party_ico, 1.1); // масштаб иконки на радаре
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//иконка на радаре называние в истории карты "Ammu-Nation"
+							ADD_BLIP_FOR_COORD(379.082, -948.858, 4.217, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_SPRITE(Party_ico, BLIP_WEAPONS);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_SCALE(Party_ico, 1.1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "Ammu-Nation"
 							CLEAR_PRINTS();
 							PRINT_STRING_IN_STRING("string", "LAW2_15", 5500, 1);//~g~Go to Ammu-Nation.
 							textID = 1;
@@ -1454,40 +1454,40 @@ void LAWYER_1(void)
 						if ((!IS_CHAR_IN_CAR(GetPlayerPed(), car1)) && (textID == 1) && (in_car == 0))
 						{
 							in_car = 1;
-							// вернись в машину
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "IN_VEH", 5500, 1);//~g~Hey! Get back in the vehicle!
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							ADD_BLIP_FOR_CAR(car1, &lance_car);
-							CHANGE_BLIP_SPRITE(lance_car, BLIP_OBJECTIVE);//текстура иконки на радаре
-							CHANGE_BLIP_COLOUR(lance_car, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(lance_car, "NE_CAR");//иконка на радаре "Связной"
-							CHANGE_BLIP_SCALE(lance_car, 0.6); // масштаб иконки на радаре
+							CHANGE_BLIP_SPRITE(lance_car, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_COLOUR(lance_car, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(lance_car, "NE_CAR");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+							CHANGE_BLIP_SCALE(lance_car, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						}
 						else if ((IS_CHAR_IN_CAR(GetPlayerPed(), car1)) && (textID == 1) && (in_car == 1))
 						{
 							in_car = 0;
-							// езжай в оружейный магазин
+							// пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "LAW2_15", 5500, 1);//~g~Go to Ammu-Nation.
-							REMOVE_BLIP(lance_car);//Удаляем иконку на радаре
-							ADD_BLIP_FOR_COORD(379.082, -948.858, 4.217, &Party_ico);//создаем иконку на радаре
-							CHANGE_BLIP_SPRITE(Party_ico, BLIP_WEAPONS);//текстура иконки на радаре
-							CHANGE_BLIP_SCALE(Party_ico, 1.1); // масштаб иконки на радаре
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//иконка на радаре называние в истории карты "Ammu-Nation"
+							REMOVE_BLIP(lance_car);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							ADD_BLIP_FOR_COORD(379.082, -948.858, 4.217, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_SPRITE(Party_ico, BLIP_WEAPONS);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_SCALE(Party_ico, 1.1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "Ammu-Nation"
 						}
 
 						if (IS_CHAR_IN_CAR(GetPlayerPed(), car1))
 						{
-							DRAW_CHECKPOINT( 379.082, -948.858, 4.217, 2.5, 246, 151, 255);//создание чекпойнт на координатах и его цвет
-							GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-							GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 379.082, -948.858, 4.217, &PlayR);//проверка "игрок на координатах"
+							DRAW_CHECKPOINT( 379.082, -948.858, 4.217, 2.5, 246, 151, 255);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+							GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 379.082, -948.858, 4.217, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 							if (( PlayR < 2.1) && (IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())))
 							{
 								ABORT_SCRIPTED_CONVERSATION( 0 );
-								//подсказки Ammu-Nation
-								REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-								SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+								//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Ammu-Nation
+								REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-								DO_SCREEN_FADE_OUT( 500 );// Затемняем экран
+								DO_SCREEN_FADE_OUT( 500 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 								while(true)
 								{
 									WAIT(0);
@@ -1496,19 +1496,19 @@ void LAWYER_1(void)
 										break;
 									}
 								}
-								// ставим камеру
+								// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								CREATE_CAM( 14, &camera );
-								POINT_CAM_AT_COORD	( camera, 369.507, -948.653, 5.431); // куда смотрит камера
-								SET_CAM_POS			( camera, 379.696, -946.602, 6.501 );//расположение камеры
+								POINT_CAM_AT_COORD	( camera, 369.507, -948.653, 5.431); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								SET_CAM_POS			( camera, 379.696, -946.602, 6.501 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								SET_CAM_ACTIVE( camera, 1 );
 								SET_CAM_PROPAGATE( camera, 1 );
 								ACTIVATE_SCRIPTED_CAMS(1, 1);
 								SET_CAM_FOV( camera, 45.0 );
 								SET_WIDESCREEN_BORDERS( 1 );
-								DO_SCREEN_FADE_IN( 500 );// убирается затемнение экрана
+								DO_SCREEN_FADE_IN( 500 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								SETTIMERA( 0 );
 								help = 0;
-								// текстс подсказки 1
+								// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1
 								PRINT_HELP_FOREVER("LAW3_11"); //Stand in the ~q~pink marker~w~ to view the weapons on offer.
 
 								while(true)
@@ -1522,46 +1522,46 @@ void LAWYER_1(void)
 									}
 									if ((TIMERA() > 3500) && (help == 0))
 									{
-										// текстс подсказки 2
+										// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
 										PRINT_HELP_FOREVER("LAW3_12"); //You can select weapons by pressing ~h~left~w~ or ~h~right~w~ on the ~h~directional button.
-										POINT_CAM_AT_COORD	( camera, 369.387, -955.835, 7.097); // куда смотрит камера
-										SET_CAM_POS			( camera, 370.659, -945.036, 7.113 );//расположение камеры
+										POINT_CAM_AT_COORD	( camera, 369.387, -955.835, 7.097); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+										SET_CAM_POS			( camera, 370.659, -945.036, 7.113 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 										SETTIMERA( 0 );
 										help = 1;
 									}
 									else if ((TIMERA() > 3500) && (help == 1))
 									{
-										// текстс подсказки 3
+										// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 3
 										PRINT_HELP_FOREVER("LAW3_13"); //If you have enough cash you can buy weapons by pressing the ~h~~k~~PED_SPRINT~ ~w~button.
-										POINT_CAM_AT_COORD	( camera, 367.628, -956.467, 7.645); // куда смотрит камера
-										SET_CAM_POS			( camera, 372.485, -945.471, 6.522 );//расположение камеры
+										POINT_CAM_AT_COORD	( camera, 367.628, -956.467, 7.645); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+										SET_CAM_POS			( camera, 372.485, -945.471, 6.522 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 										SETTIMERA( 0 );
 										help = 2;
 									}
 									else if ((TIMERA() > 3500) && (help == 2))
 									{
-										// текстс подсказки 4
+										// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 4
 										PRINT_HELP_FOREVER("LAW3_14"); //You can exit the shop by pressing the ~h~~k~~VEHICLE_ENTER_EXIT~ ~w~button.
-										POINT_CAM_AT_COORD	( camera, 372.263, -950.477, 4.784); // куда смотрит камера
-										SET_CAM_POS			( camera, 366.303, -942.803, 7.469 );//расположение камеры
+										POINT_CAM_AT_COORD	( camera, 372.263, -950.477, 4.784); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+										SET_CAM_POS			( camera, 366.303, -942.803, 7.469 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 										SETTIMERA( 0 );
 										help = 3;
 									}
 									else if ((TIMERA() > 3500) && (help == 3))
 									{
-										// текстс подсказки 5
+										// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 5
 										PRINT_HELP_FOREVER("HELP46"); //There are eight different types of weapon.
-										POINT_CAM_AT_COORD	( camera, 369.387, -955.835, 7.097); // куда смотрит камера
-										SET_CAM_POS			( camera, 370.659, -945.036, 7.113 );//расположение камеры
+										POINT_CAM_AT_COORD	( camera, 369.387, -955.835, 7.097); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+										SET_CAM_POS			( camera, 370.659, -945.036, 7.113 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 										SETTIMERA( 0 );
 										help = 4;
 									}
 									else if ((TIMERA() > 3500) && (help == 4))
 									{
-										// текстс подсказки 6
+										// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 6
 										PRINT_HELP_FOREVER("HELP47"); //You can carry one of each type of weapon at a time - one type of pistol, one type of shotgun.
-										POINT_CAM_AT_COORD	( camera, 367.628, -956.467, 7.645); // куда смотрит камера
-										SET_CAM_POS			( camera, 372.485, -945.471, 6.522 );//расположение камеры
+										POINT_CAM_AT_COORD	( camera, 367.628, -956.467, 7.645); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+										SET_CAM_POS			( camera, 372.485, -945.471, 6.522 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 										SETTIMERA( 0 );
 										help = 5;
 									}
@@ -1570,8 +1570,8 @@ void LAWYER_1(void)
 										help = 69;
 									}
 								}
-								//убираем камеру
-								DO_SCREEN_FADE_OUT( 500 );// Затемняем экран
+								//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								DO_SCREEN_FADE_OUT( 500 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 								while(true)
 								{
 									WAIT(0);
@@ -1580,85 +1580,85 @@ void LAWYER_1(void)
 										break;
 									}
 								}
-								CLEAR_HELP(); // удаляем текст подсказки
+								CLEAR_HELP(); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 								SET_CAM_BEHIND_PED( GetPlayerPed() );
 								ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 								DESTROY_CAM( camera );
 								SET_WIDESCREEN_BORDERS( 0 );
-								DO_SCREEN_FADE_IN( 500 );// убирается затемнение экрана
-								SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+								DO_SCREEN_FADE_IN( 500 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 								PRINT_STRING_IN_STRING("string", "LAW2_10", 5500, 1);//~g~Drive back to the hotel.
-								REMOVE_BLIP(lance_car);//Удаляем иконку на радаре
-								ADD_BLIP_FOR_COORD(671.379, -747.318, 4.727, &Party_ico);//создаем иконку на радаре
-								CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре
-								CHANGE_BLIP_COLOUR(Party_ico, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-								CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
-								CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//иконка на радаре называние в истории карты "hotel"
+								REMOVE_BLIP(lance_car);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								ADD_BLIP_FOR_COORD(671.379, -747.318, 4.727, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								CHANGE_BLIP_COLOUR(Party_ico, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+								CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+								CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "hotel"
 
 								in_car = 0;
 								break;
 							}
 						}
 
-						if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+						if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							break;
 						}
-						else if (!IS_CHAR_SITTING_IN_ANY_CAR(ped5))//если Ланс вышел из машины то убиваем его
+						else if (!IS_CHAR_SITTING_IN_ANY_CAR(ped5))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 						{
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "COK2_26", 5500, 1);//~r~You killed Lance!
 							EXPLODE_CHAR_HEAD(ped5);
 							break;
 						}
-						else if ((IS_CHAR_DEAD(ped5)) || (IS_CHAR_INJURED(ped5)))//если Ланс мёртв
+						else if ((IS_CHAR_DEAD(ped5)) || (IS_CHAR_INJURED(ped5)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 						{
-							skip = 1;// переменная пропуска
+							skip = 1;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "COK2_26", 5500, 1);//~r~You killed Lance!
 							EXPLODE_CHAR_HEAD(ped5);
 							break;
 						}
 					}
 				}
-				//------------------ шестая часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				if (skip == 0)
 				{
 					while (TRUE)
 					{
-						// отель
+						// пїЅпїЅпїЅпїЅпїЅ
 						WAIT(0);
 						if ((!IS_CHAR_IN_CAR(GetPlayerPed(), car1)) && (textID == 1) && (in_car == 0))
 						{
 							in_car = 1;
-							// вернись в машину
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "IN_VEH", 5500, 1);//~g~Hey! Get back in the vehicle!
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							ADD_BLIP_FOR_CAR(car1, &lance_car);
-							CHANGE_BLIP_SPRITE(lance_car, BLIP_OBJECTIVE);//текстура иконки на радаре
-							CHANGE_BLIP_COLOUR(lance_car, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(lance_car, "NE_CAR");//иконка на радаре "Связной"
-							CHANGE_BLIP_SCALE(lance_car, 0.6); // масштаб иконки на радаре
+							CHANGE_BLIP_SPRITE(lance_car, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_COLOUR(lance_car, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(lance_car, "NE_CAR");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+							CHANGE_BLIP_SCALE(lance_car, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						}
 						else if ((IS_CHAR_IN_CAR(GetPlayerPed(), car1)) && (textID == 1) && (in_car == 1))
 						{
 							in_car = 0;
-							// езжай в оружейный магазин
+							// пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "LAW2_10", 5500, 1);//~g~Drive back to the hotel.
-							REMOVE_BLIP(lance_car);//Удаляем иконку на радаре
-							ADD_BLIP_FOR_COORD(671.379, -747.318, 4.727, &Party_ico);//создаем иконку на радаре
-							CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//текстура иконки на радаре
-							CHANGE_BLIP_COLOUR(Party_ico, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-							CHANGE_BLIP_SCALE(Party_ico, 0.6); // масштаб иконки на радаре
-							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//иконка на радаре называние в истории карты "hotel"
+							REMOVE_BLIP(lance_car);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							ADD_BLIP_FOR_COORD(671.379, -747.318, 4.727, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_SPRITE(Party_ico, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_COLOUR(Party_ico, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+							CHANGE_BLIP_SCALE(Party_ico, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "hotel"
 						}
 
 						if ((IS_CHAR_IN_AREA_3D( GetPlayerPed(), 653.863, -795.02, 1.962, 703.863, -695.02, 26.962, 0 )) && (IS_CHAR_IN_CAR(GetPlayerPed(), car1)))
 						{
-							// затемнение
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-							DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							while(true)
 							{
 								WAIT(0);
@@ -1667,82 +1667,82 @@ void LAWYER_1(void)
 									break;
 								}
 							}
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
-							SET_CAR_DENSITY_MULTIPLIER(0);// отключаем пути
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAR_DENSITY_MULTIPLIER(0);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 							CLEAR_AREA_OF_CARS( 680.758, -755.964, 1.154, 100.0 );
 
-							// запускаем пути приезда
-							START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car1, 2994, 0.0, 0.008, -0.128);// запускаем пути приезда
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car1, 2994, 0.0, 0.008, -0.128);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// ставим камеру
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							CREATE_CAM( 14, &camera );
-							POINT_CAM_AT_COORD	( camera, 674.017, -740.841, 6.473); // куда смотрит камера
-							SET_CAM_POS			( camera, 670.527, -752.394, 5.354 );//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 674.017, -740.841, 6.473); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 670.527, -752.394, 5.354 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_ACTIVE( camera, 1 );
 							SET_CAM_PROPAGATE( camera, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
 							SET_CAM_FOV( camera, 45.0 );
 							SET_WIDESCREEN_BORDERS( 1 );
-							DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
-							CLEAR_AREA(674.2433, -750.8853, 4.501233, 6.5, 0);//очещаем зону загрузки
+							DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CLEAR_AREA(674.2433, -750.8853, 4.501233, 6.5, 0);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 
 							SetTime(3000);
-							TASK_LEAVE_CAR(GetPlayerPed(), car1);// высаживаем Томми
+							TASK_LEAVE_CAR(GetPlayerPed(), car1);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							SetTime(3000);
 
-							// смена ракурса камеры
-							POINT_CAM_AT_COORD	( camera, 675.293, -747.194, 5.183 ); // куда смотрит камера
-							SET_CAM_POS			( camera, 673.211, -737.637, 8.129 );//расположение камеры
+							// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							POINT_CAM_AT_COORD	( camera, 675.293, -747.194, 5.183 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 673.211, -737.637, 8.129 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// анимация пересадки Ланса
-							REQUEST_ANIMS( "veh@low" );//загружаем файл с анимацией
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+							REQUEST_ANIMS( "veh@low" );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							while (!HAVE_ANIMS_LOADED( "veh@low" )) WAIT(0);
-							TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped5, "shuffle_seat_ps", "veh@low", 1.0, 0, 0, 0, 1, -1 );//Воиспроизвидение анимации на педе
+							TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped5, "shuffle_seat_ps", "veh@low", 1.0, 0, 0, 0, 1, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 							SetTime(1500);
 
-							// проигрываем диалог
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							NEW_SCRIPTED_CONVERSATION();
 							ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
 							ADD_LINE_TO_CONVERSATION(0, "R1_BK", "LAW2_5", 0, 0);//I'm going to go see what I can dig up. I'll be watching you, Tommy.
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetTime(4200);
 
-							// смена ракурса камеры
+							// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							CLEAR_PRINTS();
-							POINT_CAM_AT_COORD	( camera, 676.609, -746.077, 4.005 ); // куда смотрит камера
-							SET_CAM_POS			( camera, 674.922, -722.211, 7.108 );//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 676.609, -746.077, 4.005 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 674.922, -722.211, 7.108 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// запускаем пути уезда
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							STOP_PLAYBACK_RECORDED_CAR(car1);
-							START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car1, 2995, 0.0, 0.008, -0.128);// запускаем пути уезда
+							START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car1, 2995, 0.0, 0.008, -0.128);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							SetTime(5800);
 							STOP_PLAYBACK_RECORDED_CAR(car1);
-							SET_CHAR_COORDINATES(ped5, 19.147, -5.867, 12.732);// перемещаем педа
+							SET_CHAR_COORDINATES(ped5, 19.147, -5.867, 12.732);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
-							//убираем камеру
+							//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_BEHIND_PED( GetPlayerPed() );
 							ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 							DESTROY_CAM( camera );
 							SET_WIDESCREEN_BORDERS( 0 );
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
-							SET_CAR_DENSITY_MULTIPLIER(1);// активируем пути
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAR_DENSITY_MULTIPLIER(1);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
 							skip = 2;
 							break;
 						}
-						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+						else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
 							break;
 						}
-						else if (!IS_CHAR_SITTING_IN_ANY_CAR(ped5))//если Ланс вышел из машины то убиваем его
+						else if (!IS_CHAR_SITTING_IN_ANY_CAR(ped5))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 						{
 							PRINT_STRING_IN_STRING("string", "COK2_26", 5500, 1);//~r~You killed Lance!
 							EXPLODE_CHAR_HEAD(ped5);
 							skip = 1;
 							break;
 						}
-						else if ((IS_CHAR_DEAD(ped5)) || (IS_CHAR_INJURED(ped5)))//если Ланс мёртв
+						else if ((IS_CHAR_DEAD(ped5)) || (IS_CHAR_INJURED(ped5)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 						{
 							PRINT_STRING_IN_STRING("string", "COK2_26", 5500, 1);//~r~You killed Lance!
 							EXPLODE_CHAR_HEAD(ped5);
@@ -1754,46 +1754,46 @@ void LAWYER_1(void)
 
 
 				ABORT_SCRIPTED_CONVERSATION( 0 );
-				REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-				REMOVE_BLIP(lance_car);//Удаляем иконку на радаре
+				REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_BLIP(lance_car);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружвем модели
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM2);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM3);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//выгружаем модель машины
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				MARK_MODEL_AS_NO_LONGER_NEEDED(trubka);
 
-				// выгружвем педов
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped2);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped3);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped4);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped5);//выгружаем модель педа(в последствии пед изчезнет
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped5);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружвем машину
-				MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//выгружаем модель машины(в последствии машина изчезнет)
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 				MARK_OBJECT_AS_NO_LONGER_NEEDED(&trubka_1);
 
-				// выгружвем модепутили
-				REMOVE_CAR_RECORDING( 2994 ); // выгружаем пути транспорта
-				REMOVE_CAR_RECORDING( 2995 ); // выгружаем пути транспорта
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_CAR_RECORDING( 2994 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_CAR_RECORDING( 2995 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				//удаляем мобыльный телефон тут
+				//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 				REMOVE_PICKUP(mob_phone);
 				DELETE_OBJECT( &trubka_1 );
 
 				if (skip == 1)
 				{
-					SETTIMERA(0); //сбрасываем таймер 
+					SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 					while (true)
 					{
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.6); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
-						DISPLAY_TEXT(0.5, 0.45, "MISSION_FAILED");// пишем "Миссия провалена"
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DISPLAY_TEXT(0.5, 0.45, "MISSION_FAILED");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 						WAIT( 0 );
 						if ( TIMERA() > 3000 )
@@ -1804,22 +1804,22 @@ void LAWYER_1(void)
 				}
 				else if (skip == 2)
 				{
-					SETTIMERA(0); //сбрасываем таймер 
-					TRIGGER_MISSION_COMPLETE_AUDIO(1);//произрываем музыку параметр "(1)" воспроизводит звук из "...\EFLC\pc\audio\Sfx\gps.rpf\GPS\MISSION_COMPLETE_1" (цыфра "6" = "SMC6" в том-же архиве) 
+					SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
+					TRIGGER_MISSION_COMPLETE_AUDIO(1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "(1)" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ "...\EFLC\pc\audio\Sfx\gps.rpf\GPS\MISSION_COMPLETE_1" (пїЅпїЅпїЅпїЅпїЅ "6" = "SMC6" пїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) 
 					while (true)
 					{
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
-						DISPLAY_TEXT(0.5, 0.45, "MISSION_PASSED");// пишем "Миссия завершина"
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DISPLAY_TEXT(0.5, 0.45, "MISSION_PASSED");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						DISPLAY_TEXT_WITH_NUMBER(0.5, 0.5, "CASH", 200);// +5000$
 						
 						WAIT( 0 );
@@ -1828,7 +1828,7 @@ void LAWYER_1(void)
 							break;
 						}
 					}
-					ADD_SCORE( GetPlayerIndex(), +200 );//даём игроку денег
+					ADD_SCORE( GetPlayerIndex(), +200 );//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					G_LAWYER = 3;
 					G_MAIN_CALL = 1;
 					sutosave = 1;
@@ -1842,27 +1842,27 @@ void LAWYER_1(void)
 		{
 			if (blip_on == 0)
 			{
-				ADD_BLIP_FOR_COORD(552.217, -293.87, 4.356, &lawyer_ico);//создаем иконку на радаре
-				CHANGE_BLIP_SPRITE(lawyer_ico, BLIP_ROMAN);//текстура иконки на радаре
-				CHANGE_BLIP_SCALE(lawyer_ico, 1.1); // масштаб иконки на радаре
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(lawyer_ico, "NE_LAWYER");//иконка на радаре называние в истории карты "Адвокат"
+				ADD_BLIP_FOR_COORD(552.217, -293.87, 4.356, &lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SPRITE(lawyer_ico, BLIP_ROMAN);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SCALE(lawyer_ico, 1.1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(lawyer_ico, "NE_LAWYER");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 				blip_on = 1;
 			}
-			DRAW_CHECKPOINT( 552.217, -293.87, 4.356, 1.5, 160, 116, 209);//создание чекпойнт на координатах и его цвет
-			GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-			GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 552.217, -293.87, 4.356, &PlayR);//проверка "игрок на координатах"
+			DRAW_CHECKPOINT( 552.217, -293.87, 4.356, 1.5, 160, 116, 209);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+			GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 552.217, -293.87, 4.356, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 			if (( PlayR < 1.5) && (!IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())))
 			{
-				skip = 0; // переменная пропуска
+				skip = 0; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				help = 0;
 				car1_des = 0;
 				car2_des = 0;
 				car2_des2 = 0;
 				G_ONMISSION = 1;
-				REMOVE_BLIP(lawyer_ico);//Удаляем иконку на радаре
-				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+				REMOVE_BLIP(lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				
-				DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+				DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				while(true)
 				{
 					WAIT(0);
@@ -1872,9 +1872,9 @@ void LAWYER_1(void)
 					}
 				}
 
-				SET_CHAR_COORDINATES(GetPlayerPed(), 552.036, -293.714, 4.766);// перемещаем игрока
+				SET_CHAR_COORDINATES(GetPlayerPed(), 552.036, -293.714, 4.766);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				SET_CHAR_HEADING(GetPlayerPed(), 52.894);
-				SET_CHAR_COMPONENT_VARIATION(GetPlayerPed(), 1, 1, 0);
+				SET_CHAR_COMPONENT_VARIATION(GetPlayerPed(), 1, 2, 0); // Modifiquei aqui
 				
 				Car car1, car2, car3, car4;
 				Ped ped1, ped2, ped3, ped4, ped5, ped6;
@@ -1883,19 +1883,19 @@ void LAWYER_1(void)
 				uint dialogID;
 				Cam camera;
 
-				uint PedM1 = MODEL_M_M_GTRI_HI_01;// Присяжный 1
-				uint PedM2 = MODEL_M_M_BUSINESS_03;// Присяжный 2
-				uint PedM3 = MODEL_F_M_PJERSEY_01;// Собиседник Присяжныого 2
-				uint PedM4 = MODEL_M_M_SWEEPER;// Сбитый прохожий
-				uint PedM5 = MODEL_M_M_GRU2_HI_02;// Водитель драндулета
-				uint PedM6 = MODEL_IG_TUNA;// Водитель грузовика
+				uint PedM1 = MODEL_M_M_GTRI_HI_01;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1
+				uint PedM2 = MODEL_M_M_BUSINESS_03;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				uint PedM3 = MODEL_F_M_PJERSEY_01;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				uint PedM4 = MODEL_M_M_SWEEPER;// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				uint PedM5 = MODEL_M_M_GRU2_HI_02;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				uint PedM6 = MODEL_IG_TUNA;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				uint CarM1 = MODEL_SENTINEL;// Сентинейл
-				uint CarM2 = MODEL_ADMIRAL;// Адмирал
-				uint CarM3 = MODEL_MARBELLA;// Драндулет
-				uint CarM4 = MODEL_FXT;// Грузовик
+				uint CarM1 = MODEL_SENTINEL;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				uint CarM2 = MODEL_ADMIRAL;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				uint CarM3 = MODEL_MARBELLA;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				uint CarM4 = MODEL_FXT;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// грузим модели
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				REQUEST_MODEL(CarM1);
 				while (!HAS_MODEL_LOADED(CarM1)) WAIT(100);
 
@@ -1908,44 +1908,44 @@ void LAWYER_1(void)
 				REQUEST_MODEL(CarM4);
 				while (!HAS_MODEL_LOADED(CarM4)) WAIT(100);
 
-				REQUEST_MODEL(PedM1);// Присяжный 1
-				while (!HAS_MODEL_LOADED(PedM1));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM1);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1
+				while (!HAS_MODEL_LOADED(PedM1));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(PedM2);// Присяжный 2
-				while (!HAS_MODEL_LOADED(PedM2));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM2);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				while (!HAS_MODEL_LOADED(PedM2));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(PedM3);// Собиседник Присяжныого 2
-				while (!HAS_MODEL_LOADED(PedM3));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM3);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				while (!HAS_MODEL_LOADED(PedM3));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(PedM4);// Сбитый прохожий
-				while (!HAS_MODEL_LOADED(PedM4));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM4);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM4));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(PedM5);// Водитель драндулета
-				while (!HAS_MODEL_LOADED(PedM5));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM5);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM5));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(PedM6);// Водитель грузовика
-				while (!HAS_MODEL_LOADED(PedM6));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM6);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM6));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// создаём авто
-				CREATE_CAR(CarM1, 968.689, 749.632, 9.099, &car1, TRUE);// Сентинейл
-				CREATE_CAR(CarM2, 618.481, -500.791, 5.058, &car2, TRUE);// Адмирал
-				CREATE_CAR(CarM3, 297.061, -779.882, 5.019, &car3, TRUE);// Драндулет
-				CREATE_CAR(CarM4, 283.846, -780.803, 5.019, &car4, TRUE);// Грузовик
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CAR(CarM1, 968.689, 749.632, 9.099, &car1, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				CREATE_CAR(CarM2, 618.481, -500.791, 5.058, &car2, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				CREATE_CAR(CarM3, 297.061, -779.882, 5.019, &car3, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				CREATE_CAR(CarM4, 283.846, -780.803, 5.019, &car4, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				SET_CAR_HEADING(car1, -91.702);
 				SET_CAR_HEADING(car2, 261.36);
 
-				// закрываем машины для игрока
-				LOCK_CAR_DOORS(car1, 3); //блокируем двери автомобиля для игрока
-				LOCK_CAR_DOORS(car2, 3); //блокируем двери автомобиля для игрока
-				LOCK_CAR_DOORS(car4, 3); //блокируем двери автомобиля для игрока
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				LOCK_CAR_DOORS(car1, 3); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				LOCK_CAR_DOORS(car2, 3); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				LOCK_CAR_DOORS(car4, 3); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// создаём Педов
-				CREATE_CHAR (26, PedM1, 290.473, -785.685, 5.19, &ped1, TRUE);// Присяжный 1
-				CREATE_CHAR (26, PedM2, 623.574, -493.928, 5.386, &ped2, TRUE);// Присяжный 2
-				CREATE_CHAR (26, PedM3, 623.574, -493.021, 5.386, &ped3, TRUE);// Cобиседник Присяжныого 2
-				CREATE_CHAR (26, PedM4, 549.677, -288.081, 4.686, &ped4, TRUE);// Сбитый прохожий
-				CREATE_CHAR_INSIDE_CAR(car3, 1, PedM5, &ped5);// Водитель драндулета
-				CREATE_CHAR_INSIDE_CAR(car4, 1, PedM6, &ped6);// Водитель грузовика
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM1, 290.473, -785.685, 5.19, &ped1, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1
+				CREATE_CHAR (26, PedM2, 623.574, -493.928, 5.386, &ped2, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				CREATE_CHAR (26, PedM3, 623.574, -493.021, 5.386, &ped3, TRUE);// CпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				CREATE_CHAR (26, PedM4, 549.677, -288.081, 4.686, &ped4, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				CREATE_CHAR_INSIDE_CAR(car3, 1, PedM5, &ped5);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				CREATE_CHAR_INSIDE_CAR(car4, 1, PedM6, &ped6);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				SET_CHAR_HEADING(ped3, 172.928);
 				SET_CHAR_HEADING(ped4, 43.279);
 				SET_CHAR_HEALTH(ped2, 1000);
@@ -1957,17 +1957,17 @@ void LAWYER_1(void)
 				SET_CHAR_RELATIONSHIP(ped3, 5, 24);
 				SET_PED_DONT_DO_EVASIVE_DIVES(ped4, 1);
 
-				// грузим пути драндулета
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				REQUEST_CAR_RECORDING( 2996 );
 				while (!HAS_CAR_RECORDING_BEEN_LOADED( 2996 )) WAIT(0);
 
 				GET_TIME_OF_DAY(&hour, &minute);
 				GET_CURRENT_WEATHER(&weather);
 				FORCE_WEATHER_NOW(WEATHER_EXTRA_SUNNY);
-				FORWARD_TO_TIME_OF_DAY(18, 40);//устанавливаем время
+				FORWARD_TO_TIME_OF_DAY(18, 40);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-				//------------ катсцена ----------------
-				LOAD_ADDITIONAL_TEXT( "LAW_3", 6 ); // загружаем субтитры из *.GTX
+				//------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ----------------
+				LOAD_ADDITIONAL_TEXT( "LAW_3", 6 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ *.GTX
 				START_CUTSCENE_NOW("law_3");
 				while (!HAS_CUTSCENE_LOADED())
 				{
@@ -1985,15 +1985,15 @@ void LAWYER_1(void)
 					DO_SCREEN_FADE_IN(0);
 				}
 
-				FORCE_WEATHER_NOW( weather );//устанавливаем погода
+				FORCE_WEATHER_NOW( weather );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				RELEASE_WEATHER();
-				FORWARD_TO_TIME_OF_DAY(hour, minute);//устанавливаем время
+				FORWARD_TO_TIME_OF_DAY(hour, minute);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-				// камера на сбитие прохожего
-				CLEAR_AREA(549.677, -288.081, 4.686, 80.5, 1);//очещаем зону загрузки
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				CLEAR_AREA(549.677, -288.081, 4.686, 80.5, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				CREATE_CAM( 14, &camera );
-				POINT_CAM_AT_COORD	( camera, 550.738, -288.656, 5.308); // куда смотрит камера
-				SET_CAM_POS			( camera, 540.301, -286.913, 7.878 );//расположение камеры
+				POINT_CAM_AT_COORD	( camera, 550.738, -288.656, 5.308); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				SET_CAM_POS			( camera, 540.301, -286.913, 7.878 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				SET_CAM_ACTIVE( camera, 1 );
 				SET_CAM_PROPAGATE( camera, 1 );
 				ACTIVATE_SCRIPTED_CAMS(1, 1);
@@ -2007,70 +2007,70 @@ void LAWYER_1(void)
 				START_SCRIPT_CONVERSATION(1, 1);
 				SetSpeech();
 
-				// проигрвыаем пути
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 				SetTime(1000);
 				START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car3, 2996, 0.0, 0.0, 0.0);
 				SetTime(1000);
 				SETTIMERA( 0 );
 
-				// машина сбивает педа
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 				while (TRUE)
 				{
 					WAIT(0);
-					if ((TIMERA() > 3000) || (IS_CHAR_TOUCHING_VEHICLE(ped4, car3))) //или если машина задела педа
+					if ((TIMERA() > 3000) || (IS_CHAR_TOUCHING_VEHICLE(ped4, car3))) //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 					{
 						EXPLODE_CHAR_HEAD(ped4);
 						STOP_PLAYBACK_RECORDED_CAR(car3);
 						break;
 					}
 				}
-				// получаем координаты педа
-				GET_CHAR_COORDINATES(ped4,  &PedX, &PedY, &PedZ);//вписываем координаты игрока в переменную
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				GET_CHAR_COORDINATES(ped4,  &PedX, &PedY, &PedZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				GET_GROUND_Z_FOR_3D_COORD(PedX, PedY, PedZ, &PedZ);
-				CREATE_PICKUP_ROTATE(w_hammer, 3, 1, PedX, PedY, PedZ, -87.532, -108.556, 8.524, &sweap_1);// создаём биту 
-				CREATE_PICKUP_ROTATE(w_bat, 3, 1, 625.035, -491.01, 5.062, 169.82, -14.625, 4.35, &sweap_2);// создаём биту 
+				CREATE_PICKUP_ROTATE(w_hammer, 3, 1, PedX, PedY, PedZ, -87.532, -108.556, 8.524, &sweap_1);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ 
+				CREATE_PICKUP_ROTATE(w_bat, 3, 1, 625.035, -491.01, 5.062, 169.82, -14.625, 4.35, &sweap_2);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ 
 
 				SetTime(2000);
-				// меняем ракурс на биту
-				POINT_CAM_AT_COORD	( camera, 551.371, -288.083, 4.596); // куда смотрит камера
-				SET_CAM_POS			( camera, 543.173, -296.107, 6.183 );//расположение камеры
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				POINT_CAM_AT_COORD	( camera, 551.371, -288.083, 4.596); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				SET_CAM_POS			( camera, 543.173, -296.107, 6.183 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				PRINT_STRING_IN_STRING("string", "LAW3_24", 5500, 1);//~g~That hammer would be useful.
 				SetTime(4000);
 
-				//убираем камеру
+				//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				SET_CAM_BEHIND_PED( GetPlayerPed() );
 				ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 				DESTROY_CAM( camera );
 				SET_WIDESCREEN_BORDERS( 0 );
-				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
-				TASK_LEAVE_CAR(ped5, car3);// пед выходит из драндулета
+				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				TASK_LEAVE_CAR(ped5, car3);// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружвем модели
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM4);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM5);//выгружаем модель машины
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped4);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped5);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CAR_AS_NO_LONGER_NEEDED(&car3);//выгружаем модель машины(в последствии машина изчезнет)
-				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM3);//выгружаем модель машины
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM5);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped5);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CAR_AS_NO_LONGER_NEEDED(&car3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружаем пути драндулета
-				REMOVE_CAR_RECORDING( 2996 ); // выгружаем пути транспорта
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_CAR_RECORDING( 2996 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// создаём меркеры над машиной
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				ADD_BLIP_FOR_CAR(car1, &jury_car1);
-				CHANGE_BLIP_SPRITE(jury_car1, BLIP_OBJECTIVE);//текстура иконки на радаре
-				CHANGE_BLIP_COLOUR(jury_car1, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(jury_car1, "NE_CAR");//иконка на радаре "Связной"
-				CHANGE_BLIP_SCALE(jury_car1, 0.6); // масштаб иконки на радаре
+				CHANGE_BLIP_SPRITE(jury_car1, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_COLOUR(jury_car1, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(jury_car1, "NE_CAR");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+				CHANGE_BLIP_SCALE(jury_car1, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// создаём меркеры над педом
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				ADD_BLIP_FOR_CHAR(ped2, &jury_car2);
-				CHANGE_BLIP_SPRITE(jury_car2, BLIP_OBJECTIVE);//текстура иконки на радаре
-				CHANGE_BLIP_COLOUR(jury_car2, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(jury_car2, "NE_CAR");//иконка на радаре "Связной"
-				CHANGE_BLIP_SCALE(jury_car2, 0.6); // масштаб иконки на радаре
+				CHANGE_BLIP_SPRITE(jury_car2, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_COLOUR(jury_car2, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(jury_car2, "NE_CAR");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+				CHANGE_BLIP_SCALE(jury_car2, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// проигрываем монолог
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				NEW_SCRIPTED_CONVERSATION();
 				ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
 				ADD_LINE_TO_CONVERSATION(0, "R1_BL", "LAW3_7", 0, 0);//~g~Go and intimidate the two jurors, but DON'T kill them!
@@ -2079,7 +2079,7 @@ void LAWYER_1(void)
 				//SET_CURRENT_MOVIE( "audio/law3_24" );
 
 
-				// мигиние радара
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				DISPLAY_RADAR(0);
 				SetTime(250);
 				DISPLAY_RADAR(1);
@@ -2097,7 +2097,7 @@ void LAWYER_1(void)
 				DISPLAY_RADAR(1);
 				SetTime(1250);
 
-				//------------------ Первая часть миссии ------------------
+				//------------------ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ------------------
 				while (TRUE)
 				{
 					WAIT(0);
@@ -2106,18 +2106,18 @@ void LAWYER_1(void)
 					GET_CHAR_HEALTH(ped2, &ped2_HP);
 					GET_CHAR_HEALTH(ped3, &ped3_HP);
 
-					// если игрок на координатах пишем "разбейте машину"
+					// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"
 					if ((IS_CHAR_IN_AREA_3D( GetPlayerPed(), 951.636, 711.794, 6.106, 986.436, 771.794, 21.106, 0 )) && (help == 0))
 					{
 						PRINT_STRING_IN_STRING("string", "LAW3_20", 5500, 1);//~g~Smash up the Juror's car!
 						help = 1;
 					}
 
-					// если машина 1 разбита
+					// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 1 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					if ((car1_HP < 5) && (car1_des == 0))
 					{
 
-						DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+						DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						while(true)
 						{
 							WAIT(0);
@@ -2126,41 +2126,41 @@ void LAWYER_1(void)
 								break;
 							}
 						}
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
-						REMOVE_BLIP(jury_car1);//Удаляем иконку на радаре
-						SET_CHAR_COORDINATES(ped1, 984.8, 727.5, 8.539);// перемещаем педа
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						REMOVE_BLIP(jury_car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CHAR_COORDINATES(ped1, 984.8, 727.5, 8.539);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 						SET_CHAR_HEADING(ped1, 46.4);
 
-						// камера тут
+						// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 						CREATE_CAM( 14, &camera );
-						POINT_CAM_AT_COORD	( camera, 984.691, 727.433, 10.274); // куда смотрит камера
-						SET_CAM_POS			( camera, 986.126, 723.922, 10.789 );//расположение камеры
+						POINT_CAM_AT_COORD	( camera, 984.691, 727.433, 10.274); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 986.126, 723.922, 10.789 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_ACTIVE( camera, 1 );
 						SET_CAM_PROPAGATE( camera, 1 );
 						ACTIVATE_SCRIPTED_CAMS(1, 1);
 						SET_CAM_FOV( camera, 45.0 );
 						SET_WIDESCREEN_BORDERS( 1 );
 
-						// проверка игрок в машине
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						if (IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed()))
 						{
-							SET_CHAR_COORDINATES(GetPlayerPed(), 958.737, 745.489, 9.099);// перемещаем игрока
+							SET_CHAR_COORDINATES(GetPlayerPed(), 958.737, 745.489, 9.099);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), -15.013);
-							WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 975.0, 740.8, 8.539);// высаживаем игрока
+							WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 975.0, 740.8, 8.539);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), -148.514);
 						}
 						else
 						{
-							SET_CHAR_COORDINATES(GetPlayerPed(), 975.0, 740.8, 8.539);// перемещаем игрока
+							SET_CHAR_COORDINATES(GetPlayerPed(), 975.0, 740.8, 8.539);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), -148.514);
 						}
 
-						// игрок идёт к педу
-						DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
-						TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 978.492, 736.038, 9.391, 2, -2);//Игрок идёт в пойнт
+						// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
+						DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 978.492, 736.038, 9.391, 2, -2);//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 						SetTime(250);
 
-						// проигрывается диалог
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						NEW_SCRIPTED_CONVERSATION();
 						ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
 						ADD_LINE_TO_CONVERSATION(0, "R1_BM", "LAW3_21", 0, 0);//I can't believe this is happening!
@@ -2217,36 +2217,36 @@ void LAWYER_1(void)
 							SetSpeech();
 						}
 
-						// меняем ракурс
-						POINT_CAM_AT_COORD	( camera, 980.528, 733.934, 10.859); // куда смотрит камера
-						SET_CAM_POS			( camera, 981.683, 736.051, 10.808 );//расположение камеры
+						// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						POINT_CAM_AT_COORD	( camera, 980.528, 733.934, 10.859); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 981.683, 736.051, 10.808 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-						// пед убегает
-						TASK_GO_STRAIGHT_TO_COORD(ped1, 968.7, 710.3, 9.391, 4, -2);//Присяжный бежит
+						// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						TASK_GO_STRAIGHT_TO_COORD(ped1, 968.7, 710.3, 9.391, 4, -2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						NEW_SCRIPTED_CONVERSATION();
 						ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
-						ADD_LINE_TO_CONVERSATION(0, "R1_BP", " ", 0, 0);//Кричит
+						ADD_LINE_TO_CONVERSATION(0, "R1_BP", " ", 0, 0);//пїЅпїЅпїЅпїЅпїЅпїЅ
 						START_SCRIPT_CONVERSATION(1, 1);
 						SetSpeech();
 						//SetTime(2500);
 
-						//убираем камеру
+						//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_BEHIND_PED( GetPlayerPed() );
 						ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 						DESTROY_CAM( camera );
 						SET_WIDESCREEN_BORDERS( 0 );
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-						// убераем педа
-						SET_CHAR_COORDINATES(ped1, 290.473, -785.685, 5.19);// перемещаем педа
-						TASK_GO_STRAIGHT_TO_COORD(ped1, 290.473, -785.685, 5.19, 4, -2);//Присяжный бежит
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+						SET_CHAR_COORDINATES(ped1, 290.473, -785.685, 5.19);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_GO_STRAIGHT_TO_COORD(ped1, 290.473, -785.685, 5.19, 4, -2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						car1_des = 1;
 					}
 
-					// если машина 2 разбита
+					// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					if ((car2_HP < 5) && (car2_des == 0))
 					{
-						DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+						DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						while(true)
 						{
 							WAIT(0);
@@ -2256,41 +2256,41 @@ void LAWYER_1(void)
 							}
 						}
 
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
-						REMOVE_BLIP(jury_car2);//Удаляем иконку на радаре
-						SET_CHAR_COORDINATES(ped2, 634.284, -489.079, 4.451);// перемещаем педа
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						REMOVE_BLIP(jury_car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CHAR_COORDINATES(ped2, 634.284, -489.079, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 						SET_CHAR_HEADING(ped2, 155.144);
 
-						// камера тут
+						// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 						CREATE_CAM( 14, &camera );
-						POINT_CAM_AT_COORD	( camera, 631.786, -494.704, 5.021); // куда смотрит камера
-						SET_CAM_POS			( camera, 636.534, -487.072, 6.687 );//расположение камеры
+						POINT_CAM_AT_COORD	( camera, 631.786, -494.704, 5.021); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 636.534, -487.072, 6.687 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_ACTIVE( camera, 1 );
 						SET_CAM_PROPAGATE( camera, 1 );
 						ACTIVATE_SCRIPTED_CAMS(1, 1);
 						SET_CAM_FOV( camera, 45.0 );
 						SET_WIDESCREEN_BORDERS( 1 );
 
-						// проверка игрок в машине
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						if (IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed()))
 						{
-							SET_CHAR_COORDINATES(GetPlayerPed(), 626.771, -498.732, 5.058);// перемещаем игрока
+							SET_CHAR_COORDINATES(GetPlayerPed(), 626.771, -498.732, 5.058);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), 105.498);
-							WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 631.758, -496.799, 4.451);// высаживаем игрока
+							WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 631.758, -496.799, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), -7.47);
 						}
 						else
 						{
-							SET_CHAR_COORDINATES(GetPlayerPed(), 631.758, -496.799, 4.451);// перемещаем игрока
+							SET_CHAR_COORDINATES(GetPlayerPed(), 631.758, -496.799, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), -7.47);
 						}
 
-						// игрок идёт к педу
-						DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
-						TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 632.752, -493.506, 5.386, 2, -2);//Игрок идёт в пойнт
+						// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
+						DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 632.752, -493.506, 5.386, 2, -2);//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 						SetTime(250);
 
-						// запускаем диалог
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						NEW_SCRIPTED_CONVERSATION();
 						ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
 						ADD_LINE_TO_CONVERSATION(0, "R1_BQ", "NE_LAW3_1", 0, 0);//Man. my car!
@@ -2303,38 +2303,38 @@ void LAWYER_1(void)
 						START_SCRIPT_CONVERSATION(1, 1);
 						SetSpeech();
 
-						// меняем ракурс
-						POINT_CAM_AT_COORD	( camera, 632.427, -490.956, 5.862); // куда смотрит камера
-						SET_CAM_POS			( camera, 632.131, -491.902, 5.988 );//расположение камеры
+						// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						POINT_CAM_AT_COORD	( camera, 632.427, -490.956, 5.862); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 632.131, -491.902, 5.988 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-						// пед убегает
-						TASK_GO_STRAIGHT_TO_COORD(ped2, 638.477, -471.28, 5.386, 4, -2);//Присяжный бежит
+						// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						TASK_GO_STRAIGHT_TO_COORD(ped2, 638.477, -471.28, 5.386, 4, -2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						NEW_SCRIPTED_CONVERSATION();
 						ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
-						ADD_LINE_TO_CONVERSATION(0, "R1_BQ_XXX1", " ", 0, 0);//Кричит
+						ADD_LINE_TO_CONVERSATION(0, "R1_BQ_XXX1", " ", 0, 0);//пїЅпїЅпїЅпїЅпїЅпїЅ
 						START_SCRIPT_CONVERSATION(1, 1);
 						SetSpeech();
 						//SetTime(3000);
 
-						//убираем камеру
+						//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_BEHIND_PED( GetPlayerPed() );
 						ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 						DESTROY_CAM( camera );
 						SET_WIDESCREEN_BORDERS( 0 );
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-						// убераем педа
-						SET_CHAR_COORDINATES(ped2, 292.473, -783.685, 5.19);// перемещаем педа
-						TASK_GO_STRAIGHT_TO_COORD(ped2, 292.473, -783.685, 5.19, 4, -2);//Присяжный бежит
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+						SET_CHAR_COORDINATES(ped2, 292.473, -783.685, 5.19);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_GO_STRAIGHT_TO_COORD(ped2, 292.473, -783.685, 5.19, 4, -2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						car2_des = 1;
 					}
 
-					// если пед 1 или пед 2 пострадали 
+					// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ 1 пїЅпїЅпїЅ пїЅпїЅпїЅ 2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
 					if (((ped2_HP < 990) && (car2_des == 0)) || ((ped3_HP < 990) && (car2_des == 0)))
 					{
 						if (IS_CAR_IN_AREA_3D(car2, 615.574, -502.26, 3.946, 621.074, -499.26, 6.946, 0))
 						{
-							DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+							DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							while(true)
 							{
 								WAIT(0);
@@ -2344,40 +2344,40 @@ void LAWYER_1(void)
 								}
 							}
 
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
-							SET_CHAR_COORDINATES(ped2, 620.943, -497.315, 4.451);// перемещаем педа
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CHAR_COORDINATES(ped2, 620.943, -497.315, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(ped2, 166.505);
 							SET_CAR_HEALTH(car2, 1000);
-							SET_CHAR_COORDINATES(GetPlayerPed(), 626.771, -498.732, 5.058);// перемещаем игрока
+							SET_CHAR_COORDINATES(GetPlayerPed(), 626.771, -498.732, 5.058);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), 105.498);
 
-							SET_CAR_COORDINATES(car2, 618.48, -500.79, 5.058);// перемещаем машину
+							SET_CAR_COORDINATES(car2, 618.48, -500.79, 5.058);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAR_HEADING(car2, 261.36);
 
-							// грузим пути
-							REQUEST_CAR_RECORDING( 2997 );// грузим пути адмирала
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+							REQUEST_CAR_RECORDING( 2997 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							while (!HAS_CAR_RECORDING_BEEN_LOADED( 2997 )) WAIT(0);
-							REQUEST_CAR_RECORDING( 2998 );// грузим пути грузовика
+							REQUEST_CAR_RECORDING( 2998 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							while (!HAS_CAR_RECORDING_BEEN_LOADED( 2998 )) WAIT(0);
 
-							REQUEST_ANIMS( "ped" );//загружаем файл с анимацией
+							REQUEST_ANIMS( "ped" );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							while (!HAVE_ANIMS_LOADED( "ped" )) WAIT(0);
-							TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped3, "duck_cower", "ped", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+							TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped3, "duck_cower", "ped", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 							PANIC_SCREAM(ped3);
-							TASK_ENTER_CAR_AS_DRIVER(ped2, car2, -1);// пед садится в машину
+							TASK_ENTER_CAR_AS_DRIVER(ped2, car2, -1);// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// камера тут
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 							CREATE_CAM( 14, &camera );
-							POINT_CAM_AT_COORD	( camera, 618.985, -503.321, 5.338); // куда смотрит камера
-							SET_CAM_POS			( camera, 625.491, -496.804, 7.461 );//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 618.985, -503.321, 5.338); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 625.491, -496.804, 7.461 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_ACTIVE( camera, 1 );
 							SET_CAM_PROPAGATE( camera, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
 							SET_CAM_FOV( camera, 45.0 );
 							SET_WIDESCREEN_BORDERS( 1 );
-							DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
+							DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// пед бежит к машине
+							// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SETTIMERA( 0 );
 							while(true)
 							{
@@ -2389,51 +2389,51 @@ void LAWYER_1(void)
 								}
 								else if (TIMERA() > 3000)
 								{
-									WARP_CHAR_INTO_CAR(ped2, car2);// телепартируем педа за руль
+									WARP_CHAR_INTO_CAR(ped2, car2);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 									break;
 								}
 							}
-							// очещаем зону
-							CLEAR_AREA(640.931, -483.029, 4.07, 5.5, 1);//очещаем зону загрузки
-							CLEAR_AREA(639.585, -489.304, 4.07, 5.5, 1);//очещаем зону загрузки
-							CLEAR_AREA(638.272, -495.001, 4.07, 5.5, 1);//очещаем зону загрузки
-							CLEAR_AREA(636.958, -500.699, 4.07, 5.5, 1);//очещаем зону загрузки
-							CLEAR_AREA(635.644, -506.396, 4.07, 5.5, 1);//очещаем зону загрузки
-							CLEAR_AREA(634.367, -512.435, 4.07, 5.5, 1);//очещаем зону загрузки
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+							CLEAR_AREA(640.931, -483.029, 4.07, 5.5, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							CLEAR_AREA(639.585, -489.304, 4.07, 5.5, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							CLEAR_AREA(638.272, -495.001, 4.07, 5.5, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							CLEAR_AREA(636.958, -500.699, 4.07, 5.5, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							CLEAR_AREA(635.644, -506.396, 4.07, 5.5, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							CLEAR_AREA(634.367, -512.435, 4.07, 5.5, 1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// запускаем пути
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 							START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car2, 2997, 0.0, 0.374, -0.164);
 							START_PLAYBACK_RECORDED_CAR_WITH_OFFSET(car4, 2998, 0.0, 0.142, -0.693);
 
-							// меняем ракурс
-							POINT_CAM_AT_COORD	( camera, 626.665, -503.788, 4.24); // куда смотрит камера
-							SET_CAM_POS			( camera, 611.616, -498.071, 6.533 );//расположение камеры
-							CLOSE_ALL_CAR_DOORS(car2);// закрываем двери
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							POINT_CAM_AT_COORD	( camera, 626.665, -503.788, 4.24); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 611.616, -498.071, 6.533 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							CLOSE_ALL_CAR_DOORS(car2);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							SetTime(4000);
 
-							// меняем ракурс
-							POINT_CAM_AT_COORD	( camera, 633.956, -505.002, 5.19); // куда смотрит камера
-							SET_CAM_POS			( camera, 633.633, -496.148, 8.663 );//расположение камеры
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							POINT_CAM_AT_COORD	( camera, 633.956, -505.002, 5.19); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 633.633, -496.148, 8.663 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SetTime(4000);
 
-							// убираем камеру
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_BEHIND_PED( GetPlayerPed() );
 							ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 							DESTROY_CAM( camera );
 							SET_WIDESCREEN_BORDERS( 0 );
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "LAW3_9", 5500, 1);//~g~Smash up the Juror's car to get him out!
 
-							//останавливаем пути
+							//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 							STOP_PLAYBACK_RECORDED_CAR(car2);
 							STOP_PLAYBACK_RECORDED_CAR(car4);
-							REMOVE_CAR_RECORDING( 2997 ); // выгружаем пути транспорта
-							REMOVE_CAR_RECORDING( 2998 ); // выгружаем пути транспорта
+							REMOVE_CAR_RECORDING( 2997 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							REMOVE_CAR_RECORDING( 2998 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							EXTINGUISH_CAR_FIRE(car2);
 							EXTINGUISH_CAR_FIRE(car4);
 							SET_CAR_HEALTH(car2, 1000);
 
-							// запускаем цыкл разбития машины
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							while(true)
 							{
 								WAIT(0);
@@ -2441,7 +2441,7 @@ void LAWYER_1(void)
 								//DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.9, "CP_TIME_NOZERO", car2_HP);
 								if ((car2_HP < 900) && (car2_des2 == 0))
 								{
-									// проигрываем монолог педа
+									// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 									NEW_SCRIPTED_CONVERSATION();
 									ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
 									ADD_LINE_TO_CONVERSATION(0, "R1_BQ_XXX2", "NE_LAW3_2", 0, 0);//Hey man, my car! Leave my damn car alone, man!
@@ -2452,7 +2452,7 @@ void LAWYER_1(void)
 								}
 								else if ((car2_HP < 700) && (car2_des2 == 1))
 								{
-									// проигрываем монолог педа
+									// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 									NEW_SCRIPTED_CONVERSATION();
 									ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
 									ADD_LINE_TO_CONVERSATION(0, "R1_BR", "NE_LAW3_3", 0, 0);//Oh, please God! Someone help me!
@@ -2463,7 +2463,7 @@ void LAWYER_1(void)
 								}
 								else if ((car2_HP < 500) && (car2_des2 == 2))
 								{
-									// проигрываем монолог педа
+									// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 									NEW_SCRIPTED_CONVERSATION();
 									ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
 									ADD_LINE_TO_CONVERSATION(0, "R1_BS", "NE_LAW3_4", 0, 0);//Yo man, I still got payment to make on this!
@@ -2474,7 +2474,7 @@ void LAWYER_1(void)
 								}
 								else if ((car2_HP < 100) && (car2_des2 == 3))
 								{
-									// проигрываем монолог педа
+									// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 									NEW_SCRIPTED_CONVERSATION();
 									ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
 									ADD_LINE_TO_CONVERSATION(0, "R1_BS_XXX1", "NE_LAW3_5", 0, 0);//Okay, okay, man! I get the message!
@@ -2487,10 +2487,10 @@ void LAWYER_1(void)
 								{
 									if (IS_CHAR_SITTING_IN_ANY_CAR(ped2))
 									{
-										TASK_LEAVE_CAR(ped2, car2);// пед выходит из машины
+										TASK_LEAVE_CAR(ped2, car2);// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 									}
 
-									DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+									DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 									while(true)
 									{
 										WAIT(0);
@@ -2502,48 +2502,48 @@ void LAWYER_1(void)
 									SetTime(1000);
 									if (IS_CHAR_SITTING_IN_ANY_CAR(ped2))
 									{
-										WARP_CHAR_FROM_CAR_TO_COORD(ped2, 633.551, -503.916, 4.451);// высаживаем педа
+										WARP_CHAR_FROM_CAR_TO_COORD(ped2, 633.551, -503.916, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 										SET_CHAR_HEADING(ped2, -168.322);
 									}
 									else
 									{
-										SET_CHAR_COORDINATES(ped2, 633.551, -503.916, 4.451);// перемещаем педа
+										SET_CHAR_COORDINATES(ped2, 633.551, -503.916, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 										SET_CHAR_HEADING(ped2, -168.322);
 									}
-									SET_CAR_COORDINATES(car2, 632.11, -505.21, 5.058);// перемещаем машину
+									SET_CAR_COORDINATES(car2, 632.11, -505.21, 5.058);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 									SET_CAR_HEADING(car2, 209.23);
 
-									// проверка игрок в машине
+									// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 									if (IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed()))
 									{
-										SET_CHAR_COORDINATES(GetPlayerPed(), 626.771, -498.732, 5.058);// перемещаем игрока
+										SET_CHAR_COORDINATES(GetPlayerPed(), 626.771, -498.732, 5.058);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 										SET_CHAR_HEADING(GetPlayerPed(), 105.498);
-										WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 633.158, -507.921, 4.304);// высаживаем игрока
+										WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 633.158, -507.921, 4.304);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 										SET_CHAR_HEADING(GetPlayerPed(), -11.288);
 									}
 									else
 									{
-										SET_CHAR_COORDINATES(GetPlayerPed(), 633.158, -507.921, 4.304);// перемещаем игрока
+										SET_CHAR_COORDINATES(GetPlayerPed(), 633.158, -507.921, 4.304);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 										SET_CHAR_HEADING(GetPlayerPed(), -11.288);
 									}
 
-									SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
-									REMOVE_BLIP(jury_car2);//Удаляем иконку на радаре
+									SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+									REMOVE_BLIP(jury_car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-									// ставим камеру
+									// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 									CREATE_CAM( 14, &camera );
-									POINT_CAM_AT_COORD	( camera, 631.877, -506.294, 4.671); // куда смотрит камера
-									SET_CAM_POS			( camera, 634.686, -497.097, 6.668 );//расположение камеры
+									POINT_CAM_AT_COORD	( camera, 631.877, -506.294, 4.671); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+									SET_CAM_POS			( camera, 634.686, -497.097, 6.668 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 									SET_CAM_ACTIVE( camera, 1 );
 									SET_CAM_PROPAGATE( camera, 1 );
 									ACTIVATE_SCRIPTED_CAMS(1, 1);
 									SET_CAM_FOV( camera, 45.0 );
 									SET_WIDESCREEN_BORDERS( 1 );
-									DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
+									DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 									SetTime(250);
 
-									// проигрывается диалог
-									REMOVE_BLIP(jury_car2);//Удаляем иконку на радаре
+									// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+									REMOVE_BLIP(jury_car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 									GENERATE_RANDOM_INT_IN_RANGE( 1, 12, &dialogID);
 									if ((dialogID == 1) || (dialogID == 7))
 									{
@@ -2594,42 +2594,42 @@ void LAWYER_1(void)
 										SetSpeech();
 									}
 
-									// меняем ракурс
-									POINT_CAM_AT_COORD	( camera, 632.427, -490.956, 5.862); // куда смотрит камера
-									SET_CAM_POS			( camera, 632.131, -491.902, 5.988 );//расположение камеры
-									SET_CHAR_COORDINATES(ped2, 634.284, -489.079, 4.451);// перемещаем педа
+									// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+									POINT_CAM_AT_COORD	( camera, 632.427, -490.956, 5.862); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+									SET_CAM_POS			( camera, 632.131, -491.902, 5.988 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+									SET_CHAR_COORDINATES(ped2, 634.284, -489.079, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 									SET_CHAR_HEADING(ped2, -28.13);
 
-									// пед убегает
-									TASK_GO_STRAIGHT_TO_COORD(ped2, 638.477, -471.28, 5.386, 4, -2);//Присяжный бежит
+									// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+									TASK_GO_STRAIGHT_TO_COORD(ped2, 638.477, -471.28, 5.386, 4, -2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 									NEW_SCRIPTED_CONVERSATION();
 									ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
-									ADD_LINE_TO_CONVERSATION(0, "R1_BQ_XXX1", " ", 0, 0);//Кричит
+									ADD_LINE_TO_CONVERSATION(0, "R1_BQ_XXX1", " ", 0, 0);//пїЅпїЅпїЅпїЅпїЅпїЅ
 									START_SCRIPT_CONVERSATION(1, 1);
 									SetSpeech();
 									//SetTime(2500);
 
-									//убираем камеру
+									//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 									SET_CAM_BEHIND_PED( GetPlayerPed() );
 									ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 									DESTROY_CAM( camera );
 									SET_WIDESCREEN_BORDERS( 0 );
-									SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+									SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-									// убераем педа
-									SET_CHAR_COORDINATES(ped2, 292.473, -783.685, 5.19);// перемещаем педа
-									TASK_GO_STRAIGHT_TO_COORD(ped2, 292.473, -783.685, 5.19, 4, -2);//Присяжный бежит
+									// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+									SET_CHAR_COORDINATES(ped2, 292.473, -783.685, 5.19);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+									TASK_GO_STRAIGHT_TO_COORD(ped2, 292.473, -783.685, 5.19, 4, -2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 									car2_des2 = 5;
 									car2_des = 1;
 									break;
 								}
-								else if ((IS_CHAR_DEAD(ped1)) || (IS_CHAR_INJURED(ped1)) || (IS_CHAR_DEAD(ped2)) || (IS_CHAR_INJURED(ped2)))//если Присяжный мёртв
+								else if ((IS_CHAR_DEAD(ped1)) || (IS_CHAR_INJURED(ped1)) || (IS_CHAR_DEAD(ped2)) || (IS_CHAR_INJURED(ped2)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 								{
 									EXPLODE_CHAR_HEAD(ped1);
 									EXPLODE_CHAR_HEAD(ped2);
 									break;
 								}
-								else if (!IS_CHAR_IN_AREA_3D( GetPlayerPed(), 581.95, -543.68, 1.652, 671.95, -453.68, 25.1, 0 ))// если игрок покинул заону
+								else if (!IS_CHAR_IN_AREA_3D( GetPlayerPed(), 581.95, -543.68, 1.652, 671.95, -453.68, 25.1, 0 ))// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 								{
 									skip = 1;
 									break;
@@ -2639,7 +2639,7 @@ void LAWYER_1(void)
 						}
 						else
 						{
-							DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+							DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							while(true)
 							{
 								WAIT(0);
@@ -2649,46 +2649,46 @@ void LAWYER_1(void)
 								}
 							}
 
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
-							REMOVE_BLIP(jury_car2);//Удаляем иконку на радаре
-							SET_CHAR_COORDINATES(ped2, 624.583, -494.482, 4.451);// перемещаем педа
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							REMOVE_BLIP(jury_car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CHAR_COORDINATES(ped2, 624.583, -494.482, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(ped2, -111.38);
 
-							REQUEST_ANIMS( "ped" );//загружаем файл с анимацией
+							REQUEST_ANIMS( "ped" );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							while (!HAVE_ANIMS_LOADED( "ped" )) WAIT(0);
 
-							// камера тут
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 							CREATE_CAM( 14, &camera );
-							POINT_CAM_AT_COORD	( camera, 630.144, -495.907, 4.983); // куда смотрит камера
-							SET_CAM_POS			( camera, 622.264, -492.284, 6.136 );//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 630.144, -495.907, 4.983); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 622.264, -492.284, 6.136 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_ACTIVE( camera, 1 );
 							SET_CAM_PROPAGATE( camera, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
 							SET_CAM_FOV( camera, 45.0 );
 							SET_WIDESCREEN_BORDERS( 1 );
 
-							// проверка игрок в машине
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							if (IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed()))
 							{
-								SET_CHAR_COORDINATES(GetPlayerPed(), 626.771, -498.732, 5.058);// перемещаем игрока
+								SET_CHAR_COORDINATES(GetPlayerPed(), 626.771, -498.732, 5.058);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								SET_CHAR_HEADING(GetPlayerPed(), 105.498);
-								WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 628.82, -495.402, 4.451);// высаживаем игрока
+								WARP_CHAR_FROM_CAR_TO_COORD(GetPlayerPed(), 628.82, -495.402, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								SET_CHAR_HEADING(GetPlayerPed(), 68.201);
 							}
 							else
 							{
-								SET_CHAR_COORDINATES(GetPlayerPed(), 628.82, -495.402, 4.451);// перемещаем игрока
+								SET_CHAR_COORDINATES(GetPlayerPed(), 628.82, -495.402, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 								SET_CHAR_HEADING(GetPlayerPed(), 68.201);
 							}
 
-							// игрок идёт к педу
-							DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
-							TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped3, "duck_cower", "ped", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+							// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
+							DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped3, "duck_cower", "ped", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 							PANIC_SCREAM(ped3);
-							TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 626.697, -494.893, 5.386, 2, -2);//Игрок идёт в пойнт
+							TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 626.697, -494.893, 5.386, 2, -2);//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 							SetTime(250);
 
-							// запускаем диалог
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							NEW_SCRIPTED_CONVERSATION();
 							ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "ROMAN");
 							ADD_LINE_TO_CONVERSATION(0, "R1_BN", "LAW3_3", 0, 0);//Innocent until I say otherwise.
@@ -2701,46 +2701,46 @@ void LAWYER_1(void)
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetSpeech();
 
-							// меняем ракурс
-							POINT_CAM_AT_COORD	( camera, 632.427, -490.956, 5.862); // куда смотрит камера
-							SET_CAM_POS			( camera, 632.131, -491.902, 5.988 );//расположение камеры
-							SET_CHAR_COORDINATES(ped2, 634.284, -489.079, 4.451);// перемещаем педа
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							POINT_CAM_AT_COORD	( camera, 632.427, -490.956, 5.862); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 632.131, -491.902, 5.988 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CHAR_COORDINATES(ped2, 634.284, -489.079, 4.451);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(ped2, -15.774);
 
-							// пед убегает
-							TASK_GO_STRAIGHT_TO_COORD(ped2, 638.477, -471.28, 5.386, 4, -2);//Присяжный бежит
+							// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							TASK_GO_STRAIGHT_TO_COORD(ped2, 638.477, -471.28, 5.386, 4, -2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							NEW_SCRIPTED_CONVERSATION();
 							ADD_NEW_CONVERSATION_SPEAKER(0, GetPlayerPed(), "NIKO");
-							ADD_LINE_TO_CONVERSATION(0, "R1_BQ_XXX1", " ", 0, 0);//Кричит
+							ADD_LINE_TO_CONVERSATION(0, "R1_BQ_XXX1", " ", 0, 0);//пїЅпїЅпїЅпїЅпїЅпїЅ
 							START_SCRIPT_CONVERSATION(1, 1);
 							SetSpeech();
 							//SetTime(3000);
 
-							//убираем камеру
+							//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_BEHIND_PED( GetPlayerPed() );
 							ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 							DESTROY_CAM( camera );
 							SET_WIDESCREEN_BORDERS( 0 );
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// убераем педа
-							SET_CHAR_COORDINATES(ped2, 292.473, -783.685, 5.19);// перемещаем педа
-							TASK_GO_STRAIGHT_TO_COORD(ped2, 292.473, -783.685, 5.19, 4, -2);//Присяжный бежит
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+							SET_CHAR_COORDINATES(ped2, 292.473, -783.685, 5.19);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+							TASK_GO_STRAIGHT_TO_COORD(ped2, 292.473, -783.685, 5.19, 4, -2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 						}
 						car2_des = 1;
 					}
 
-					if ((car1_des == 1) && (car2_des == 1))// если машина 1 и 2 разбиты
+					if ((car1_des == 1) && (car2_des == 1))// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 1 пїЅ 2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					{
 						skip = 2;
 						break;
 					}
-					else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+					else if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					{
 						skip = 1;
 						break;
 					}
-					else if ((IS_CHAR_DEAD(ped1)) || (IS_CHAR_INJURED(ped1)) || (IS_CHAR_DEAD(ped2)) || (IS_CHAR_INJURED(ped2)))//если Присяжный мёртв
+					else if ((IS_CHAR_DEAD(ped1)) || (IS_CHAR_INJURED(ped1)) || (IS_CHAR_DEAD(ped2)) || (IS_CHAR_INJURED(ped2)))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 					{
 						skip = 1;
 						PRINT_STRING_IN_STRING("string", "LAW3_8", 5500, 1);//~r~You killed a Juror!
@@ -2756,42 +2756,42 @@ void LAWYER_1(void)
 				}
 
 				ABORT_SCRIPTED_CONVERSATION( 0 );
-				REMOVE_BLIP(jury_car1);//Удаляем иконку на радаре
-				REMOVE_BLIP(jury_car2);//Удаляем иконку на радаре
-				REMOVE_PICKUP(sweap_1);// выгружаем биту
-				REMOVE_PICKUP(sweap_2);// выгружаем биту
+				REMOVE_BLIP(jury_car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_BLIP(jury_car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_PICKUP(sweap_1);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				REMOVE_PICKUP(sweap_2);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
-				// выгружвем модели
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM2);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM3);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM6);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM2);//выгружаем модель машины
-				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM4);//выгружаем модель машины
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM6);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружвем педов
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped2);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped3);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped6);//выгружаем модель педа(в последствии пед изчезнет
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped6);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружвем машину
-				MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//выгружаем модель машины(в последствии машина изчезнет)
-				MARK_CAR_AS_NO_LONGER_NEEDED(&car2);//выгружаем модель машины(в последствии машина изчезнет)
-				MARK_CAR_AS_NO_LONGER_NEEDED(&car4);//выгружаем модель машины(в последствии машина изчезнет)
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+				MARK_CAR_AS_NO_LONGER_NEEDED(&car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+				MARK_CAR_AS_NO_LONGER_NEEDED(&car4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 
 				if (skip == 1)
 				{
-					SETTIMERA(0); //сбрасываем таймер 
+					SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 					while (true)
 					{
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.6); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
-						DISPLAY_TEXT(0.5, 0.45, "MISSION_FAILED");// пишем "Миссия провалена"
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DISPLAY_TEXT(0.5, 0.45, "MISSION_FAILED");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 						WAIT( 0 );
 						if ( TIMERA() > 3000 )
@@ -2802,22 +2802,22 @@ void LAWYER_1(void)
 				}
 				else if (skip == 2)
 				{
-					SETTIMERA(0); //сбрасываем таймер 
-					TRIGGER_MISSION_COMPLETE_AUDIO(1);//произрываем музыку параметр "(1)" воспроизводит звук из "...\EFLC\pc\audio\Sfx\gps.rpf\GPS\MISSION_COMPLETE_1" (цыфра "6" = "SMC6" в том-же архиве) 
+					SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
+					TRIGGER_MISSION_COMPLETE_AUDIO(1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "(1)" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ "...\EFLC\pc\audio\Sfx\gps.rpf\GPS\MISSION_COMPLETE_1" (пїЅпїЅпїЅпїЅпїЅ "6" = "SMC6" пїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) 
 					while (true)
 					{
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
-						DISPLAY_TEXT(0.5, 0.45, "MISSION_PASSED");// пишем "Миссия завершина"
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DISPLAY_TEXT(0.5, 0.45, "MISSION_PASSED");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						DISPLAY_TEXT_WITH_NUMBER(0.5, 0.5, "CASH", 400);// +5000$
 						
 						WAIT( 0 );
@@ -2826,7 +2826,7 @@ void LAWYER_1(void)
 							break;
 						}
 					}
-					ADD_SCORE( GetPlayerIndex(), +400 );//даём игроку денег
+					ADD_SCORE( GetPlayerIndex(), +400 );//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					G_LAWYER = 4;
 					sutosave = 1;
 				}
@@ -2840,23 +2840,23 @@ void LAWYER_1(void)
 		{
 			if (blip_on == 0)
 			{
-				ADD_BLIP_FOR_COORD(552.217, -293.87, 4.356, &lawyer_ico);//создаем иконку на радаре
-				CHANGE_BLIP_SPRITE(lawyer_ico, BLIP_ROMAN);//текстура иконки на радаре
-				CHANGE_BLIP_SCALE(lawyer_ico, 1.1); // масштаб иконки на радаре
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(lawyer_ico, "NE_LAWYER");//иконка на радаре называние в истории карты "Адвокат"
+				ADD_BLIP_FOR_COORD(552.217, -293.87, 4.356, &lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SPRITE(lawyer_ico, BLIP_ROMAN);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SCALE(lawyer_ico, 1.1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(lawyer_ico, "NE_LAWYER");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 				blip_on = 1;
 			}
-			DRAW_CHECKPOINT( 552.217, -293.87, 4.356, 1.5, 160, 116, 209);//создание чекпойнт на координатах и его цвет
-			GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-			GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 552.217, -293.87, 4.356, &PlayR);//проверка "игрок на координатах"
+			DRAW_CHECKPOINT( 552.217, -293.87, 4.356, 1.5, 160, 116, 209);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+			GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 552.217, -293.87, 4.356, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 			if (( PlayR < 1.5) && (!IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())))
 			{
-				skip = 0; // переменная пропуска
+				skip = 0; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				G_ONMISSION = 1;
-				REMOVE_BLIP(lawyer_ico);//Удаляем иконку на радаре
-				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+				REMOVE_BLIP(lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				
-				DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+				DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				while(true)
 				{
 					WAIT(0);
@@ -2866,7 +2866,7 @@ void LAWYER_1(void)
 					}
 				}
 
-				SET_CHAR_COORDINATES(GetPlayerPed(), 552.036, -293.714, 4.766);// перемещаем игрока
+				SET_CHAR_COORDINATES(GetPlayerPed(), 552.036, -293.714, 4.766);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				SET_CHAR_HEADING(GetPlayerPed(), 52.894);
 				SET_CHAR_COMPONENT_VARIATION(GetPlayerPed(), 1, 1, 0);
 				SET_MAX_WANTED_LEVEL(0);
@@ -2874,10 +2874,10 @@ void LAWYER_1(void)
 				GET_TIME_OF_DAY(&hour, &minute);
 				GET_CURRENT_WEATHER(&weather);
 				FORCE_WEATHER_NOW(WEATHER_EXTRA_SUNNY);
-				FORWARD_TO_TIME_OF_DAY(18, 40);//устанавливаем время
+				FORWARD_TO_TIME_OF_DAY(18, 40);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				
-				//------------ катсцена тут ----------------
-				LOAD_ADDITIONAL_TEXT( "LAW_4", 6 ); // загружаем субтитры из *.GTX
+				//------------ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ ----------------
+				LOAD_ADDITIONAL_TEXT( "LAW_4", 6 ); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ *.GTX
 				START_CUTSCENE_NOW("law_4");
 				while (!HAS_CUTSCENE_LOADED())
 				{
@@ -2895,24 +2895,24 @@ void LAWYER_1(void)
 					DO_SCREEN_FADE_IN(0);
 				}
 
-				FORCE_WEATHER_NOW( weather );//устанавливаем погода
+				FORCE_WEATHER_NOW( weather );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				RELEASE_WEATHER();
-				FORWARD_TO_TIME_OF_DAY(hour, minute);//устанавливаем время
+				FORWARD_TO_TIME_OF_DAY(hour, minute);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-				// иконка бунта
-				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
-				ADD_BLIP_FOR_COORD(731.166, 210.147, 6.354, &Riot);//создаем иконку на радаре
-				CHANGE_BLIP_SPRITE(Riot, BLIP_OBJECTIVE);//текстура иконки на радаре
-				CHANGE_BLIP_COLOUR(Riot, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-				CHANGE_BLIP_SCALE(Riot, 0.6); // масштаб иконки на радаре
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(Riot, "NE_POINT");//иконка на радаре называние в истории карты ""
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				ADD_BLIP_FOR_COORD(731.166, 210.147, 6.354, &Riot);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SPRITE(Riot, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_COLOUR(Riot, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+				CHANGE_BLIP_SCALE(Riot, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(Riot, "NE_POINT");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ ""
 
-				// иконка магазина одежды
-				ADD_BLIP_FOR_COORD(527.259, -601.747, 4.341, &Party_ico);//создаем иконку на радаре
-				CHANGE_BLIP_SPRITE(Party_ico, BLIP_CLOTHES_SHOP);//текстура иконки на радаре
-				CHANGE_BLIP_COLOUR(Party_ico, 0);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-				CHANGE_BLIP_SCALE(Party_ico, 1.1); // масштаб иконки на радаре
-				CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_SHOP");//иконка на радаре называние в истории карты ""
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				ADD_BLIP_FOR_COORD(527.259, -601.747, 4.341, &Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_SPRITE(Party_ico, BLIP_CLOTHES_SHOP);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_COLOUR(Party_ico, 0);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+				CHANGE_BLIP_SCALE(Party_ico, 1.1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				CHANGE_BLIP_NAME_FROM_TEXT_FILE(Party_ico, "NE_SHOP");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ ""
 
 				SetTime(1000);
 				NEW_SCRIPTED_CONVERSATION();
@@ -2929,48 +2929,48 @@ void LAWYER_1(void)
 				Object barrel_1, barrel_2, barrel_3, vorota;
 				Cam camera, camera2, camera3;
 
-				// запрашиваем модели грузовиков
-				uint PedM1 = MODEL_M_M_SECURITYMAN;// Охранник
-				uint PedM2 = MODEL_IG_TUNA;// Рабочий 1
-				uint PedM3 = MODEL_IG_VINNY_SPAZ;// Рабочий 2
-				uint CarM1 = MODEL_FXT;// Грузовик
-				uint barrel = barrel4;// бочка
-				uint vorotaM = vc_electricgate; //ворота
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				uint PedM1 = MODEL_M_M_SECURITYMAN;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				uint PedM2 = MODEL_IG_TUNA;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1
+				uint PedM3 = MODEL_IG_VINNY_SPAZ;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				uint CarM1 = MODEL_FXT;// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				uint barrel = barrel4;// пїЅпїЅпїЅпїЅпїЅ
+				uint vorotaM = vc_electricgate; //пїЅпїЅпїЅпїЅпїЅпїЅ
 				uint ped4_HP, ped5_HP, ped6_HP, ped7_HP, ped8_HP, ped9_HP, ped10_HP, ped11_HP, ped12_HP, ped13_HP;
 				uint ped14_HP, ped15_HP, ped16_HP, ped17_HP, ped18_HP, ped19_HP, ped20_HP, ped21_HP, ped22_HP, ped23_HP, ped24_HP;
 				uint AudID;
 
-				// загружаем модели
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				REQUEST_MODEL(CarM1);
 				while (!HAS_MODEL_LOADED(CarM1)) WAIT(100);
 
-				REQUEST_MODEL(PedM1);// Охранник
-				while (!HAS_MODEL_LOADED(PedM1));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM1);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAS_MODEL_LOADED(PedM1));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(PedM2);// Рабочий 1
-				while (!HAS_MODEL_LOADED(PedM2));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM2);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1
+				while (!HAS_MODEL_LOADED(PedM2));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(PedM3);// Рабочий 2
-				while (!HAS_MODEL_LOADED(PedM3));////проверка "пед загрузился" если нет то начанаем с начало
+				REQUEST_MODEL(PedM3);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				while (!HAS_MODEL_LOADED(PedM3));////пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				REQUEST_MODEL(barrel);// бочки
+				REQUEST_MODEL(barrel);// пїЅпїЅпїЅпїЅпїЅ
 				while (!HAS_MODEL_LOADED(barrel)) WAIT(0);
 				
-				REQUEST_MODEL(vorotaM);// ворота
+				REQUEST_MODEL(vorotaM);// пїЅпїЅпїЅпїЅпїЅпїЅ
 				while (!HAS_MODEL_LOADED(vorotaM)) WAIT(0);
 
-				// создаём ворота
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				CREATE_OBJECT_NO_OFFSET(vorotaM, 731.196, 219.32, 6.078, &vorota, TRUE);
 				SET_OBJECT_DYNAMIC(vorota, 0);
 				SET_OBJECT_INVINCIBLE(vorota, 1);
 				FREEZE_OBJECT_POSITION(vorota, 1);
 
-				// создаём бочки
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				CREATE_OBJECT_NO_OFFSET(barrel, 716.957, 222.311, 6.386, &barrel_1, TRUE);
 				CREATE_OBJECT_NO_OFFSET(barrel, 747.284, 231.978, 6.386, &barrel_2, TRUE);
 				CREATE_OBJECT_NO_OFFSET(barrel, 744.208, 221.089, 6.386, &barrel_3, TRUE);
 
-				// создаём машины
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				CREATE_CAR(CarM1, 744.774, 223.702, 6.354, &car1, TRUE);
 				SET_CAR_HEADING(car1, 89.421);
 				CREATE_CAR(CarM1, 744.774, 229.793, 6.354, &car2, TRUE);
@@ -2978,37 +2978,37 @@ void LAWYER_1(void)
 				CREATE_CAR(CarM1, 719.85, 230.833, 6.354, &car3, TRUE);
 				SET_CAR_HEADING(car3, -90.579);
 
-				// создаём Охранников
-				CREATE_CHAR (26, PedM1, 737.717, 234.072, 6.354, &ped1, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM1, 731.529, 221.274, 6.354, &ped2, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM1, 735.911, 221.376, 6.354, &ped3, TRUE);// создаём педа
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM1, 737.717, 234.072, 6.354, &ped1, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM1, 731.529, 221.274, 6.354, &ped2, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM1, 735.911, 221.376, 6.354, &ped3, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
-				// создаём Рабочих 1
-				CREATE_CHAR (26, PedM2, 726.113, 216.401, 6.354, &ped4, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 737.019, 211.426, 6.354, &ped5, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 740.795, 216.692, 6.354, &ped6, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 731.361, 214.974, 6.354, &ped7, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 726.873, 210.934, 6.354, &ped8, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 735.413, 214.706, 6.354, &ped9, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 741.986, 213.132, 6.354, &ped10, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 739.796, 209.501, 6.354, &ped11, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 730.041, 212.085, 6.354, &ped12, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 736.509, 217.536, 6.354, &ped13, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM2, 731.682, 209.003, 6.354, &ped14, TRUE);// создаём педа
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1
+				CREATE_CHAR (26, PedM2, 726.113, 216.401, 6.354, &ped4, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 737.019, 211.426, 6.354, &ped5, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 740.795, 216.692, 6.354, &ped6, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 731.361, 214.974, 6.354, &ped7, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 726.873, 210.934, 6.354, &ped8, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 735.413, 214.706, 6.354, &ped9, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 741.986, 213.132, 6.354, &ped10, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 739.796, 209.501, 6.354, &ped11, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 730.041, 212.085, 6.354, &ped12, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 736.509, 217.536, 6.354, &ped13, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM2, 731.682, 209.003, 6.354, &ped14, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
-				// создаём Рабочих 2
-				CREATE_CHAR (26, PedM3, 723.234, 212.966, 6.354, &ped15, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 728.926, 208.093, 6.354, &ped16, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 726.826, 213.711, 6.354, &ped17, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 729.155, 216.309, 6.354, &ped18, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 732.908, 217.047, 6.354, &ped19, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 733.013, 212.894, 6.354, &ped20, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 734.284, 210.596, 6.354, &ped21, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 736.751, 207.754, 6.354, &ped22, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 738.673, 215.755, 6.354, &ped23, TRUE);// создаём педа
-				CREATE_CHAR (26, PedM3, 741.959, 210.859, 6.354, &ped24, TRUE);// создаём педа
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2
+				CREATE_CHAR (26, PedM3, 723.234, 212.966, 6.354, &ped15, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 728.926, 208.093, 6.354, &ped16, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 726.826, 213.711, 6.354, &ped17, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 729.155, 216.309, 6.354, &ped18, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 732.908, 217.047, 6.354, &ped19, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 733.013, 212.894, 6.354, &ped20, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 734.284, 210.596, 6.354, &ped21, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 736.751, 207.754, 6.354, &ped22, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 738.673, 215.755, 6.354, &ped23, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+				CREATE_CHAR (26, PedM3, 741.959, 210.859, 6.354, &ped24, TRUE);// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
-				// поворачиваем педов
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 				SET_CHAR_HEADING(ped1, -175.01);
 				SET_CHAR_HEADING(ped2, -170.01);
 				SET_CHAR_HEADING(ped3, 175.01);
@@ -3036,7 +3036,7 @@ void LAWYER_1(void)
 				SET_CHAR_HEADING(ped23, 0.01);
 				SET_CHAR_HEADING(ped24, 0.01);
 
-				// настройки "Свой-чужой" тут
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅ
 				int dm, cdm;
 				LOAD_CHAR_DECISION_MAKER(2, &dm); // 4
 				LOAD_COMBAT_DECISION_MAKER(3, &cdm); // 3 10
@@ -3250,43 +3250,43 @@ void LAWYER_1(void)
 				UpdateWeaponOfPed(ped3, WEAPON_EPISODIC_24);
 				SET_CURRENT_CHAR_WEAPON(ped3, WEAPON_EPISODIC_24, TRUE);
 
-				// загружаем анимацию
-				REQUEST_ANIMS( "amb@bum_a" );//загружаем файл с анимацией
-				while (!HAVE_ANIMS_LOADED( "amb@bum_a" ));//если файл с анимацией не загружен начанаем с начало
-				REQUEST_ANIMS( "amb@nightclub_ext" );//загружаем файл с анимацией
-				while (!HAVE_ANIMS_LOADED( "amb@nightclub_ext" ));//если файл с анимацией не загружен начанаем с начало
-				REQUEST_ANIMS( "amb@payphone" );//загружаем файл с анимацией
-				while (!HAVE_ANIMS_LOADED( "amb@payphone" ));//если файл с анимацией не загружен начанаем с начало
-				REQUEST_ANIMS( "ped" );//загружаем файл с анимацией
-				while (!HAVE_ANIMS_LOADED( "ped" ));//если файл с анимацией не загружен начанаем с начало
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				REQUEST_ANIMS( "amb@bum_a" );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAVE_ANIMS_LOADED( "amb@bum_a" ));//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REQUEST_ANIMS( "amb@nightclub_ext" );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAVE_ANIMS_LOADED( "amb@nightclub_ext" ));//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REQUEST_ANIMS( "amb@payphone" );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAVE_ANIMS_LOADED( "amb@payphone" ));//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REQUEST_ANIMS( "ped" );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				while (!HAVE_ANIMS_LOADED( "ped" ));//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// воспроизводим анимацию
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped6, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped8, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped13, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped20, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped6, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped8, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped13, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped20, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 				WAIT(200);
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped4, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped17, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped21, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped15, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped4, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped17, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped21, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped15, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 				WAIT(200);
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped9, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped23, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped18, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped24, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped9, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped23, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped18, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped24, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 				WAIT(200);
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped7, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped22, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped12, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped5, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped7, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped22, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped12, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped5, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 				WAIT(200);
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped10, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped11, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped14, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped16, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped10, "angryman", "amb@payphone", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped11, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped14, "stand_rant_b", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped16, "stand_rant_a", "amb@bum_a", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 				WAIT(200);
-				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped19, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+				TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped19, "street_argue_a", "amb@nightclub_ext", 1.0, 1, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 
 				sound = 0;
 				soundID = 1;
@@ -3321,7 +3321,7 @@ void LAWYER_1(void)
 				car2_des2 = 0;
 				vorotaX = 731.196;
 
-				// воспроизводим звук
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 				while (!(REQUEST_AMBIENT_AUDIO_BANK( "SCRIPT_MISSION/LAWRIOT" )))
 				{
 					 WAIT(0);
@@ -3333,32 +3333,32 @@ void LAWYER_1(void)
 				{
 					WAIT(0);
 
-					// чекпойнт смены одежды
+					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 					if (skin == 0)
 					{
-						DRAW_CHECKPOINT( 527.259, -601.747, 4.341, 1.5, 160, 116, 209);//создание чекпойнт на координатах и его цвет
-						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-						GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 527.259, -601.747, 4.341, &PlayR);//проверка "игрок на координатах"
+						DRAW_CHECKPOINT( 527.259, -601.747, 4.341, 1.5, 160, 116, 209);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+						GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 527.259, -601.747, 4.341, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 						if (( PlayR < 1.5) && (!IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed())))
 						{
 							skin = 1;
-							REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+							REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// камера сверху
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							CREATE_CAM( 14, &camera );
-							POINT_CAM_AT_COORD	( camera, 530.273, -604.626, 4.197 ); // куда смотрит камера
-							SET_CAM_POS			( camera, 522.552, -596.448, 16.414 );//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 530.273, -604.626, 4.197 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 522.552, -596.448, 16.414 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_ACTIVE( camera, 1 );
 							SET_CAM_PROPAGATE( camera, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
 							SET_CAM_FOV( camera, 45.0 );
 							SET_WIDESCREEN_BORDERS( 1 );
 
-							TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 529.623, -603.946, 4.766, 2, -2);// Томми идёт в двери
+							TASK_GO_STRAIGHT_TO_COORD(GetPlayerPed(), 529.623, -603.946, 4.766, 2, -2);// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 							SetTime(1000);
 
-							DO_SCREEN_FADE_OUT( 1000 );// Затемняем экран
+							DO_SCREEN_FADE_OUT( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 							while(true)
 							{
 								WAIT(0);
@@ -3367,34 +3367,34 @@ void LAWYER_1(void)
 									break;
 								}
 							}
-							// переодивание	
-							SET_CHAR_COMPONENT_VARIATION(GetPlayerPed(), 1, 2, 0);// куртка
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ	
+							SET_CHAR_COMPONENT_VARIATION(GetPlayerPed(), 1, 2, 0);// пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							SET_CHAR_COORDINATES(GetPlayerPed(), 528.664, -602.916, 4.766);// перемещаем игрока
+							SET_CHAR_COORDINATES(GetPlayerPed(), 528.664, -602.916, 4.766);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CHAR_HEADING(GetPlayerPed(), 52.9);
 							SetTime(200);
-							DO_SCREEN_FADE_IN( 1000 );// убирается затемнение экрана
+							DO_SCREEN_FADE_IN( 1000 );// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-							// подём камеры
+							// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							CREATE_CAM( 3, &camera2 );
 							CREATE_CAM( 14, &camera3 );
-							POINT_CAM_AT_COORD	( camera, 528.442, -602.798, 4.56 ); // куда смотрит камера
-							SET_CAM_POS			( camera, 527.141, -601.545, 5.08 );//расположение камеры
-							POINT_CAM_AT_COORD	( camera3, 528.442, -602.798, 5.839 ); // куда смотрит камера
-							SET_CAM_POS			( camera3, 527.141, -601.545, 5.08 );//расположение камеры
-							SET_CAM_INTERP_STYLE_CORE( camera2, camera, camera3, 3500, 0 ); //перемещение камеры от игрока на точку указанную в координатах "SET_CAM_POS(camera, X, Y, Z)" 
+							POINT_CAM_AT_COORD	( camera, 528.442, -602.798, 4.56 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 527.141, -601.545, 5.08 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							POINT_CAM_AT_COORD	( camera3, 528.442, -602.798, 5.839 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera3, 527.141, -601.545, 5.08 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_INTERP_STYLE_CORE( camera2, camera, camera3, 3500, 0 ); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "SET_CAM_POS(camera, X, Y, Z)" 
 							SET_CAM_ACTIVE( camera2, 1 );
 							SET_CAM_PROPAGATE( camera2, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
-							SET_WIDESCREEN_BORDERS( 1 ); //отключаем инетрфейс
+							SET_WIDESCREEN_BORDERS( 1 ); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 							SetTime(5000);
 
 							ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 							DESTROY_CAM( camera );
 							DESTROY_CAM( camera2 );
 							DESTROY_CAM( camera3 );
-							SET_WIDESCREEN_BORDERS( 0 ); //возвращаем инетрфейс
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+							SET_WIDESCREEN_BORDERS( 0 ); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							PRINT_STRING_IN_STRING("string", "NE_LAW4_1", 5500, 1);//~g~Drive to the site of the workers' strike.
 						}
 					}
@@ -3421,9 +3421,9 @@ void LAWYER_1(void)
 					GET_CHAR_HEALTH(ped23, &ped23_HP);
 					GET_CHAR_HEALTH(ped24, &ped24_HP);
 
-					// чекпойнт бунта
-					GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//вписываем координаты игрока в переменную
-					GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 731.166, 210.147, 6.354, &PlayR);//проверка "игрок на координатах"
+					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+					GET_CHAR_COORDINATES(GetPlayerPed(),  &PlayX, &PlayY, &PlayZ);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					GET_DISTANCE_BETWEEN_COORDS_3D( PlayX, PlayY, PlayZ, 731.166, 210.147, 6.354, &PlayR);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 					if (( PlayR < 40.0) && (sound == 0))
 					{
 						SETTIMERB( 0 );
@@ -3463,7 +3463,7 @@ void LAWYER_1(void)
 					}
 					if (( PlayR < 25.0) && (textID == 0))
 					{
-						// начните драку с несколькими рабочими
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						PRINT_STRING_IN_STRING("string", "LAW4_13", 5500, 1);//~g~Start fighting with at least 4 workers to get a riot started.
 						textID = 1;
 					}
@@ -3493,16 +3493,16 @@ void LAWYER_1(void)
 					if (((riotID > 3) && (riotON == 0)) || ((IS_CHAR_IN_AREA_3D( GetPlayerPed(), 716.176, 219.828, 5.218, 748.176, 235.758, 15.218, 0 )) && (riotON == 0)))
 					{
 						riotON = 1;
-						REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-						REMOVE_BLIP(Riot);//Удаляем иконку на радаре
+						REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						REMOVE_BLIP(Riot);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 						if (riotID > 3)
 						{
-							// камера на ворота
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+							// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							CREATE_CAM( 14, &camera );
-							POINT_CAM_AT_COORD	( camera, 733.589, 220.041, 6.696 ); // куда смотрит камера
-							SET_CAM_POS			( camera, 728.927, 224.124, 7.243);//расположение камеры
+							POINT_CAM_AT_COORD	( camera, 733.589, 220.041, 6.696 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+							SET_CAM_POS			( camera, 728.927, 224.124, 7.243);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_ACTIVE( camera, 1 );
 							SET_CAM_PROPAGATE( camera, 1 );
 							ACTIVATE_SCRIPTED_CAMS(1, 1);
@@ -3514,7 +3514,7 @@ void LAWYER_1(void)
 							START_SCRIPT_CONVERSATION(1, 1);
 							soundID = 3;
 
-							// открываем ворота
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							while (true)
 							{
 								WAIT( 0 );
@@ -3527,42 +3527,42 @@ void LAWYER_1(void)
 							}
 							SetSpeech();
 
-							TASK_GO_STRAIGHT_TO_COORD(ped2, 732.049, 218.421, 6.354, 2, -2);// Пед идёт в пойнт
-							TASK_GO_STRAIGHT_TO_COORD(ped3, 736.048, 218.378, 6.354, 2, -2);// Пед идёт в пойнт
+							TASK_GO_STRAIGHT_TO_COORD(ped2, 732.049, 218.421, 6.354, 2, -2);// пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
+							TASK_GO_STRAIGHT_TO_COORD(ped3, 736.048, 218.378, 6.354, 2, -2);// пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 							SetTime(2000);
 
-							// убираем камиру
+							// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 							SET_CAM_BEHIND_PED( GetPlayerPed() );
 							ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 							DESTROY_CAM( camera );
 							SET_WIDESCREEN_BORDERS( 0 );
-							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+							SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						}
 
 						SET_OBJECT_COORDINATES(vorota, 737.8, 219.32, 6.078);
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped4, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped5, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped6, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped7, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped8, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped9, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped10, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped11, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped12, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped13, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped14, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped15, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped16, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped17, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped18, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped19, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped20, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped21, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped22, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped23, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
-						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped24, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//Воиспроизвидение анимации на педе
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped4, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped5, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped6, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped7, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped8, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped9, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped10, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped11, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped12, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped13, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped14, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped15, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped16, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped17, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped18, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped19, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped20, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped21, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped22, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped23, "nm_melee", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
+						TASK_PLAY_ANIM_NON_INTERRUPTABLE( ped24, "fuck_u", "ped", 1.0, 0, 0, 0, 0, -1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 
-						// бунт тут
+						// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 						SET_SENSE_RANGE(ped1, 15.01);
 						SET_SENSE_RANGE(ped2, 10.01);
 						SET_SENSE_RANGE(ped3, 10.01);
@@ -3617,47 +3617,47 @@ void LAWYER_1(void)
 						PRINT_STRING_IN_STRING("string", "LAW4_14", 5500, 1);//~g~Destroy the vans in the compound!
 
 						ADD_BLIP_FOR_CAR(car1, &lance_car);
-						CHANGE_BLIP_SPRITE(lance_car, BLIP_OBJECTIVE);//текстура иконки на радаре
-						CHANGE_BLIP_COLOUR(lance_car, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-						CHANGE_BLIP_NAME_FROM_TEXT_FILE(lance_car, "MO_TARGET");//иконка на радаре "Связной"
-						CHANGE_BLIP_SCALE(lance_car, 0.6); // масштаб иконки на радаре
+						CHANGE_BLIP_SPRITE(lance_car, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						CHANGE_BLIP_COLOUR(lance_car, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+						CHANGE_BLIP_NAME_FROM_TEXT_FILE(lance_car, "MO_TARGET");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+						CHANGE_BLIP_SCALE(lance_car, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 						ADD_BLIP_FOR_CAR(car2, &jury_car1);
-						CHANGE_BLIP_SPRITE(jury_car1, BLIP_OBJECTIVE);//текстура иконки на радареjury_car1
-						CHANGE_BLIP_COLOUR(jury_car1, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-						CHANGE_BLIP_NAME_FROM_TEXT_FILE(jury_car1, "MO_TARGET");//иконка на радаре "Связной"
-						CHANGE_BLIP_SCALE(jury_car1, 0.6); // масштаб иконки на радаре
+						CHANGE_BLIP_SPRITE(jury_car1, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅjury_car1
+						CHANGE_BLIP_COLOUR(jury_car1, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+						CHANGE_BLIP_NAME_FROM_TEXT_FILE(jury_car1, "MO_TARGET");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+						CHANGE_BLIP_SCALE(jury_car1, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 						ADD_BLIP_FOR_CAR(car3, &jury_car2);
-						CHANGE_BLIP_SPRITE(jury_car2, BLIP_OBJECTIVE);//текстура иконки на радареjury_car1
-						CHANGE_BLIP_COLOUR(jury_car2, 19);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-						CHANGE_BLIP_NAME_FROM_TEXT_FILE(jury_car2, "MO_TARGET");//иконка на радаре "Связной"
-						CHANGE_BLIP_SCALE(jury_car2, 0.6); // масштаб иконки на радаре
+						CHANGE_BLIP_SPRITE(jury_car2, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅjury_car1
+						CHANGE_BLIP_COLOUR(jury_car2, 19);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+						CHANGE_BLIP_NAME_FROM_TEXT_FILE(jury_car2, "MO_TARGET");//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+						CHANGE_BLIP_SCALE(jury_car2, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						skin = 1;
 					}
 
 					if ((riotON == 1) && (IS_CHAR_IN_AREA_3D( GetPlayerPed(), 716.176, 219.828, 5.218, 748.176, 235.758, 15.218, 0 )))
 					{
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//замораживаем игрока
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						CREATE_CAM( 14, &camera );
-						POINT_CAM_AT_COORD	( camera, 737.311, 233.431, 6.871 ); // куда смотрит камера
-						SET_CAM_POS			( camera, 730.188, 225.704, 9.987 );//расположение камеры
+						POINT_CAM_AT_COORD	( camera, 737.311, 233.431, 6.871 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 730.188, 225.704, 9.987 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_ACTIVE( camera, 1 );
 						SET_CAM_PROPAGATE( camera, 1 );
 						ACTIVATE_SCRIPTED_CAMS(1, 1);
 						SetTime(4000);
 
-						// меняем ракурс
-						POINT_CAM_AT_COORD	( camera, 748.657, 232.445, 5.295 ); // куда смотрит камера
-						SET_CAM_POS			( camera, 732.313, 232.226, 8.498 );//расположение камеры
+						// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						POINT_CAM_AT_COORD	( camera, 748.657, 232.445, 5.295 ); // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_CAM_POS			( camera, 732.313, 232.226, 8.498 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SetTime(4000);
 
-						// убираем камиру
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_CAM_BEHIND_PED( GetPlayerPed() );
 						ACTIVATE_SCRIPTED_CAMS( 0, 0 );
 						DESTROY_CAM( camera );
 						SET_WIDESCREEN_BORDERS( 0 );
-						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//размораживаем игрока
+						SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 						TASK_COMBAT(ped1, GetPlayerPed());
 						TASK_COMBAT(ped2, ped7);
@@ -3675,21 +3675,21 @@ void LAWYER_1(void)
 					
 					if ((IS_CAR_DEAD(car1)) && (car1_des == 0))
 					{
-						REMOVE_BLIP(lance_car);//Удаляем иконку на радаре
+						REMOVE_BLIP(lance_car);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						car1_des = 1;
 					}
 					if ((IS_CAR_DEAD(car2)) && (car2_des == 0))
 					{
-						REMOVE_BLIP(jury_car1);//Удаляем иконку на радаре
+						REMOVE_BLIP(jury_car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						car2_des = 1;
 					}
 					if ((IS_CAR_DEAD(car3)) && (car2_des2 == 0))
 					{
-						REMOVE_BLIP(jury_car2);//Удаляем иконку на радаре
+						REMOVE_BLIP(jury_car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						car2_des2 = 1;
 					}
 
-					if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+					if ((IS_CHAR_DEAD(GetPlayerPed())) || (HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					{
 						skip = 1;
 						break;
@@ -3697,7 +3697,7 @@ void LAWYER_1(void)
 					else if ((car1_des == 1) && (car2_des == 1) && (car2_des2 == 1))
 					{
 						WAIT( 500 );
-						if ((!IS_CHAR_DEAD(GetPlayerPed())) && (!HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//если игрок мёртв или аврестован
+						if ((!IS_CHAR_DEAD(GetPlayerPed())) && (!HAS_CHAR_BEEN_ARRESTED(GetPlayerPed())))//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						{
 							skip = 2;
 							break;
@@ -3710,63 +3710,63 @@ void LAWYER_1(void)
 					}
 				}
 
-				// удаляем звук
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 				STOP_SOUND(AudID);
 				RELEASE_SOUND_ID(AudID);
 				SET_MAX_WANTED_LEVEL(6);
 
-				REMOVE_BLIP(Party_ico);//Удаляем иконку на радаре
-				REMOVE_BLIP(Riot);//Удаляем иконку на радаре
-				REMOVE_BLIP(lance_car);//Удаляем иконку на радаре
-				REMOVE_BLIP(jury_car1);//Удаляем иконку на радаре
-				REMOVE_BLIP(jury_car2);//Удаляем иконку на радаре
+				REMOVE_BLIP(Party_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_BLIP(Riot);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_BLIP(lance_car);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_BLIP(jury_car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				REMOVE_BLIP(jury_car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружвем модели
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//выгружаем модель
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM2);//выгружаем модель
-				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM3);//выгружаем модель
-				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//выгружаем модель
-				MARK_MODEL_AS_NO_LONGER_NEEDED(barrel);//выгружаем модель
-				MARK_MODEL_AS_NO_LONGER_NEEDED(vorotaM);//выгружаем модель
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(PedM3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(CarM1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(barrel);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_MODEL_AS_NO_LONGER_NEEDED(vorotaM);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружвем педов
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped2);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped3);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped4);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped5);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped6);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped7);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped8);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped9);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped10);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped11);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped12);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped13);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped14);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped15);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped16);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped17);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped18);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped19);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped20);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped21);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped22);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped23);//выгружаем модель педа(в последствии пед изчезнет
-				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped24);//выгружаем модель педа(в последствии пед изчезнет
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped4);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped5);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped6);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped7);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped8);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped9);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped10);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped11);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped12);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped13);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped14);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped15);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped16);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped17);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped18);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped19);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped20);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped21);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped22);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped23);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CHAR_AS_NO_LONGER_NEEDED(&ped24);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-				// выгружвем машину
-				MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//выгружаем модель машины(в последствии машина изчезнет)
-				MARK_CAR_AS_NO_LONGER_NEEDED(&car2);//выгружаем модель машины(в последствии машина изчезнет)
-				MARK_CAR_AS_NO_LONGER_NEEDED(&car3);//выгружаем модель машины(в последствии машина изчезнет)
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				MARK_CAR_AS_NO_LONGER_NEEDED(&car1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+				MARK_CAR_AS_NO_LONGER_NEEDED(&car2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+				MARK_CAR_AS_NO_LONGER_NEEDED(&car3);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 
-				// удаляем объекты
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				DELETE_OBJECT(&barrel_1);
 				DELETE_OBJECT(&barrel_2);
 				DELETE_OBJECT(&barrel_3);
 				DELETE_OBJECT(&vorota);
 
-				// выгружаем бочки и ворота
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				MARK_OBJECT_AS_NO_LONGER_NEEDED(&barrel_1);
 				MARK_OBJECT_AS_NO_LONGER_NEEDED(&barrel_2);
 				MARK_OBJECT_AS_NO_LONGER_NEEDED(&barrel_3);
@@ -3774,15 +3774,15 @@ void LAWYER_1(void)
 
 				if (skip == 1)
 				{
-					SETTIMERA(0); //сбрасываем таймер 
+					SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 					while (true)
 					{
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.6); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
-						DISPLAY_TEXT(0.5, 0.45, "MISSION_FAILED");// пишем "Миссия провалена"
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DISPLAY_TEXT(0.5, 0.45, "MISSION_FAILED");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 						WAIT( 0 );
 						if ( TIMERA() > 3000 )
@@ -3794,22 +3794,22 @@ void LAWYER_1(void)
 				else if (skip == 2)
 				{
 					PRINT_HELP("CLOTH3"); //Coveralls outfit delivered to Tooled Up in The North Point Mall.
-					SETTIMERA(0); //сбрасываем таймер 
-					TRIGGER_MISSION_COMPLETE_AUDIO(1);//произрываем музыку параметр "(1)" воспроизводит звук из "...\EFLC\pc\audio\Sfx\gps.rpf\GPS\MISSION_COMPLETE_1" (цыфра "6" = "SMC6" в том-же архиве) 
+					SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
+					TRIGGER_MISSION_COMPLETE_AUDIO(1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "(1)" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ "...\EFLC\pc\audio\Sfx\gps.rpf\GPS\MISSION_COMPLETE_1" (пїЅпїЅпїЅпїЅпїЅ "6" = "SMC6" пїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) 
 					while (true)
 					{
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
-						DISPLAY_TEXT(0.5, 0.45, "MISSION_PASSED");// пишем "Миссия завершина"
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						DISPLAY_TEXT(0.5, 0.45, "MISSION_PASSED");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
-						SET_TEXT_COLOUR(255, 159, 255, 255); // задаём цвет текста
-						SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+						SET_TEXT_COLOUR(255, 159, 255, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-						SET_TEXT_CENTRE(1); // задаём центр текста
+						SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+						SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						DISPLAY_TEXT_WITH_NUMBER(0.5, 0.5, "CASH", 1000);// +5000$
 						
 						WAIT( 0 );
@@ -3818,7 +3818,7 @@ void LAWYER_1(void)
 							break;
 						}
 					}
-					ADD_SCORE( GetPlayerIndex(), +1000 );//даём игроку денег
+					ADD_SCORE( GetPlayerIndex(), +1000 );//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					G_LAWYER = 5;
 					G_AVERY = 1;
 					sutosave = 1;
@@ -3836,7 +3836,7 @@ void LAWYER_1(void)
 		{
 			if (blip_on == 1)
 			{
-				REMOVE_BLIP(lawyer_ico);//Удаляем иконку на радаре
+				REMOVE_BLIP(lawyer_ico);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				blip_on = 0;
 			}
 		}

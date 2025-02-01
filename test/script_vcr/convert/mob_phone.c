@@ -1940,21 +1940,21 @@ void call_43(void)
 }
 
 // Disable in Phone call to avoid change weapon while player is on phone
-void DisablePlayerControls(int disable)
-{
-	if (disable == 1)
-	{
-		SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_UNARMED, TRUE);
-		SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );
-		SET_CAMERA_CONTROLS_DISABLED_WITH_PLAYER_CONTROLS(0);
-	}
-	else 
-	{
-		SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_UNARMED, TRUE);
-		SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );
-		SET_CAMERA_CONTROLS_DISABLED_WITH_PLAYER_CONTROLS(0);
-	}
-}
+// void DisablePlayerControls(int disable)
+// {
+// 	if (disable == 1)
+// 	{
+// 		SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_UNARMED, TRUE);
+// 		SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 0, 0, 0 );
+// 		SET_CAMERA_CONTROLS_DISABLED_WITH_PLAYER_CONTROLS(0);
+// 	}
+// 	else 
+// 	{
+// 		SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_UNARMED, TRUE);
+// 		SET_PLAYER_CONTROL_ADVANCED( GetPlayerIndex(), 1, 1, 1 );
+// 		SET_CAMERA_CONTROLS_DISABLED_WITH_PLAYER_CONTROLS(0);
+// 	}
+// }
 
 void set_anim_in(void)
 {
@@ -1962,10 +1962,11 @@ void set_anim_in(void)
 	while (!HAVE_ANIMS_LOADED( "cellphone" )) WAIT(0);
 	
 	ATTACH_OBJECT_TO_PED( trubka_1, GetPlayerPed(), 1232, 0.070, 0.052, 0.003, 3.30000000, 0.30000000, -0.45000000, 0 );
-	DisablePlayerControls(1);
+	//DisablePlayerControls(1);
 	TASK_PLAY_ANIM_SECONDARY_UPPER_BODY( GetPlayerPed(), "cellphone_in", "cellphone", 8.0, 0, 0, 0, 1, -1 );//���������������� �������� �� ����
 	WAIT(1000);
-	TASK_PLAY_ANIM_SECONDARY_UPPER_BODY( GetPlayerPed(), "cellphone_talk", "cellphone", 8.0, 1, 0, 0, 0, -1 );//���������������� �������� �� ����
+	TASK_PLAY_ANIM_NON_INTERRUPTABLE( GetPlayerPed(), "cellphone_talk",  "cellphone", 8.0, 1, 0, 0, 0, -1 );//���������������� �������� �� ����
+	// TASK_PLAY_ANIM_SECONDARY_UPPER_BODY( GetPlayerPed(), "cellphone_talk", "cellphone", 8.0, 1, 0, 0, 0, -1 );//���������������� �������� �� ����
 	incoming_call = 1;
 }
 void set_anim_out(void)
@@ -1975,7 +1976,7 @@ void set_anim_out(void)
 	DETACH_OBJECT( trubka_1, 1 );
 	SET_OBJECT_COORDINATES(trubka_1, 1.1, 1.1, -1.1);
 	incoming_call = 0;
-	DisablePlayerControls(0);
+	//DisablePlayerControls(0);
 }
 void melodi(void)
 {
@@ -2011,6 +2012,7 @@ void melodi(void)
 			STOP_MOBILE_PHONE_RINGING();
 			CLEAR_HELP(); // ������� ����� ���������
 			set_anim_in();
+			// LOGICA DA ARMA AQUI INCOMING CALL
 			call_drop = 0;
 			break;
 		}

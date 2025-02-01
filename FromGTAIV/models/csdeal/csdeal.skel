@@ -1,0 +1,534 @@
+Version 107 11
+NumBones 26
+Flags HaveBoneMappings HaveBoneWorldOrient AuthoredOrientation
+bone Char
+{
+	Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+	Index 0
+	Id 0
+	Mirror 0
+	LocalOffset 0.00000000 0.00000000 0.00000000
+	RotationEuler 0.00000000 0.00000000 0.00000000
+	RotationQuaternion 0.00000000 0.00000000 0.00000000 1.00000000
+	Scale 0.00000000 0.00000000 0.00000000
+	WorldOffset 0.00000000 0.00000000 0.00000000
+	Orient 0.00000000 0.00000000 0.00000000
+	Sorient 0.00000000 0.00000000 0.00000000
+	TransMin 0.00000000 0.00000000 0.00000000
+	TransMax 1.00000000 1.00000000 1.00000000
+	RotMin -3.14159000 -3.14159000 -3.14159000
+	RotMax 3.14159000 3.14159000 3.14159000
+	Children 1
+	{
+		bone Pelvis
+		{
+			Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+			Index 1
+			Id 1
+			Mirror 1
+			LocalOffset 0.00019699 -0.00002100 0.00000000
+			RotationEuler -1.57080000 -1.57080000 0.00000000
+			RotationQuaternion -0.50000000 -0.50000000 -0.50000000 0.50000100
+			Scale 0.00000000 0.00000000 0.00000000
+			WorldOffset 0.00019699 -0.00002100 0.00000000
+			Orient -1.57080000 -1.57080000 0.00000000
+			Sorient 0.00000000 0.00000000 0.00000000
+			TransMin 0.00000000 0.00000000 0.00000000
+			TransMax 1.00000000 1.00000000 1.00000000
+			RotMin -3.14159000 -3.14159000 -3.14159000
+			RotMax 3.14159000 3.14159000 3.14159000
+			Children 1
+			{
+				bone Spine
+				{
+					Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+					Index 2
+					Id 2
+					Mirror 2
+					LocalOffset -0.00640578 -0.05074580 0.00452879
+					RotationEuler -0.00000429 0.00000122 0.00079662
+					RotationQuaternion -0.00000215 0.00000069 0.00039829 1.00000000
+					Scale 0.00000000 0.00000012 0.00000012
+					WorldOffset -0.05054880 0.00450777 -0.00640573
+					Orient -0.00000429 0.00000122 0.00079662
+					Sorient 0.00000000 0.00000000 0.00000000
+					TransMin 0.00000000 0.00000000 0.00000000
+					TransMax 1.00000000 1.00000000 1.00000000
+					RotMin -3.14159000 -3.14159000 -3.14159000
+					RotMax 3.14159000 3.14159000 3.14159000
+					Children 3
+					{
+						bone Spine1
+						{
+							Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+							Index 3
+							Id 3
+							Mirror 3
+							LocalOffset 0.27461800 -0.00019343 0.00000000
+							RotationEuler 0.00000000 -0.00000018 0.00000000
+							RotationQuaternion 0.00000000 0.00000000 0.00000000 1.00000000
+							Scale 0.00000000 0.00000012 -0.00000012
+							WorldOffset -0.05052320 0.00450713 0.26821200
+							Orient 0.00000000 -0.00000018 0.00000000
+							Sorient 0.00000000 0.00000000 0.00000000
+							TransMin 0.00000000 0.00000000 0.00000000
+							TransMax 1.00000000 1.00000000 1.00000000
+							RotMin -3.14159000 -3.14159000 -3.14159000
+							RotMax 3.14159000 3.14159000 3.14159000
+							Children 1
+							{
+								bone Neck
+								{
+									Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+									Index 4
+									Id 4
+									Mirror 4
+									LocalOffset 0.24305500 -0.00013956 0.00000000
+									RotationEuler 0.00000000 0.00000069 0.20944100
+									RotationQuaternion 0.00000000 0.00000051 0.10452900 0.99452190
+									Scale 0.00000000 -0.00000036 -0.00000012
+									WorldOffset -0.05046890 0.00450653 0.51126700
+									Orient 0.00000000 0.00000069 0.20944100
+									Sorient 0.00000000 0.00000000 0.00000000
+									TransMin 0.00000000 0.00000000 0.00000000
+									TransMax 1.00000000 1.00000000 1.00000000
+									RotMin -3.14159000 -3.14159000 -3.14159000
+									RotMax 3.14159000 3.14159000 3.14159000
+									Children 3
+									{
+										bone Head
+										{
+											Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+											Index 5
+											Id 5
+											Mirror 5
+											LocalOffset 0.17929200 0.00000000 -0.00000018
+											RotationEuler 0.00000000 -0.00000017 -0.21023700
+											RotationQuaternion 0.00000000 0.00000013 -0.10492500 0.99448000
+											Scale 0.00000036 0.00000060 0.00000012
+											WorldOffset -0.01305190 0.00450570 0.68661200
+											Orient 0.00000000 -0.00000017 -0.21023700
+											Sorient 0.00000000 0.00000000 0.00000000
+											TransMin 0.00000000 0.00000000 0.00000000
+											TransMax 1.00000000 1.00000000 1.00000000
+											RotMin -3.14159000 -3.14159000 -3.14159000
+											RotMax 3.14159000 3.14159000 3.14159000
+										}
+										bone Bip01_L_Clavicle
+										{
+											Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+											Index 6
+											Id 31
+											Mirror 6
+											LocalOffset 0.00189924 0.00904398 0.04264320
+											RotationEuler 1.57079000 -1.40499000 1.36056000
+											RotationQuaternion -0.70693200 0.01570730 -0.69464500 -0.13216900
+											Scale 0.00000036 0.00000095 0.00000060
+											WorldOffset -0.04122760 0.04714960 0.51123700
+											Orient 1.57079000 -1.40499000 1.36056000
+											Sorient 0.00000000 0.00000000 0.00000000
+											TransMin 0.00000000 0.00000000 0.00000000
+											TransMax 1.00000000 1.00000000 1.00000000
+											RotMin -3.14159000 -3.14159000 -3.14159000
+											RotMax 3.14159000 3.14159000 3.14159000
+											Children 1
+											{
+												bone L_UpperArm
+												{
+													Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+													Index 7
+													Id 32
+													Mirror 7
+													LocalOffset 0.15049500 0.00000000 -0.00000018
+													RotationEuler -0.00000049 0.00000027 0.16581100
+													RotationQuaternion -0.00000023 0.00000000 0.08281060 0.99656500
+													Scale -0.00000042 -0.00000024 -0.00000048
+													WorldOffset -0.01638830 0.19558100 0.51123800
+													Orient -0.00000049 0.00000027 0.16581100
+													Sorient 0.00000000 0.00000000 0.00000000
+													TransMin 0.00000000 0.00000000 0.00000000
+													TransMax 1.00000000 1.00000000 1.00000000
+													RotMin -3.14159000 -3.14159000 -3.14159000
+													RotMax 3.14159000 3.14159000 3.14159000
+													Children 1
+													{
+														bone L_Forearm
+														{
+															Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+															Index 8
+															Id 33
+															Mirror 8
+															LocalOffset 0.32146200 0.00000000 0.00000042
+															RotationEuler -0.00000049 0.00000000 0.00000000
+															RotationQuaternion -0.00000023 0.00000000 0.00000000 1.00000000
+															Scale 0.00000000 -0.00000036 0.00000036
+															WorldOffset -0.01638890 0.51704300 0.51123900
+															Orient -0.00000049 0.00000000 0.00000000
+															Sorient 0.00000000 0.00000000 0.00000000
+															TransMin 0.00000000 0.00000000 0.00000000
+															TransMax 1.00000000 1.00000000 1.00000000
+															RotMin -3.14159000 -3.14159000 -3.14159000
+															RotMax 3.14159000 3.14159000 3.14159000
+															Children 1
+															{
+																bone L_Hand
+																{
+																	Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+																	Index 9
+																	Id 34
+																	Mirror 9
+																	LocalOffset 0.24599800 0.00000000 -0.00000042
+																	RotationEuler -1.57000000 0.00000221 -0.00000177
+																	RotationQuaternion -0.70682500 0.00000143 0.00000000 0.70738800
+																	Scale 0.00000012 -0.00000060 0.00000012
+																	WorldOffset -0.01638930 0.76304100 0.51123900
+																	Orient -1.57000000 0.00000221 -0.00000177
+																	Sorient 0.00000000 0.00000000 0.00000000
+																	TransMin 0.00000000 0.00000000 0.00000000
+																	TransMax 1.00000000 1.00000000 1.00000000
+																	RotMin -3.14159000 -3.14159000 -3.14159000
+																	RotMax 3.14159000 3.14159000 3.14159000
+																	Children 1
+																	{
+																		bone L_Finger
+																		{
+																			Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+																			Index 10
+																			Id 35
+																			Mirror 10
+																			LocalOffset 0.07278480 -0.00000024 0.00000000
+																			RotationEuler -0.00075922 0.00023909 0.30543200
+																			RotationQuaternion -0.00039321 0.00006038 0.15212300 0.98836100
+																			Scale 0.00000000 0.00000072 0.00000000
+																			WorldOffset -0.01638930 0.83582600 0.51123900
+																			Orient -0.00075922 0.00023909 0.30543200
+																			Sorient 0.00000000 0.00000000 0.00000000
+																			TransMin 0.00000000 0.00000000 0.00000000
+																			TransMax 1.00000000 1.00000000 1.00000000
+																			RotMin -3.14159000 -3.14159000 -3.14159000
+																			RotMax 3.14159000 3.14159000 3.14159000
+																			Children 1
+																			{
+																				bone Root_L_Finger01
+																				{
+																					Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+																					Index 11
+																					Id 54
+																					Mirror 11
+																					LocalOffset 0.03968400 -0.00000018 0.00000000
+																					RotationEuler 0.00000000 -0.00000018 0.00000000
+																					RotationQuaternion 0.00000000 0.00000027 0.00000000 -1.00000000
+																					Scale 0.00000012 0.00000048 0.00000000
+																					WorldOffset -0.01638920 0.87367300 0.49930600
+																					Orient 0.00000000 -0.00000018 0.00000000
+																					Sorient 0.00000000 0.00000000 0.00000000
+																					TransMin 0.00000000 0.00000000 0.00000000
+																					TransMax 1.00000000 1.00000000 1.00000000
+																					RotMin -3.14159000 -3.14159000 -3.14159000
+																					RotMax 3.14159000 3.14159000 3.14159000
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+										bone Bip01_R_Clavicle
+										{
+											Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+											Index 12
+											Id 21
+											Mirror 12
+											LocalOffset 0.00189951 0.00904417 -0.04264330
+											RotationEuler -1.57079000 1.40499000 1.36057000
+											RotationQuaternion -0.70693200 0.01570520 0.69464500 0.13217000
+											Scale 0.00000012 0.00000012 0.00000048
+											WorldOffset -0.04122770 -0.03813680 0.51123700
+											Orient -1.57079000 1.40499000 1.36057000
+											Sorient 0.00000000 0.00000000 0.00000000
+											TransMin 0.00000000 0.00000000 0.00000000
+											TransMax 1.00000000 1.00000000 1.00000000
+											RotMin -3.14159000 -3.14159000 -3.14159000
+											RotMax 3.14159000 3.14159000 3.14159000
+											Children 1
+											{
+												bone R_UpperArm
+												{
+													Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+													Index 13
+													Id 22
+													Mirror 13
+													LocalOffset 0.15049500 0.00000000 -0.00000018
+													RotationEuler 0.00000000 0.00000000 0.16580900
+													RotationQuaternion 0.00000000 0.00000000 -0.08280950 -0.99656500
+													Scale -0.00000030 0.00000083 -0.00000012
+													WorldOffset -0.01638890 -0.18656800 0.51123700
+													Orient 0.00000000 0.00000000 0.16580900
+													Sorient 0.00000000 0.00000000 0.00000000
+													TransMin 0.00000000 0.00000000 0.00000000
+													TransMax 1.00000000 1.00000000 1.00000000
+													RotMin -3.14159000 -3.14159000 -3.14159000
+													RotMax 3.14159000 3.14159000 3.14159000
+													Children 1
+													{
+														bone R_Forearm
+														{
+															Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+															Index 14
+															Id 23
+															Mirror 14
+															LocalOffset 0.32146200 0.00000017 0.00000018
+															RotationEuler 0.00000065 0.00000000 0.00000054
+															RotationQuaternion -0.00000033 0.00000000 -0.00000027 -1.00000000
+															Scale 0.00000042 -0.00000024 -0.00000066
+															WorldOffset -0.01639000 -0.50803000 0.51123500
+															Orient 0.00000065 0.00000000 0.00000054
+															Sorient 0.00000000 0.00000000 0.00000000
+															TransMin 0.00000000 0.00000000 0.00000000
+															TransMax 1.00000000 1.00000000 1.00000000
+															RotMin -3.14159000 -3.14159000 -3.14159000
+															RotMax 3.14159000 3.14159000 3.14159000
+															Children 1
+															{
+																bone R_Hand
+																{
+																	Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+																	Index 15
+																	Id 24
+																	Mirror 15
+																	LocalOffset 0.24599800 -0.00000012 0.00000000
+																	RotationEuler 1.57000000 -0.00000190 -0.00000434
+																	RotationQuaternion -0.70682500 0.00000219 0.00000080 -0.70738800
+																	Scale -0.00000024 0.00000119 0.00000000
+																	WorldOffset -0.01639070 -0.75402800 0.51123400
+																	Orient 1.57000000 -0.00000190 -0.00000434
+																	Sorient 0.00000000 0.00000000 0.00000000
+																	TransMin 0.00000000 0.00000000 0.00000000
+																	TransMax 1.00000000 1.00000000 1.00000000
+																	RotMin -3.14159000 -3.14159000 -3.14159000
+																	RotMax 3.14159000 3.14159000 3.14159000
+																	Children 1
+																	{
+																		bone R_Finger
+																		{
+																			Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+																			Index 16
+																			Id 25
+																			Mirror 16
+																			LocalOffset 0.07278500 0.00000012 0.00000000
+																			RotationEuler 0.00076031 -0.00024005 0.30543400
+																			RotationQuaternion -0.00039406 0.00006099 -0.15212400 -0.98836100
+																			Scale -0.00000030 -0.00000095 0.00000137
+																			WorldOffset -0.01639070 -0.82681300 0.51123400
+																			Orient 0.00076031 -0.00024005 0.30543400
+																			Sorient 0.00000000 0.00000000 0.00000000
+																			TransMin 0.00000000 0.00000000 0.00000000
+																			TransMax 1.00000000 1.00000000 1.00000000
+																			RotMin -3.14159000 -3.14159000 -3.14159000
+																			RotMax 3.14159000 3.14159000 3.14159000
+																			Children 1
+																			{
+																				bone Root_R_Finger01
+																				{
+																					Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+																					Index 17
+																					Id 55
+																					Mirror 17
+																					LocalOffset 0.03968420 -0.00000012 0.00000000
+																					RotationEuler 0.00000000 -0.00000054 0.00000000
+																					RotationQuaternion 0.00000015 -0.00000043 0.00000000 1.00000000
+																					Scale 0.00000113 -0.00000095 0.00000000
+																					WorldOffset -0.01639070 -0.86466000 0.49930000
+																					Orient 0.00000000 -0.00000054 0.00000000
+																					Sorient 0.00000000 0.00000000 0.00000000
+																					TransMin 0.00000000 0.00000000 0.00000000
+																					TransMax 1.00000000 1.00000000 1.00000000
+																					RotMin -3.14159000 -3.14159000 -3.14159000
+																					RotMax 3.14159000 3.14159000 3.14159000
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						bone L_Thigh
+						{
+							Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+							Index 18
+							Id 41
+							Mirror 18
+							LocalOffset 0.00644618 0.05074030 0.10930200
+							RotationEuler -3.14156000 0.00002200 3.12611000
+							RotationQuaternion -0.00773971 -0.99997000 0.00001401 -0.00001089
+							Scale 0.00000036 0.00000060 0.00000000
+							WorldOffset 0.00019702 0.11381000 0.00000022
+							Orient -3.14156000 0.00002200 3.12611000
+							Sorient 0.00000000 0.00000000 0.00000000
+							TransMin 0.00000000 0.00000000 0.00000000
+							TransMax 1.00000000 1.00000000 1.00000000
+							RotMin -3.14159000 -3.14159000 -3.14159000
+							RotMax 3.14159000 3.14159000 3.14159000
+							Children 1
+							{
+								bone L_Calf
+								{
+									Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+									Index 19
+									Id 42
+									Mirror 19
+									LocalOffset 0.47786200 0.00000000 0.00000000
+									RotationEuler 0.00000000 0.00000000 -0.16462400
+									RotationQuaternion 0.00000000 0.00000000 -0.08221910 0.99661400
+									Scale -0.00000048 -0.00000012 -0.00000012
+									WorldOffset 0.00721273 0.11380000 -0.47781000
+									Orient 0.00000000 0.00000000 -0.16462400
+									Sorient 0.00000000 0.00000000 0.00000000
+									TransMin 0.00000000 0.00000000 0.00000000
+									TransMax 1.00000000 1.00000000 1.00000000
+									RotMin -3.14159000 -3.14159000 -3.14159000
+									RotMax 3.14159000 3.14159000 3.14159000
+									Children 1
+									{
+										bone L_Foot
+										{
+											Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+											Index 20
+											Id 43
+											Mirror 20
+											LocalOffset 0.39489100 0.00000020 0.00000000
+											RotationEuler -0.00003067 0.00002137 0.14994100
+											RotationQuaternion 0.00001600 -0.00000960 -0.07490040 -0.99719100
+											Scale 0.00000012 -0.00000024 0.00000012
+											WorldOffset -0.05177630 0.11379400 -0.86827100
+											Orient -0.00003067 0.00002137 0.14994100
+											Sorient 0.00000000 0.00000000 0.00000000
+											TransMin 0.00000000 0.00000000 0.00000000
+											TransMax 1.00000000 1.00000000 1.00000000
+											RotMin -3.14159000 -3.14159000 -3.14159000
+											RotMax 3.14159000 3.14159000 3.14159000
+											Children 1
+											{
+												bone L_Toe0
+												{
+													Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+													Index 21
+													Id 56
+													Mirror 21
+													LocalOffset 0.14531900 0.18783500 0.00000000
+													RotationEuler 0.00000057 0.00000056 1.57080000
+													RotationQuaternion 0.00000000 -0.00000036 -0.70710700 -0.70710700
+													Scale -0.00000048 -0.00000024 -0.00000012
+													WorldOffset 0.13605900 0.11379400 -1.01359000
+													Orient 0.00000057 0.00000056 1.57080000
+													Sorient 0.00000000 0.00000000 0.00000000
+													TransMin 0.00000000 0.00000000 0.00000000
+													TransMax 1.00000000 1.00000000 1.00000000
+													RotMin -3.14159000 -3.14159000 -3.14159000
+													RotMax 3.14159000 3.14159000 3.14159000
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						bone R_Thigh
+						{
+							Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+							Index 22
+							Id 51
+							Mirror 22
+							LocalOffset 0.00644622 0.05074090 -0.11835900
+							RotationEuler 3.14159000 -0.00000357 -3.14115000
+							RotationQuaternion 0.00022082 -1.00000000 -0.00000355 0.00000182
+							Scale 0.00000000 0.00000012 0.00000000
+							WorldOffset 0.00019679 -0.11385100 -0.00000024
+							Orient 3.14159000 -0.00000357 -3.14115000
+							Sorient 0.00000000 0.00000000 0.00000000
+							TransMin 0.00000000 0.00000000 0.00000000
+							TransMax 1.00000000 1.00000000 1.00000000
+							RotMin -3.14159000 -3.14159000 -3.14159000
+							RotMax 3.14159000 3.14159000 3.14159000
+							Children 1
+							{
+								bone R_Calf
+								{
+									Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+									Index 23
+									Id 52
+									Mirror 23
+									LocalOffset 0.47786200 0.00000000 0.00000000
+									RotationEuler -0.00000015 0.00000059 -0.11491400
+									RotationQuaternion 0.00000000 -0.00000033 0.05742510 -0.99835000
+									Scale 0.00000024 0.00000012 -0.00000012
+									WorldOffset -0.00039545 -0.11384900 -0.47786200
+									Orient -0.00000015 0.00000059 -0.11491400
+									Sorient 0.00000000 0.00000000 0.00000000
+									TransMin 0.00000000 0.00000000 0.00000000
+									TransMax 1.00000000 1.00000000 1.00000000
+									RotMin -3.14159000 -3.14159000 -3.14159000
+									RotMax 3.14159000 3.14159000 3.14159000
+									Children 1
+									{
+										bone R_Foot
+										{
+											Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+											Index 24
+											Id 53
+											Mirror 24
+											LocalOffset 0.39489100 0.00000000 0.00000000
+											RotationEuler 0.00000417 -0.00000526 0.11615200
+											RotationQuaternion -0.00000221 0.00000250 -0.05804320 -0.99831400
+											Scale -0.00000030 -0.00000024 0.00000012
+											WorldOffset -0.04616010 -0.11384600 -0.87009200
+											Orient 0.00000417 -0.00000526 0.11615200
+											Sorient 0.00000000 0.00000000 0.00000000
+											TransMin 0.00000000 0.00000000 0.00000000
+											TransMax 1.00000000 1.00000000 1.00000000
+											RotMin -3.14159000 -3.14159000 -3.14159000
+											RotMax 3.14159000 3.14159000 3.14159000
+											Children 1
+											{
+												bone R_Toe0
+												{
+													Flags LockRotXYZ LockRotX LockRotY LockRotZ LockTransX LockTransY LockTransZ LockScaleX LockScaleY LockScaleZ Invisible
+													Index 25
+													Id 57
+													Mirror 25
+													LocalOffset 0.12802500 0.18261300 0.00000000
+													RotationEuler 0.00000000 0.00000050 1.57080000
+													RotationQuaternion 0.00000019 -0.00000018 -0.70710700 -0.70710700
+													Scale 0.00000000 -0.00000024 -0.00000030
+													WorldOffset 0.13645300 -0.11384600 -0.99811700
+													Orient 0.00000000 0.00000050 1.57080000
+													Sorient 0.00000000 0.00000000 0.00000000
+													TransMin 0.00000000 0.00000000 0.00000000
+													TransMax 1.00000000 1.00000000 1.00000000
+													RotMin -3.14159000 -3.14159000 -3.14159000
+													RotMax 3.14159000 3.14159000 3.14159000
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

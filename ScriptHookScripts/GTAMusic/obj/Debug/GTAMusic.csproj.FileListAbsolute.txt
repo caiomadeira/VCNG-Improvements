@@ -1,0 +1,11 @@
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\bin\Debug\GTAMusic.dll
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\bin\Debug\Newtonsoft.Json.dll
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\bin\Debug\ScriptHookDotNet.dll
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\bin\Debug\SpotifyAPI.Web.dll
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\bin\Debug\Newtonsoft.Json.xml
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\bin\Debug\ScriptHookDotNet.xml
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\bin\Debug\SpotifyAPI.Web.xml
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\obj\Debug\GTAMusic.csproj.AssemblyReference.cache
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\obj\Debug\GTAMusic.csproj.CoreCompileInputs.cache
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\obj\Debug\GTAMusic.csproj.Up2Date
+D:\VCNextGen-Fixes\ScriptHookScripts\GTAMusic\obj\Debug\GTAMusic.dll

@@ -1,0 +1,19 @@
+
+    ---- ChangeLogs #1 ----
+     (16/06/2022 - v1.0.1)
+
+------------------------------
+
+ -- [~] --
+
+Fixing some bugs.
+
+ -- [+] --
+
+Added an action that automatically puts the player in the vehicle that has just appeared.
+
+Added a button to throw your current weapon.
+
+ -- [-] --
+
+Nothing.

@@ -1,0 +1,28 @@
+Version 110 12
+{
+	gtaDrawable uppr_000_u
+	{
+		shadinggroup
+		{
+			Shaders 1
+			{
+				gta_ped.sps uppr_diff_000_a_uni uppr_normal_000 35.00000000 0.20000000 1.00000000;0.00000000;0.00000000 uppr_spec_000 1.00000000
+			}
+		}
+		skel
+		{
+			skel f_m_peasteuro_01\f_m_peasteuro_01.skel
+		}
+		lodgroup
+		{
+			high 1 f_m_peasteuro_01\uppr_000_u_high.mesh 0 9999.00000000
+			med none 9999.00000000
+			low none 9999.00000000
+			vlow none 9999.00000000
+			center 0.07062280 -0.01111410 -0.11534700
+			AABBMin -0.13187400 0.50934600 -0.94596300
+			AABBMax 0.27311900 -0.53157400 0.71527000
+			radius 1.00090000
+		}
+	}
+}
