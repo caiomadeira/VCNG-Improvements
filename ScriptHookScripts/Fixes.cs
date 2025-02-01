@@ -18,18 +18,18 @@ public class Fixes : Script
 
     private void OnTick(object sender, EventArgs e)
     {
-        Ped player = Player.Character;
-        // extern boolean IS_MOBILE_PHONE_CALL_ONGOING(void);
-        AnimationFlags animflags = AnimationFlags.Unknown12 | AnimationFlags.Unknown11 | AnimationFlags.Unknown09;
+        // Ped player = Player.Character;
+        // // extern boolean IS_MOBILE_PHONE_CALL_ONGOING(void);
+        // AnimationFlags animflags = AnimationFlags.Unknown12 | AnimationFlags.Unknown11 | AnimationFlags.Unknown09;
 
-        if (GTA.Native.Function.Call<bool>("HAVE_ANIMS_LOADED", "cellphone_talk"))
-        //if (Player.Character.Animation.Play(anims, "cellphone", 8.0F, animflags))
-        {
-            //if (Player.Character.Weapons.CurrentType != Weapon.Unarmed)
-            //{
-                Player.Character.Weapons.Unarmed.Select();
-            //}
-        }
+        // if (GTA.Native.Function.Call<bool>("HAVE_ANIMS_LOADED", "cellphone_talk"))
+        // //if (Player.Character.Animation.Play(anims, "cellphone", 8.0F, animflags))
+        // {
+        //     //if (Player.Character.Weapons.CurrentType != Weapon.Unarmed)
+        //     //{
+        //         Player.Character.Weapons.Unarmed.Select();
+        //     //}
+        // }
     }
 
     private void OnKeyDown(object sender, GTA.KeyEventArgs e)

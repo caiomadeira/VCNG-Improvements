@@ -8,6 +8,7 @@ public class TestScript : Script
     private bool incrementing = true;
     public TestScript()
     {
+        Interval = 250;
         // Evento acionado ao carregar o script
         Tick += OnTick;
         KeyDown += OnKeyDown;
@@ -65,7 +66,7 @@ public class TestScript : Script
            // BLOCK_PED_WEAPON_SWITCHING(Ped ped, boolean value);
            Game.DisplayText("Player can't switch guns: active", 3000);
            Ped ped = Player.Character;
-           GTA.Native.Function.Call("BLOCK_PED_WEAPON_SWITCHING", ped, true);
+           
         }
 
         if (e.Key == Keys.L)
@@ -74,22 +75,6 @@ public class TestScript : Script
             Ped ped = Player.Character;
             GTA.Native.Function.Call("SET_CHAR_COMPONENT_VARIATION", ped, 1, 2, 0);
         }
-
-        // if (e.Key == Keys.M)
-        // {
-        //     if (incrementing)
-        //     {
-        //         clothIndex++;
-        //         if (clothIndex == 4)
-        //             incrementing = false;
-        //     } else {
-        //         clothIndex--;
-        //         if (clothIndex == 0)
-        //             incrementing = true;
-        //     }
-
-        //     ChangeClothes(clothIndex);
-        // }
     }
 
     // private void ChangeClothes(uint clothIndex)
@@ -123,6 +108,55 @@ public class TestScript : Script
         Game.DisplayText("Modelo alterado para: {modelName}", 3000);
         Game.Console.Print("Player Model: " + Player.Model);
 
+    }
+
+}
+
+// Feature de fazer um refém
+public class HostageTask : Script {
+
+    TaskSequence FleeTask;
+
+    public HostageTask() {
+        this.KeyDown += OnKeyDown;
+        this.Tick += OnTick;
+    }
+
+    private void OnTick(object sender, EventArgs e)
+    {
+        //Game.DisplayText("RUNNING", 300);
+        // 
+
+    }
+
+    private void OnKeyDown(object sender, GTA.KeyEventArgs e)
+    {
+        if (e.Key == Keys.K)
+        {
+            Ped targetPed = Player.GetTargetedPed();
+
+            if (targetPed != null)
+            {
+                Game.DisplayText("Refém detectado!", 3000);
+                Vector3 playerPos = Player.Character.Position;
+                float heading = Player.Character.Heading * (float)(Math.PI / 180.0); // Converte graus para radianos
+                Vector3 hostagePos = playerPos + new Vector3((float)Math.Cos(heading), (float)Math.Sin(heading), 0.0f) * 1.0f;
+
+                targetPed.Position = hostagePos;
+                targetPed.Heading = Player.Character.Heading + 100.0f;
+                Game.DisplayText("Executando a task", 3000);
+                // FleeTask = new TaskSequence();
+                AnimationFlags animflags = AnimationFlags.Unknown12 | AnimationFlags.Unknown11 | AnimationFlags.Unknown09;
+                // //FleeTask.AddTask.PlayAnimation(new AnimationSet("missray6"), "drop_knees", 8.0f);
+                Game.DisplayText("missgerry4: hostage_taker", 3000);
+                // FleeTask.AddTask.PlayAnimation(new AnimationSet("missgerry4"), "hostage_taker", 8.0f, animflags);
+                Player.Character.Task.PlayAnimation(new AnimationSet("missgerry4"), "hostage_taker", 8.0f, animflags);
+                // Player.Character.Task.ClearAll();
+                //Player.Character.Task.PerformSequence(FleeTask);
+                // FleeTask.Dispose();
+                Game.DisplayText("Animação ativada!", 3000);
+            }
+        }
     }
 
 }
