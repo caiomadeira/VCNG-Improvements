@@ -2147,7 +2147,7 @@ extern boolean IS_KEYBOARD_KEY_PRESSED(int key);
 extern float GET_MOUSE_SENSITIVITY(void);
 extern boolean IS_GAME_KEYBOARD_NAV_LEFT_PRESSED(boolean);
 extern int GET_ASCII_JUST_PRESSED(int key, int);
-extern void SHAKE_PAD(int, int, int);
+extern void SHAKE_PADIS_USING_CONTROLLER(int, int, int);
 extern boolean IS_KEYBOARD_KEY_JUST_PRESSED(int key);
 extern void GET_MOUSE_POSITION(int *x, int *y);
 extern boolean IS_MOUSE_BUTTON_JUST_PRESSED(int);

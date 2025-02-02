@@ -1963,14 +1963,24 @@ void set_anim_in(void)
 	
 	ATTACH_OBJECT_TO_PED( trubka_1, GetPlayerPed(), 1232, 0.070, 0.052, 0.003, 3.30000000, 0.30000000, -0.45000000, 0 );
 	//DisablePlayerControls(1);
+	SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_UNARMED, TRUE);
 	TASK_PLAY_ANIM_SECONDARY_UPPER_BODY( GetPlayerPed(), "cellphone_in", "cellphone", 8.0, 0, 0, 0, 1, -1 );//���������������� �������� �� ����
 	WAIT(1000);
-	TASK_PLAY_ANIM_NON_INTERRUPTABLE( GetPlayerPed(), "cellphone_talk",  "cellphone", 8.0, 1, 0, 0, 0, -1 );//���������������� �������� �� ����
-	// TASK_PLAY_ANIM_SECONDARY_UPPER_BODY( GetPlayerPed(), "cellphone_talk", "cellphone", 8.0, 1, 0, 0, 0, -1 );//���������������� �������� �� ����
+	if (IS_CHAR_SITTING_IN_ANY_CAR(GetPlayerPed()))
+	{
+		SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_UNARMED, TRUE);
+		TASK_PLAY_ANIM_SECONDARY_UPPER_BODY( GetPlayerPed(), "cellphone_talk", "cellphone", 8.0, 1, 0, 0, 0, -1 );
+	} 
+	else
+	{
+		SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_UNARMED, TRUE);
+		TASK_PLAY_ANIM_NON_INTERRUPTABLE( GetPlayerPed(), "cellphone_talk",  "cellphone", 8.0, 1, 0, 0, 0, -1 );
+	}
 	incoming_call = 1;
 }
 void set_anim_out(void)
 {
+	SET_CURRENT_CHAR_WEAPON(GetPlayerPed(), WEAPON_UNARMED, TRUE);
 	TASK_PLAY_ANIM_SECONDARY_UPPER_BODY( GetPlayerPed(), "cellphone_out", "cellphone", 1.0, 0, 0, 0, 0, -1 );//���������������� �������� �� ����
 	SetTime(1000);
 	DETACH_OBJECT( trubka_1, 1 );

@@ -52,21 +52,21 @@ void mission_cleanup_taxi1(void) {
 		G_TAXI = 1;
 	}
 
-	SETTIMERA(0); //сбрасываем таймер 
+	SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 	while (true)
 	{
-		SET_TEXT_COLOUR(95, 195, 247, 255); // задаём цвет текста
-		SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+		SET_TEXT_COLOUR(95, 195, 247, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-		SET_TEXT_CENTRE(1); // задаём центр текста
-		DISPLAY_TEXT(0.5, 0.5, "TAXI6");// пишем "Миссия завершина"
+		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		DISPLAY_TEXT(0.5, 0.5, "TAXI6");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
-		SET_TEXT_COLOUR(30, 215, 135, 255); // задаём цвет текста
-		SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+		SET_TEXT_COLOUR(30, 215, 135, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-		SET_TEXT_CENTRE(1); // задаём центр текста
+		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		DISPLAY_TEXT_WITH_NUMBER(0.5, 0.4, "TSCORE", taxi_score);//
 
 		WAIT( 0 );
@@ -162,31 +162,31 @@ void score(void) {
 	ADD_SCORE(GetPlayerIndex(), score_for_this_fare);
 	//PRINT_WITH_NUMBER_BIG("TSCORE2", score_for_this_fare, 6000, 6);
 
-	SETTIMERA(0); //сбрасываем таймер 
+	SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 	while (true)
 	{
-		SET_TEXT_COLOUR(30, 215, 135, 255); // задаём цвет текста
-		SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+		SET_TEXT_COLOUR(30, 215, 135, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-		SET_TEXT_CENTRE(1); // задаём центр текста
+		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		DISPLAY_TEXT_WITH_NUMBER(0.5, 0.5, "TSCORE2", score_for_this_fare);//
 
 
-		SET_TEXT_COLOUR(95, 195, 247, 255); // задаём цвет текста
-		SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+		SET_TEXT_COLOUR(95, 195, 247, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-		SET_TEXT_CENTRE(1); // задаём центр текста
+		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 		if (TIMERB() > speedbonus) {
 		score_for_this_fare = WMOCAistance_int_old / 10;
 		//PRINT_BIG("TAXI4", 5000, 5);
-		DISPLAY_TEXT(0.5, 0.4, "TAXI4");// пишем "Миссия завершина"
+		DISPLAY_TEXT(0.5, 0.4, "TAXI4");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 		} else {
 			score_for_this_fare = WMOCAistance_int_old / 8;
 			//PRINT_BIG("TAXI5", 5000, 5);
-			DISPLAY_TEXT(0.5, 0.4, "TAXI5");// пишем "Миссия завершина"
+			DISPLAY_TEXT(0.5, 0.4, "TAXI5");// пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 		}
 		
 		WAIT( 0 );
@@ -227,14 +227,14 @@ void score(void) {
 	}
 	//PRINT_WITH_2_NUMBERS_BIG("IN_ROW", taxi_passed_this_shot, in_a_row_cash, 5000, 6);
 	if (taxi_passed_this_shot == in_a_row_number) {
-		SETTIMERA(0); //сбрасываем таймер 
+		SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 		while (true)
 		{
-			SET_TEXT_COLOUR(30, 215, 135, 255); // задаём цвет текста
-			SET_TEXT_SCALE(0.5, 0.7); // размеры шрифта
+			SET_TEXT_COLOUR(30, 215, 135, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+			SET_TEXT_SCALE(0.5, 0.7); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-			SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-			SET_TEXT_CENTRE(1); // задаём центр текста
+			SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+			SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			DISPLAY_TEXT_WITH_2_NUMBERS(0.5, 0.4, "IN_ROW", taxi_passed_this_shot, in_a_row_cash);
 			
 			WAIT( 0 );
@@ -532,9 +532,9 @@ void passenger_destination(void) {
 		}
 	}
 	ADD_BLIP_FOR_COORD(WMOCAestx1, WMOCAesty1, WMOCAestz1, &blip2_ct1);
-	CHANGE_BLIP_SPRITE(blip2_ct1, BLIP_OBJECTIVE);//текстура иконки на радаре "BLIP_FINISH_LINE"
-	CHANGE_BLIP_COLOUR(blip2_ct1, 5);   //цвет иконка на радаре (0=белая 5=розовый 19=жёлтый)
-	CHANGE_BLIP_SCALE(blip2_ct1, 0.6); // масштаб иконки на радаре
+	CHANGE_BLIP_SPRITE(blip2_ct1, BLIP_OBJECTIVE);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "BLIP_FINISH_LINE"
+	CHANGE_BLIP_COLOUR(blip2_ct1, 5);   //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (0=пїЅпїЅпїЅпїЅпїЅ 5=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 19=пїЅпїЅпїЅпїЅпїЅ)
+	CHANGE_BLIP_SCALE(blip2_ct1, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	CHANGE_BLIP_DISPLAY(blip2_ct1, 2);
 	
 	if (IS_CAR_DEAD(taxi_car1)) {
@@ -638,8 +638,8 @@ void passenger_destination(void) {
 			taxi_countdown -= 1000;
 			SETTIMERC(0);
 		}
-		DRAW_SPRITE( fon, 0.8765625, 0.74213, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// рисуем фоновую текстуру.
-		DRAW_SPRITE( fon, 0.8765625, 0.7838, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// рисуем фоновую текстуру.
+		DRAW_SPRITE( fon, 0.8765625, 0.74213, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+		DRAW_SPRITE( fon, 0.8765625, 0.7838, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 		int timemin, timesec, timetemp;
 		timesec = taxi_countdown / 1000;
 		timemin = timesec / 60;
@@ -667,11 +667,11 @@ void passenger_destination(void) {
 		SET_TEXT_CENTRE(1);
 		if (timemin > 9)
 		{
-			DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_NOZERO", timemin);// минуты
+			DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_NOZERO", timemin);// пїЅпїЅпїЅпїЅпїЅпїЅ
 		}
 		else
 		{
-			DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_ZERO", timemin);// минуты
+			DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_ZERO", timemin);// пїЅпїЅпїЅпїЅпїЅпїЅ
 		}
 		setup_draw_value();
 		DISPLAY_TEXT(0.9203125, 0.76954074, "CP_TIME_SEP");
@@ -680,11 +680,11 @@ void passenger_destination(void) {
 		SET_TEXT_CENTRE(1);
 		if ( timesec > 9 )
 		{
-			DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_NOZERO", timesec);// секунды
+			DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_NOZERO", timesec);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		}
 		else
 		{
-			DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_ZERO", timesec);// секунды
+			DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_ZERO", timesec);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		}
 
 
@@ -707,7 +707,7 @@ void passenger_destination(void) {
 			DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.72916666, "CP_TIME_ZERO", taxi_passed_this_shot);
 		}
 
-		DRAW_CHECKPOINT( WMOCAestx1, WMOCAesty1, WMOCAestz1, 5.0, 160, 116, 209);//создание чекпойнт на координатах и его цвет
+		DRAW_CHECKPOINT( WMOCAestx1, WMOCAesty1, WMOCAestz1, 5.0, 160, 116, 209);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		if ((LOCATE_CHAR_IN_CAR_3D(GetPlayerPed(), WMOCAestx1, WMOCAesty1, WMOCAestz1, 4.0, 4.0, 4.0, 1)) && (IS_CAR_STOPPED(taxi_car1))) {
 			break;
 		}
@@ -745,8 +745,8 @@ void ped_get_in_taxi(void) {
 			}
 		}
 
-		DRAW_SPRITE( fon, 0.8765625, 0.74213, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// рисуем фоновую текстуру.
-		DRAW_SPRITE( fon, 0.8765625, 0.7838, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// рисуем фоновую текстуру.
+		DRAW_SPRITE( fon, 0.8765625, 0.74213, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+		DRAW_SPRITE( fon, 0.8765625, 0.7838, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 		int timemin, timesec, timetemp;
 		timesec = taxi_countdown / 1000;
 		timemin = timesec / 60;
@@ -772,11 +772,11 @@ void ped_get_in_taxi(void) {
 			SET_TEXT_CENTRE(1);
 			if (timemin > 9)
 			{
-				DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_NOZERO", timemin);// минуты
+				DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_NOZERO", timemin);// пїЅпїЅпїЅпїЅпїЅпїЅ
 			}
 			else
 			{
-				DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_ZERO", timemin);// минуты
+				DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_ZERO", timemin);// пїЅпїЅпїЅпїЅпїЅпїЅ
 			}
 			setup_draw_value();
 			DISPLAY_TEXT(0.9203125, 0.76954074, "CP_TIME_SEP");
@@ -785,11 +785,11 @@ void ped_get_in_taxi(void) {
 			SET_TEXT_CENTRE(1);
 			if ( timesec > 9 )
 			{
-				DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_NOZERO", timesec);// секунды
+				DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_NOZERO", timesec);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			}
 			else
 			{
-				DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_ZERO", timesec);// секунды
+				DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_ZERO", timesec);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			}
 		} else {
 			setup_draw_value();
@@ -857,8 +857,8 @@ void ped_get_in_taxi(void) {
 	while (!IS_CHAR_IN_CAR(taxi_ped1, taxi_car1)) {
 		WAIT(0);
 
-		DRAW_SPRITE( fon, 0.8765625, 0.74213, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// рисуем фоновую текстуру.
-		DRAW_SPRITE( fon, 0.8765625, 0.7838, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// рисуем фоновую текстуру.
+		DRAW_SPRITE( fon, 0.8765625, 0.74213, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+		DRAW_SPRITE( fon, 0.8765625, 0.7838, 0.14322917, 0.0296, 0.0, 246, 151, 255, 155 );// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 		int timemin, timesec, timetemp;
 		timesec = taxi_countdown / 1000;
 		timemin = timesec / 60;
@@ -884,11 +884,11 @@ void ped_get_in_taxi(void) {
 			SET_TEXT_CENTRE(1);
 			if (timemin > 9)
 			{
-				DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_NOZERO", timemin);// минуты
+				DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_NOZERO", timemin);// пїЅпїЅпїЅпїЅпїЅпїЅ
 			}
 			else
 			{
-				DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_ZERO", timemin);// минуты
+				DISPLAY_TEXT_WITH_NUMBER(0.9088542, 0.76954074, "CP_TIME_ZERO", timemin);// пїЅпїЅпїЅпїЅпїЅпїЅ
 			}
 			setup_draw_value();
 			DISPLAY_TEXT(0.9203125, 0.76954074, "CP_TIME_SEP");
@@ -897,11 +897,11 @@ void ped_get_in_taxi(void) {
 			SET_TEXT_CENTRE(1);
 			if ( timesec > 9 )
 			{
-				DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_NOZERO", timesec);// секунды
+				DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_NOZERO", timesec);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			}
 			else
 			{
-				DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_ZERO", timesec);// секунды
+				DISPLAY_TEXT_WITH_NUMBER(0.9348959, 0.76954074, "CP_TIME_ZERO", timesec);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			}
 		} else {
 			setup_draw_value();
@@ -998,7 +998,7 @@ void Start_taxi_mission(void) {
 	}
 	ADD_BLIP_FOR_CHAR(taxi_ped1, &blip1_ct1);
 	CHANGE_BLIP_COLOUR(blip1_ct1, 5);
-	CHANGE_BLIP_SCALE(blip1_ct1, 0.77999990); // масштаб иконки на радаре
+	CHANGE_BLIP_SCALE(blip1_ct1, 0.77999990); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	CHANGE_BLIP_NAME_FROM_TEXT_FILE(blip1_ct1, "TAXPSG");
 	LOAD_CHAR_DECISION_MAKER(2, &dm);
 	LOAD_COMBAT_DECISION_MAKER(3, &cdm);
@@ -1035,14 +1035,14 @@ void mission_start_taxi1(void) {
 	} else {
 		mission_taxi1_failed();
 	}
-	SETTIMERA(0); //сбрасываем таймер 
+	SETTIMERA(0); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 	while (true)
 	{
-		SET_TEXT_COLOUR(30, 215, 135, 255); // задаём цвет текста
-		SET_TEXT_SCALE(0.5, 0.6); // размеры шрифта
+		SET_TEXT_COLOUR(30, 215, 135, 255); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_SCALE(0.5, 0.6); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		SET_TEXT_EDGE(1, 0, 0, 0, 255); //
-		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // задаём тень текста
-		SET_TEXT_CENTRE(1); // задаём центр текста
+		SET_TEXT_DROPSHADOW(1, 0, 0, 0, 200); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		SET_TEXT_CENTRE(1); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		DISPLAY_TEXT(0.5, 0.45, "TAXI_M");//
 
 		WAIT( 0 );
@@ -1056,30 +1056,17 @@ void mission_start_taxi1(void) {
 	Start_taxi_mission();
 }
 
-void main(void) {
-	mission_start_taxi1();
-	mission_cleanup_taxi1();
-	//while (true) {
-	//	WAIT(0);
-	//	STORE_WANTED_LEVEL(GetPlayerIndex(), &wl);
-	//	if ((IS_CHAR_IN_TAXI(GetPlayerPed())) && (wl == 0)) {
-	//		if (G_ONMISSION == 0) {
-	//			if (intaxi == 0) {
-	//				PRINT_HELP("TTUTOR");
-	//				intaxi = 1;
-	//			}
-	//			if (((IS_CONTROL_PRESSED(2, 23)) && (!IS_USING_CONTROLLER())) || ((IS_BUTTON_PRESSED(0, 4)) && (IS_USING_CONTROLLER()))) {
-	//				G_ONMISSION = 1;
-	//				PRINT_BIG("TAXI_M", 6000, 5);
-	//				mission_start_taxi1();
-	//				mission_cleanup_taxi1();
-	//				G_ONMISSION = 0;
-	//				WAIT(1000);
-	//			}
-	//		}
-	//	} else {
-	//		CLEAR_HELP();
-	//		intaxi = 0;
-	//	}
-	//}
+void main(void) 
+{
+	Ped * ped;
+	if (IS_CHAR_IN_ANY_CAR(GetPlayerPed())) 
+	{
+		STORE_CAR_CHAR_IS_IN_NO_SAVE(GetPlayerPed(), &taxi_car1);
+		GET_DRIVER_OF_CAR(taxi_car1, &ped);
+		if (ped == GetPlayerPed())
+		{
+			mission_start_taxi1();
+			mission_cleanup_taxi1();
+		}
+	}
 }
