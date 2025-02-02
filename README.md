@@ -72,7 +72,7 @@ void set_anim_out(void)
 }
 ```
 
-### Credtis:
+### Credits:
 - Made by me; For use, give the credits;
 - RevolutionTeam to GTAVCNG mod;
 - Alexander's Blade;
