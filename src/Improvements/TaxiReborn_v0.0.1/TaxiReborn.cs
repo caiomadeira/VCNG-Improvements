@@ -1,9 +1,9 @@
 /*
-   Taxi Reborn By Caio Madeira
+   Taxi Reborn By Caio Madeira. 2025.
    https://github.com/caiomadeira/VCNG-Improvements
-   Is a WIP Project and part of ViceCity Next Gen Improvements
+   Is a Project and part of ViceCity Next Gen Improvements
    Give the credits.
-   Code inspired by Alexander Blade's samples for Scripthook.
+   Code Pieces inspired by Alexander Blade's samples for Scripthook.
 */
 
 using System;
@@ -11,6 +11,12 @@ using System.Windows.Forms;
 using GTA;
 
 public class TaxiReborn : Script {
+
+   /*
+   :::::::::::::::::::::::::::::::::::::::::::::::::::
+      ATRIBUTTES
+   :::::::::::::::::::::::::::::::::::::::::::::::::::
+   */
     enum eState {
          Off,
          WaitingForPlayer,
@@ -31,20 +37,20 @@ public class TaxiReborn : Script {
       bool ChangedTimescale = false;
       Blip w = Game.GetWaypoint();
       float playerDistToTaxi = 10.0f;
-    public TaxiReborn() {
+    public TaxiReborn() 
+    {
         Interval = 500;
         this.KeyDown += OnKeyDown;
         this.Tick += OnTick;
-        Game.DisplayText("TaxiRebornVCNG\nBy caiomadeira\nv0.0.1\ngithub.com/caiomadeira", 3000);
+        Game.DisplayText("TaxiReborn (for VCNG)\nBy caiomadeira\nv0.0.1\ngithub.com/caiomadeira", 5000);
     }
     private void OnTick(object sender, EventArgs e)
     {   
-        CheckAllTimeForTaxis();
-
+         CheckAllTimeForTaxis();
+         HandleController();
         if (state == eState.WaitingForPlayer)
-        {
             DisablePolice(true);
-        }
+
         if (!Exists(Player.Character) || Player.Character.isDead )
         {
             TurnDriverToNormal();
@@ -55,15 +61,11 @@ public class TaxiReborn : Script {
         {
             DisablePolice(false);
             if (Exists(SelectedCar) && SelectedCar.Speed > 0.5f)
-            {
                 UpdateCostChange(1);
-            }
-            Game.DisplayText("Taxi Trip\nPress 'M' to accelerate time.\nPress 'SPACEBAR' to Skip with a Extra Cost.\nTrip in Progress.\nCost: $" + cost.ToString("0.0"));
+            TextBasedInput("Taxi Trip\nPress 'B' to accelerate time.\nPress 'A' to Skip with a Extra Cost.\nTrip in Progress.\nCost: $" + cost.ToString("0.0"), "Taxi Trip\nPress 'M' to accelerate time.\nPress 'SPACEBAR' to Skip with a Extra Cost.\nTrip in Progress.\nCost: $" + cost.ToString("0.0"));
         }
         if (state == eState.ReachedTarget)
-        {
             DisablePolice(false);
-        }
 
         if (state == 0) return;
          switch (state) {
@@ -126,120 +128,123 @@ public class TaxiReborn : Script {
 
     private void OnKeyDown(object sender, GTA.KeyEventArgs e)
     {
-        switch (e.Key) {
-
+        switch (e.Key) 
+        {
             case Keys.E:
-                if (Player.WantedLevel == 0)
-                    DisablePolice(true);
-                else { return; }
-               switch (state) {
-                  case eState.Off:
-                     cost = 0.0f;
-                     SelectedCar = World.GetClosestVehicle(Player.Character.Position, playerDistToTaxi);
-                     if (!Exists(SelectedCar) || !IsTaxi(SelectedCar)) return;
-                     SelectedDriver = SelectedCar.GetPedOnSeat(VehicleSeat.Driver);
-                     if (!Exists(SelectedDriver)) 
-                     {
-                       // SelectedDriver = SelectedCar.CreatePedOnSeat(VehicleSeat.Driver);
-                        //if (!Exists(SelectedDriver)) 
-                        //{
-                           //SelectedCar = null;
-                           return;
-                        //}
-                     } else if (SelectedDriver == Player) {
-                        SelectedCar = null;
-                        SelectedDriver = null;
-                        return;
-                     }
-                     // Call the taxi Animation
-                     HailTaxi();
-                     DisablePolice(true);
-                     // force the game to load all path nodes, or he wouldn't be able to find the way to distant locations
-                     Game.LoadAllPathNodes = true;
-
-                     SelectedCar.DoorLock = 0;
-                     SelectedCar.MakeProofTo(false, false, false, true, false); // make the car collision proof, or it will blow up pretty fast
-
-                     // make sure that the driver won't die from his miserable driving skills
-                     SelectedDriver.Invincible = true;
-                     SelectedDriver.WillFlyThroughWindscreen = false;
-                     SelectedDriver.CanBeKnockedOffBike = false;
-
-                     // make sure that he will focus on his task
-                     SelectedDriver.BlockPermanentEvents = true;
-                     SelectedDriver.ChangeRelationship(RelationshipGroup.Player, Relationship.Respect);
-
-                     SelectedDriver.Task.ClearAll();
-                     SelectedDriver.Task.AlwaysKeepTask = true;
-                     SelectedDriver.Task.Wait(-1); // wait until we clear the tasks again
-
-                     if (Player.Group.MemberCount > 0)
-                        // Group.EnterVehicle will make sure that only members closeby try to enter the vehicle
-                        Player.Group.EnterVehicle(SelectedCar, true, true);
-                     else
-                        Player.Character.Task.EnterVehicle(SelectedCar, SelectedCar.GetFreePassengerSeat());
-
-                     state = eState.WaitingForPlayer;
-                     break;
-
-                  case eState.WaitingForPlayer:
-                     TurnDriverToNormal();
-                     state = eState.Off;
-                     break;
-
-                  case eState.Driving: // Change Route
-
-                        break;
-                  case eState.ReachedTarget:
-                     if (SetDestination()) 
-                     {
-                        // give the new task to the driver
-                        SelectedDriver.BlockPermanentEvents = true;
-                        SelectedDriver.Task.ClearAll();
-                        SelectedDriver.Task.AlwaysKeepTask = true;
-                        SelectedDriver.Task.DriveTo(SelectedCar, Destination, Speed, false);
-
-                        state = eState.Driving;
-                     }
-                     break;
-               }
-               break;
+               HandleKeyE(); break;
 
             case Keys.M:
-               if (state == eState.Driving) { // Accelerate time when M is pressed while driving
-                  ChangedTimescale = !ChangedTimescale;
-                  if (ChangedTimescale)
-                     Game.TimeScale = 4.0F;
-                  else
-                     Game.TimeScale = 1.0F;
-               }
-               break;
+               HandleKeyM(); break;
             
-            // case spacebar to skip
             case Keys.Space:
-                if (state == eState.Driving)
-                {
-                    if (Destination != null)
-                    {
-                        Vector3 nearbyPosition = Destination + new Vector3(RandFloat(-12f, 12f), RandFloat(-12f, 12f), 0f);
-
-                        Game.FadeScreenOut(1000);
-                        Wait(1200);
-
-                        cost += 10.0f;
-
-                        Player.Character.Position = nearbyPosition;
-                        SelectedCar.Position = nearbyPosition;
-
-                        SelectedDriver.Task.ClearAll();
-                        state = eState.ReachedTarget;
-                        Game.FadeScreenIn(1000);
-                        Player.Character.Task.LeaveVehicle();
-                    }
-                }
-                break;
+               HandleKeySpace(); break;
          }
     }
+
+   private void HandleKeyE()
+   {
+      if (Player.WantedLevel == 0) DisablePolice(true); else { return; }
+      switch (state) 
+      {
+         case eState.Off:
+            cost = 0.0f;
+            SelectedCar = World.GetClosestVehicle(Player.Character.Position, playerDistToTaxi);
+            if (!Exists(SelectedCar) || !IsTaxi(SelectedCar)) return;
+            SelectedDriver = SelectedCar.GetPedOnSeat(VehicleSeat.Driver);
+            if (!Exists(SelectedDriver)) { return; } 
+            else if (SelectedDriver == Player) { SelectedCar = null; SelectedDriver = null; return; }
+            // Call the taxi Animation
+            HailTaxi();
+            DisablePolice(true);
+            // force the game to load all path nodes, or he wouldn't be able to find the way to distant locations
+            Game.LoadAllPathNodes = true;
+
+            SelectedCar.DoorLock = 0;
+            SelectedCar.MakeProofTo(false, false, false, true, false); // make the car collision proof, or it will blow up pretty fast
+
+            // make sure that the driver won't die from his miserable driving skills
+            SelectedDriver.Invincible = true;
+            SelectedDriver.WillFlyThroughWindscreen = false;
+            SelectedDriver.CanBeKnockedOffBike = false;
+
+            // make sure that he will focus on his task
+            SelectedDriver.BlockPermanentEvents = true;
+            SelectedDriver.ChangeRelationship(RelationshipGroup.Player, Relationship.Respect);
+
+            SelectedDriver.Task.ClearAll();
+            SelectedDriver.Task.AlwaysKeepTask = true;
+            SelectedDriver.Task.Wait(-1); // wait until we clear the tasks again
+
+            if (Player.Group.MemberCount > 0)
+               // Group.EnterVehicle will make sure that only members closeby try to enter the vehicle
+               Player.Group.EnterVehicle(SelectedCar, true, true);
+            else
+               Player.Character.Task.EnterVehicle(SelectedCar, SelectedCar.GetFreePassengerSeat());
+
+            state = eState.WaitingForPlayer;
+            break;
+
+         case eState.WaitingForPlayer:
+            TurnDriverToNormal();
+            state = eState.Off;
+            break;
+
+         case eState.Driving: // Change Route
+               break;
+
+         case eState.ReachedTarget:
+            if (SetDestination()) 
+            {
+               // give the new task to the driver
+               SelectedDriver.BlockPermanentEvents = true;
+               SelectedDriver.Task.ClearAll();
+               SelectedDriver.Task.AlwaysKeepTask = true;
+               SelectedDriver.Task.DriveTo(SelectedCar, Destination, Speed, false);
+
+               state = eState.Driving;
+            }
+            break;
+      }
+   }
+
+// Accelerate time when M is pressed while driving
+   private void HandleKeyM()
+   {
+      if (state == eState.Driving) 
+      { 
+         ChangedTimescale = !ChangedTimescale;
+         if (ChangedTimescale)
+            Game.TimeScale = 4.0F;
+         else
+            Game.TimeScale = 1.0F;
+      }
+   }
+  
+  // Skip Trip
+   private void HandleKeySpace()
+   {
+      if (state == eState.Driving)
+      {
+         if (Destination != null)
+         {
+            Vector3 nearbyPosition = Destination + new Vector3(RandFloat(-12f, 12f), RandFloat(-12f, 12f), 0f);
+
+            Game.FadeScreenOut(1000);
+            Wait(1200);
+
+            cost += 10.0f;
+
+            Player.Character.Position = nearbyPosition;
+            SelectedCar.Position = nearbyPosition;
+
+            SelectedDriver.Task.ClearAll();
+            state = eState.ReachedTarget;
+            Game.FadeScreenIn(1000);
+            Player.Character.Task.LeaveVehicle();
+         }
+      }
+   }
+
    /* 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       UpdateCostChange (WIP): 
@@ -257,9 +262,9 @@ public class TaxiReborn : Script {
             cost = baseCost + (distance * costPerMeter);
 
             if (cost > 1000.0f)
-         {
+            {
                cost = 1000.0f;
-         }
+            }
          }
       } else 
       {
@@ -434,5 +439,33 @@ public class TaxiReborn : Script {
    {
       Random rand = new Random();
       return (float)(rand.NextDouble() * (maxValue - minValue) + minValue);
+   }
+
+   private bool IsUsingController()
+   {
+      // extern boolean IS_USING_CONTROLLER(void);
+      if (GTA.Native.Function.Call<bool>("IS_USING_CONTROLLER"))
+         return true;
+      return false;
+   }
+
+   private bool IsControlJustPressed(int group, int control)
+   { return GTA.Native.Function.Call<bool>("IS_CONTROL_JUST_PRESSED", group, control); }
+
+   private void HandleController()
+   {  
+      if (IsControlJustPressed(2, 46))
+         HandleKeyE();
+      if (IsControlJustPressed(2, 80))
+         HandleKeyM();
+      if (IsControlJustPressed(2, 76))
+         HandleKeySpace();
+   }
+   private void TextBasedInput(string msgKeyboard, string msgController)
+   {
+      if (!IsUsingController())
+         Game.DisplayText(msgKeyboard);
+      else
+         Game.DisplayText(msgController);
    }
 }
