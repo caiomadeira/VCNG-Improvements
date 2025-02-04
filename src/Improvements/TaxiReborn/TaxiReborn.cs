@@ -4,6 +4,9 @@
    Is a Project and part of ViceCity Next Gen Improvements
    Give the credits.
    Code Pieces inspired by Alexander Blade's samples for Scripthook.
+
+   GLOBAL TODOS:
+   - Make player seat in any place in car (but not in driver's seat);
 */
 
 using System;
@@ -44,10 +47,13 @@ public class TaxiReborn : Script {
         this.Tick += OnTick;
         Game.DisplayText("TaxiReborn (for VCNG)\nBy caiomadeira\nv0.0.1\ngithub.com/caiomadeira", 5000);
     }
+    
     private void OnTick(object sender, EventArgs e)
-    {   
-         CheckAllTimeForTaxis();
-         HandleController();
+    {
+         HandleController();  
+         if (IsPlayerNearTaxi())
+            TextBasedInput("Press 'E' to call the taxi", "Press 'LB' to call the taxi");
+
         if (state == eState.WaitingForPlayer)
             DisablePolice(true);
 
@@ -292,21 +298,24 @@ public class TaxiReborn : Script {
     }
    /* 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-      CheckAllTimeForTaxis: 
+      IsPlayerNearTaxi: 
       Search for taxis nearst player
-      TODO: The functions need to avoid show the message if the taxi has no Ped Driver
+      TODO: The functions need to avoid show the message if the taxi has no Ped Driver - DONE
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
    */
-   private void CheckAllTimeForTaxis()
+   private bool IsPlayerNearTaxi()
    {
       if (state == eState.Off && !Player.Character.isInVehicle())
       {
          Vehicle closestTaxi = World.GetClosestVehicle(Player.Character.Position, playerDistToTaxi);
          if (closestTaxi != null && IsTaxi(closestTaxi))
          {
-            Game.DisplayText("Press 'E' to call the taxi", 3000);
+            Ped driver = closestTaxi.GetPedOnSeat(VehicleSeat.Driver);
+            if (driver != null && driver.Exists())
+               return true;
          }
       }
+      return false;
    }
    /* 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -442,24 +451,30 @@ public class TaxiReborn : Script {
    }
 
    private bool IsUsingController()
-   {
-      // extern boolean IS_USING_CONTROLLER(void);
-      if (GTA.Native.Function.Call<bool>("IS_USING_CONTROLLER"))
-         return true;
-      return false;
-   }
+   { return GTA.Native.Function.Call<bool>("IS_USING_CONTROLLER"); }
 
    private bool IsControlJustPressed(int group, int control)
-   { return GTA.Native.Function.Call<bool>("IS_CONTROL_JUST_PRESSED", group, control); }
+   { return GTA.Native.Function.Call<bool>("IS_CONTROL_PRESSED", group, control); }
 
    private void HandleController()
    {  
-      if (IsControlJustPressed(2, 46))
+      if (IsControlJustPressed(2, 23) && IsUsingController() && IsPlayerNearTaxi())
+      {
+         //GTA.Native.Function.Call("PRINT_STRING_WITH_LITERAL_STRING_NOW", "STRING", "CALLING TAXI - LB BUTTON PRESSED", 2000, true);
          HandleKeyE();
-      if (IsControlJustPressed(2, 80))
+      }
+
+      if (IsControlJustPressed(2, 2) && IsUsingController() && state == eState.Driving)
+      {
+         //GTA.Native.Function.Call("PRINT_STRING_WITH_LITERAL_STRING_NOW", "STRING", "ACCELERATE TIME - X BUTTON PRESSED", 2000, true);
          HandleKeyM();
-      if (IsControlJustPressed(2, 76))
+      }
+
+      if (IsControlJustPressed(2, 1)  && IsUsingController() && state == eState.Driving)
+      {
+         //GTA.Native.Function.Call("PRINT_STRING_WITH_LITERAL_STRING_NOW", "STRING", "SKIP TRIP - A BUTTON PRESSED", 2000, true);
          HandleKeySpace();
+      }
    }
    private void TextBasedInput(string msgKeyboard, string msgController)
    {

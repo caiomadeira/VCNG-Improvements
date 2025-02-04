@@ -1,4 +1,4 @@
-## GTA ViceCity Next-Gen Mod: Fixes and Enhancements
+## GTA ViceCity Next-Gen: Fixes and Enhancements by cmadeira
 
 This repo contains improvements and fixes for GTA Vice City Next Gen Mod by RevTeam. Some Scripthook mods can work in original GTA IV Game, others not.
 
@@ -11,18 +11,27 @@ To install you need to:
     - Drag and drop the files;
     - Copy TaxiReborn_xxx.cs to your scripts folder in game main folder.
  ```
-
- ### Improvements List:
- #### 1. Taxi Reborn (BETA) (src/Improments/TaxiReborn_x.x.x/TaxiReborn.cs)
+---
+ ## Improvements List:
+ ### 1. Taxi Reborn
 The player can now (again) use a Taxi. You can skip the ride. If your money is lower than the trip value, may be have consequences.I rewrite from scratch this feature, so can be a few bugs. Feel free to report then in POST section (Nexus) or in Issues section (GITHUB).
 
 [Showcase](https://www.youtube.com/watch?v=JH-5HKLd8iI)
 
-[![showcase](assets/cover1.png)](https://www.youtube.com/watch?v=JH-5HKLd8iI)
+[![showcase](DOCS/assets/cover1.png)](https://www.youtube.com/watch?v=JH-5HKLd8iI)
 
-![test](assets/sc1.png)
-
-### Fixes:
+### CHANGELOG:
+#### v0.0.1 (BETA) (03/02/2025):
+ ```
+ - First version of mod (BETA);
+  ```
+#### v1.0.0 (04/02/2025):
+ ```
+ - feature: Add Controller Support (With know bug - you need to press two times the button in controller);
+ - fix: check if taxi has no Ped Driver 
+  ```
+---
+## Fixes:
 For fixes i honest choose to use the sco language.  
 To install you need to:
  ```
